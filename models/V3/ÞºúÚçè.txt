@@ -1,0 +1,56 @@
+在发现 Data Leakage 后的第三版（即清洗后的 36 列净版增强表与最终定型版），我们对**特征**和**算法模型**分别做了如下改动：
+
+---
+
+### 一、 第三版具体删除了哪些 Feature？
+
+我们在完整保留你原表 25 列不动的前提下，通过 `clean_leaky_external_columns.py` 从爬取的 22 个外部特征中**删除了以下 11 个带有未来信息或当前快照泄漏的字段**：
+
+| 泄漏类别 | 删除的具体字段 | 为什么必须删除？ |
+| --- | --- | --- |
+| **发表后的早期引文**<br>
+
+<br>*(直接泄漏 $Y_1$ 目标)* | `oa_early_citations_t0_year`<br>
+
+<br>`oa_early_citations_t0_plus1` | 它们记录了论文发表当年和次年的实际被引用数，本质上是把 $Y_1$（3 年总被引）的前半段答案直接喂给了模型。 |
+| **作者“截至今天”的声誉**<br>
+
+<br>*(未来时间快照泄漏)* | `s2_author_max_hindex`<br>
+
+<br>`s2_author_mean_hindex`<br>
+
+<br>`s2_author_max_citations` | [Semantic Scholar API](https://api.semanticscholar.org/api-docs/) 返回的是作者**截至今天**的累计 H-index 和总被引，包含了 2021 年之后靠这篇论文及后续工作涨起来的声誉。 |
+| **参考文献“截至今天”的被引**<br>
+
+<br>*(未来时间快照泄漏)* | `s2_ref_citation_max`<br>
+
+<br>`s2_ref_citation_mean`<br>
+
+<br>`s2_ref_citation_median` | 同样是 API 当前快照，包含了论文提交之后数年间参考文献本身的新增引用。 |
+| **事后代码库与冗余统计** | `pwc_repo_count`<br>
+
+<br>`pwc_mentioned_in_github`<br>
+
+<br>`oa_referenced_works_count` *(注：最初一并删去，后确认其为论文自身参考文献篇数，无泄漏可保留)* | GitHub 仓库的扩散与提及往往发生在论文公开甚至中稿之后。 |
+
+> **第三版最终保留的无泄漏外部特征（11 列）**：主要聚焦在论文提交时刻 $t_0$ 就已印在首页的**作者所属大学/大厂实验室**（`oa_has_top_industry_lab`, `oa_has_top_university`, `oa_institutions_count`, `oa_countries_count`, `oa_institutions_json`, `oa_matched`）、**近两年参考文献前沿占比**（`s2_ref_recent_2y_ratio`, `s2_batch_matched`）以及基础框架标记（`pwc_has_official_code`, `pwc_is_pytorch`, `pwc_is_tensorflow`）。
+
+---
+
+### 二、 第三版在算法模型上做了什么改动？
+
+删除了上述 11 个强信号泄漏列后，原本靠“作弊特征”称霸的树模型（CatBoost / LightGBM）瞬间失效，因此第三版在算法上做了 **4 项关键切换与升级**：
+
+1. **算法模型切换：从“树模型（CatBoost/GBDT）”切换回“超线性乘性协同模型（`mult_graph_synergy`）”**
+* 失去早期引用和作者当前 H-index 后，树模型无法外推高引爆款尾部的缺陷立刻暴露（`Y1` 一度掉到 `0.125`）。
+* 我在第三版中修正了验证折的 `warm_blend_` 参数（从 `0.02` 恢复到 `0.38`），锁定 `Y1` 和 `Y2` 重新由 **`MultiplicativeSynergyRegressor`（`mult_graph_synergy`）** 挑大梁，并默认关闭了耗时约 40 分钟的 48 次高维 GBDT 扫描（`ENABLE_SLOW_GBDT=0`），将 `Y1` 无泄漏 Raw $R^2$ 拉升至 **`0.2565`**（Log1p $R^2$ 达 **`0.3470`**）。
+
+
+2. **乘性协同算法的“全特征对数耦合”与“跨目标协同”升级**
+* 在最新的第三版补丁中，把 [BGE](https://arxiv.org/abs/2309.07597) 128 维语义向量纳入 5 折 OOF 主题蒸馏器，并把全特征对数预测头（`LogSmearingRegressor(damp=8.0)`）的预测分数作为乘子直接耦合进 `MultiplicativeSynergyRegressor`（`Y1` 引入 `0.38` 次方对数缩放因子，`Y2` 融合 `0.32` 倍的 `Y1` 协同信号），让无泄漏的语义和机构信息能真正放大预测上限。
+
+
+3. **冷启动机构先验的防噪截断与 `Y3` 动态列隔离**
+* 在 `AuthorCollaborationGraphEncoder` 中，对纯新作者查询所属机构的先验做了温和截断（上限控制在全局均值的 `1.8` 倍，权重调整为 `0.25 * 机构先验 + 0.75 * DBLP 先验`），防止名校普通论文被过度高估。
+* 在 `CohortCalibratedY3Regressor` 中动态适配 36 列特征布局，屏蔽外部机构/代码噪点对双盲审稿评分 `Y3` 的干扰，使其稳定保持在 **`+0.0862`**。
+

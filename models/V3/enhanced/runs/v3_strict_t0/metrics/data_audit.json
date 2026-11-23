@@ -1,0 +1,104 @@
+{
+  "all_three_available": 929,
+  "author_graph_features": "2-hop co-author collaboration graph with Lp-norm aggregation, shared-paper deduplication, challenge-paper cap, and cross-paper DBLP recovery (fitted on training rows only)",
+  "category_source": "primary + categories_v1_json + cs_categories_v1_json, multi-hot",
+  "columns": 64,
+  "dblp_missing": 4269,
+  "emerging_paradigm_features": "Temporal emerging high-impact n-gram encoder contrasting late vs early training sub-windows",
+  "excluded": {
+    "abstract_v1": "raw text; consumed by TF-IDF/BGE and emerging-paradigm encoder",
+    "authors_v1_json": "parsed into training-only 2-hop collaboration graph & DBLP recovery",
+    "categories_v1_json": "parsed into multi-hot category features",
+    "cs_categories_v1_json": "parsed into multi-hot category features",
+    "openreview_mean_rating": "target Y3",
+    "paper_id": "primary key",
+    "s2_citation_count_3y": "target Y1",
+    "s2_influential_citation_count_3y": "target Y2",
+    "title_v1": "raw text; consumed by TF-IDF/BGE and emerging-paradigm encoder"
+  },
+  "numeric_features": [
+    "submission_year",
+    "t0_month_sin",
+    "t0_month_cos",
+    "author_count_log1p",
+    "has_author_affiliation",
+    "category_count",
+    "is_interdisciplinary",
+    "title_word_count_v1",
+    "abstract_word_count_v1",
+    "dblp_mean_publication_log1p",
+    "dblp_max_publication_log1p",
+    "dblp_team_total_pub_log1p",
+    "dblp_star_ratio",
+    "dblp_productivity_rate",
+    "dblp_mean_academic_age",
+    "dblp_max_academic_age",
+    "dblp_features_missing",
+    "text_has_code_or_url",
+    "text_has_sota_claim",
+    "text_has_theory_claim",
+    "text_is_survey_or_benchmark",
+    "text_has_named_model_colon",
+    "text_is_challenge_report"
+  ],
+  "paper_id_unique": true,
+  "rows": 29856,
+  "split": {
+    "test_years": [
+      2021,
+      2022
+    ],
+    "train_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "validation_folds": [
+      {
+        "train": [
+          2017,
+          2018
+        ],
+        "validation": 2019
+      },
+      {
+        "train": [
+          2017,
+          2018,
+          2019
+        ],
+        "validation": 2020
+      }
+    ]
+  },
+  "targets": {
+    "Y1": {
+      "available": 29818,
+      "column": "s2_citation_count_3y",
+      "missing": 38,
+      "rate": 0.9987272240085745
+    },
+    "Y2": {
+      "available": 29852,
+      "column": "s2_influential_citation_count_3y",
+      "missing": 4,
+      "rate": 0.99986602357985
+    },
+    "Y3": {
+      "available": 934,
+      "column": "openreview_mean_rating",
+      "missing": 28922,
+      "rate": 0.031283494105037515
+    }
+  },
+  "text_source": "title_v1 + [SEP] + abstract_v1 (+ comment_v1 in full mode); TF-IDF and optional BGE embeddings",
+  "years": {
+    "2017": 4965,
+    "2018": 4970,
+    "2019": 4980,
+    "2020": 4982,
+    "2021": 4984,
+    "2022": 4975
+  }
+}
