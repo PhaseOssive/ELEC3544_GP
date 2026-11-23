@@ -1,0 +1,7 @@
+﻿submission_year,split,papers,Y1_available,Y2_available,Y3_available
+2017,train,4965,4962,4965,76
+2018,train,4970,4954,4969,119
+2019,train,4980,4969,4980,132
+2020,train,4982,4978,4981,122
+2021,test,4984,4982,4983,250
+2022,test,4975,4973,4974,235
