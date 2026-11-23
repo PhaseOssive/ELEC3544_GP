@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-11-13T13:26:40+08:00",
+  "data_path": "gp_data\\papers_features.csv",
+  "max_features": 5000,
+  "output_dir": "gp_model\\improved",
+  "packages": {
+    "joblib": "1.6.0",
+    "lightgbm": "4.6.0",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0"
+  },
+  "seed": 42,
+  "selected": {
+    "Y1": "lgb_tweedie_1.5",
+    "Y2": "lgb_tweedie_1.1",
+    "Y3": "train_median"
+  },
+  "selection": "2020 validation only; test evaluated after selection",
+  "tasks": [
+    "Y1",
+    "Y2",
+    "Y3"
+  ],
+  "y3_features": 1500
+}

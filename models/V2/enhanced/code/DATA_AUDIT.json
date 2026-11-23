@@ -1,0 +1,101 @@
+{
+  "all_three_targets_available": 929,
+  "categorical_feature": "primary_category_v1",
+  "columns": 32,
+  "dblp_features_missing": 4269,
+  "derived_columns": [
+    "author_count_log1p",
+    "dblp_mean_publication_log1p",
+    "dblp_max_publication_log1p",
+    "dblp_mean_academic_age",
+    "dblp_max_academic_age",
+    "dblp_features_missing",
+    "text_all"
+  ],
+  "excluded_from_x": {
+    "abstract_v1": "Raw text; used only through TF-IDF.",
+    "authors_v1_json": "Identity metadata; author_count_v1 is the model feature.",
+    "categories_v1_json": "Redundant with primary_category_v1.",
+    "comment_v1": "Optional venue/status metadata; possible post-t0 information.",
+    "cs_categories_v1_json": "Redundant with primary_category_v1 for this baseline.",
+    "dblp_previously_published_before_arxiv_v1": "DBLP audit field; not a baseline predictor.",
+    "dblp_temporal_status": "DBLP matching/audit field.",
+    "doi_v1": "Identifier/optional metadata; not predictive at t0.",
+    "journal_ref_v1": "Optional venue metadata; not part of the t0 content/team feature set.",
+    "openreview_mean_rating": "Target Y3.",
+    "paper_id": "Primary key; not a feature.",
+    "s2_citation_count_3y": "Target Y1.",
+    "s2_influential_citation_count_3y": "Target Y2.",
+    "s2_reference_count_current": "Current-time metadata; post-t0 and therefore leakage-prone.",
+    "t0_date": "Time key used to construct the split; not a content feature.",
+    "title_v1": "Raw text; used only through TF-IDF."
+  },
+  "numeric_features": [
+    "submission_year",
+    "author_count_log1p",
+    "title_word_count_v1",
+    "abstract_word_count_v1",
+    "dblp_mean_publication_log1p",
+    "dblp_max_publication_log1p",
+    "dblp_mean_academic_age",
+    "dblp_max_academic_age",
+    "dblp_features_missing"
+  ],
+  "paper_id_unique": true,
+  "primary_categories": 133,
+  "rows": 29856,
+  "source_columns": 25,
+  "source_rows": 29856,
+  "split": {
+    "test_years": [
+      2021,
+      2022
+    ],
+    "train_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "xgboost_inner_train_years": [
+      2017,
+      2018,
+      2019
+    ],
+    "xgboost_validation_year": 2020
+  },
+  "target_columns": [
+    "s2_citation_count_3y",
+    "s2_influential_citation_count_3y",
+    "openreview_mean_rating"
+  ],
+  "targets": {
+    "Y1": {
+      "available": 29818,
+      "available_rate": 0.9987272240085745,
+      "column": "s2_citation_count_3y",
+      "missing": 38
+    },
+    "Y2": {
+      "available": 29852,
+      "available_rate": 0.99986602357985,
+      "column": "s2_influential_citation_count_3y",
+      "missing": 4
+    },
+    "Y3": {
+      "available": 934,
+      "available_rate": 0.031283494105037515,
+      "column": "openreview_mean_rating",
+      "missing": 28922
+    }
+  },
+  "text_feature": "title_v1 + ' ' + abstract_v1 -> TF-IDF fitted on training rows only",
+  "years": {
+    "2017": 4965,
+    "2018": 4970,
+    "2019": 4980,
+    "2020": 4982,
+    "2021": 4984,
+    "2022": 4975
+  }
+}
