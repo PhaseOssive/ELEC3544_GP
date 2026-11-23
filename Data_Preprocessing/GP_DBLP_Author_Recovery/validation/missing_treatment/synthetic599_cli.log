@@ -1,0 +1,136 @@
+{
+  "status": "COMPLETE",
+  "policy": "CONFIRMED_COMPLETE_ZERO_HISTORY_COUNT_AND_AGE_ZERO_V1",
+  "author_count_unit": "AUTHOR_OCCURRENCES_NOT_UNIQUE_PERSONS",
+  "zero_history_author_count": 150,
+  "academic_age_newly_zero_filled_count": 150,
+  "zero_history_unique_pid_count": 150,
+  "unresolved_author_count": 150,
+  "confirmed_authors_with_incomplete_history_count": 149,
+  "history_missing_year_author_count": 149,
+  "reason_counts": {
+    "EXISTING_VALID_HISTORY_VALUES_RETAINED": 150,
+    "UNRESOLVED_IDENTITY_REMAINS_MISSING": 150,
+    "HISTORY_NOT_CERTIFIED_ZERO_OR_VALID:MISSING_YEAR": 149,
+    "CONFIRMED_COMPLETE_ZERO_HISTORY_COUNT_AND_AGE_ZERO": 150
+  },
+  "input_paper_count": 599,
+  "retained_paper_count": 599,
+  "excluded_paper_count": 0,
+  "before_after_coverage": {
+    "dblp_team_mean_publication_count_pre_t0": {
+      "before": {
+        "valid_count": 300,
+        "missing_count": 299,
+        "coverage_ratio": 0.5008347245409015
+      },
+      "after": {
+        "valid_count": 300,
+        "missing_count": 299,
+        "coverage_ratio": 0.5008347245409015
+      },
+      "valid_count_change": 0,
+      "coverage_percentage_point_change": 0.0
+    },
+    "dblp_team_max_publication_count_pre_t0": {
+      "before": {
+        "valid_count": 300,
+        "missing_count": 299,
+        "coverage_ratio": 0.5008347245409015
+      },
+      "after": {
+        "valid_count": 300,
+        "missing_count": 299,
+        "coverage_ratio": 0.5008347245409015
+      },
+      "valid_count_change": 0,
+      "coverage_percentage_point_change": 0.0
+    },
+    "dblp_team_mean_academic_age_pre_t0": {
+      "before": {
+        "valid_count": 150,
+        "missing_count": 449,
+        "coverage_ratio": 0.25041736227045075
+      },
+      "after": {
+        "valid_count": 300,
+        "missing_count": 299,
+        "coverage_ratio": 0.5008347245409015
+      },
+      "valid_count_change": 150,
+      "coverage_percentage_point_change": 25.041736227045075
+    },
+    "dblp_team_max_academic_age_pre_t0": {
+      "before": {
+        "valid_count": 150,
+        "missing_count": 449,
+        "coverage_ratio": 0.25041736227045075
+      },
+      "after": {
+        "valid_count": 300,
+        "missing_count": 299,
+        "coverage_ratio": 0.5008347245409015
+      },
+      "valid_count_change": 150,
+      "coverage_percentage_point_change": 25.041736227045075
+    }
+  },
+  "original_master_coverage": {
+    "dblp_team_mean_publication_count_pre_t0": {
+      "valid_count": 0,
+      "missing_count": 599,
+      "coverage_ratio": 0.0
+    },
+    "dblp_team_max_publication_count_pre_t0": {
+      "valid_count": 0,
+      "missing_count": 599,
+      "coverage_ratio": 0.0
+    },
+    "dblp_team_mean_academic_age_pre_t0": {
+      "valid_count": 0,
+      "missing_count": 599,
+      "coverage_ratio": 0.0
+    },
+    "dblp_team_max_academic_age_pre_t0": {
+      "valid_count": 0,
+      "missing_count": 599,
+      "coverage_ratio": 0.0
+    }
+  },
+  "final_features": {
+    "dblp_team_mean_publication_count_pre_t0": {
+      "valid_count": 300,
+      "missing_count": 299,
+      "coverage_ratio": 0.5008347245409015
+    },
+    "dblp_team_max_publication_count_pre_t0": {
+      "valid_count": 300,
+      "missing_count": 299,
+      "coverage_ratio": 0.5008347245409015
+    },
+    "dblp_team_mean_academic_age_pre_t0": {
+      "valid_count": 300,
+      "missing_count": 299,
+      "coverage_ratio": 0.5008347245409015
+    },
+    "dblp_team_max_academic_age_pre_t0": {
+      "valid_count": 300,
+      "missing_count": 299,
+      "coverage_ratio": 0.5008347245409015
+    }
+  },
+  "input_sha256": {
+    "summary": "b97a641f28c58a126c67c239be7e41b64809b15a330605563b79e0b48f98783d",
+    "manifest": "e338ec04189f43a1ef8d46562088944fbac1fefa5d982ce36ef737cdfe57ea77",
+    "temporal": "3fa9537f6b97246b8eb679cbc1998c789efa7d55a4f3699cfa0c6cba1027635a",
+    "authors": "718a1944223e29bd79065143693ff9110f40ae543193768265cda7dcd731891e",
+    "teams": "965233d3849eacb2c05522456a4991b63d27c77261d167e7b333590903c26dd0",
+    "master": "82721df9bb396546fb68ac5836ce298d6fb90509de494987afea65f921c98925"
+  },
+  "original_order_preserved": true,
+  "all_non_feature_fields_preserved": true,
+  "xml_scanned_by_treatment": false,
+  "sqlite_opened_by_treatment": false,
+  "master_output": "features/papers_master_dblp_imputed.csv",
+  "note": "Zero reflects qualified history in the complete DBLP snapshot, not proof about publications outside DBLP. Original metadata columns remain unchanged."
+}

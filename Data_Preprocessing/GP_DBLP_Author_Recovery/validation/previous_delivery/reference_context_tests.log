@@ -1,0 +1,796 @@
+2026-11-06 22:52:46,394 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,394 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,394 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,395 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,404 INFO Validate author occurrences started
+2026-11-06 22:52:46,404 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,406 INFO Recalculate four team features started
+2026-11-06 22:52:46,407 INFO Recalculate four team features processed=1 papers speed=667.8/s elapsed=0.0s {}
+2026-11-06 22:52:46,409 INFO Using XML: /tmp/tmpvxl6xzbt/input/dblp.xml.gz
+2026-11-06 22:52:46,411 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,411 INFO Profile / Alias index started
+2026-11-06 22:52:46,412 INFO Index committed 2 records
+2026-11-06 22:52:46,413 INFO Index committed 4 records
+2026-11-06 22:52:46,413 INFO Index committed 6 records
+2026-11-06 22:52:46,413 INFO Index committed 8 records
+2026-11-06 22:52:46,413 INFO Index committed 10 records
+2026-11-06 22:52:46,413 INFO Profile / Alias index processed=10 records speed=4745.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,414 INFO DBLP paper evidence started
+2026-11-06 22:52:46,415 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,416 INFO Name repair candidates started
+2026-11-06 22:52:46,416 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,416 INFO Identity conflict validation started
+2026-11-06 22:52:46,416 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,421 INFO History alias lookup started
+2026-11-06 22:52:46,421 INFO History alias lookup processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,421 INFO History scan; committed records=0
+2026-11-06 22:52:46,421 INFO Historical publication scan started
+2026-11-06 22:52:46,421 INFO History committed 2 records
+2026-11-06 22:52:46,421 INFO History committed 4 records
+2026-11-06 22:52:46,421 INFO History committed 6 records
+2026-11-06 22:52:46,421 INFO History committed 8 records
+2026-11-06 22:52:46,421 INFO History committed 10 records
+2026-11-06 22:52:46,421 INFO Historical publication scan processed=10 records speed=10000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,421 INFO Historical work deduplication started
+2026-11-06 22:52:46,422 INFO Historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,423 INFO Author history at t0 started
+2026-11-06 22:52:46,423 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,424 INFO Recalculate four team features started
+2026-11-06 22:52:46,426 INFO Recalculate four team features processed=1 papers speed=551.9/s elapsed=0.0s {}
+.2026-11-06 22:52:46,445 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,445 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,445 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,445 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,451 INFO Validate author occurrences started
+2026-11-06 22:52:46,451 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,453 INFO Recalculate four team features started
+2026-11-06 22:52:46,454 INFO Recalculate four team features processed=1 papers speed=827.6/s elapsed=0.0s {}
+2026-11-06 22:52:46,457 INFO Using XML: /tmp/tmpc6y25btd/input/dblp.xml.gz
+2026-11-06 22:52:46,459 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,459 INFO Profile / Alias index started
+2026-11-06 22:52:46,459 INFO Index committed 2 records
+2026-11-06 22:52:46,460 INFO Index committed 4 records
+2026-11-06 22:52:46,460 INFO Index committed 6 records
+2026-11-06 22:52:46,460 INFO Index committed 8 records
+2026-11-06 22:52:46,460 INFO Profile / Alias index processed=9 records speed=8775.4/s elapsed=0.0s {}
+2026-11-06 22:52:46,461 INFO DBLP paper evidence started
+2026-11-06 22:52:46,461 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,462 INFO Name repair candidates started
+2026-11-06 22:52:46,462 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,462 INFO Identity conflict validation started
+2026-11-06 22:52:46,462 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,467 INFO History alias lookup started
+2026-11-06 22:52:46,467 INFO History alias lookup processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,467 INFO History scan; committed records=0
+2026-11-06 22:52:46,467 INFO Historical publication scan started
+2026-11-06 22:52:46,468 INFO History committed 2 records
+2026-11-06 22:52:46,468 INFO History committed 4 records
+2026-11-06 22:52:46,468 INFO History committed 6 records
+2026-11-06 22:52:46,468 INFO History committed 8 records
+2026-11-06 22:52:46,468 INFO Historical publication scan processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,468 INFO Historical work deduplication started
+2026-11-06 22:52:46,469 INFO Historical work deduplication processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,469 INFO Author history at t0 started
+2026-11-06 22:52:46,469 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,471 INFO Recalculate four team features started
+2026-11-06 22:52:46,472 INFO Recalculate four team features processed=1 papers speed=703.8/s elapsed=0.0s {}
+2026-11-06 22:52:46,489 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,490 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,490 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,490 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,495 INFO Validate author occurrences started
+2026-11-06 22:52:46,495 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,497 INFO Recalculate four team features started
+2026-11-06 22:52:46,498 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,500 INFO Using XML: /tmp/tmpc6y25btd/input/dblp.xml.gz
+2026-11-06 22:52:46,502 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,502 INFO Profile / Alias index started
+2026-11-06 22:52:46,502 INFO Index committed 2 records
+2026-11-06 22:52:46,502 INFO Index committed 4 records
+2026-11-06 22:52:46,503 INFO Index committed 6 records
+2026-11-06 22:52:46,503 INFO Index committed 8 records
+2026-11-06 22:52:46,503 INFO Profile / Alias index processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,504 INFO DBLP paper evidence started
+2026-11-06 22:52:46,504 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,504 INFO Name repair candidates started
+2026-11-06 22:52:46,505 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,505 INFO Identity conflict validation started
+2026-11-06 22:52:46,505 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,509 INFO History alias lookup started
+2026-11-06 22:52:46,509 INFO History alias lookup processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,509 INFO History scan; committed records=0
+2026-11-06 22:52:46,510 INFO Historical publication scan started
+2026-11-06 22:52:46,510 INFO History committed 2 records
+2026-11-06 22:52:46,510 INFO History committed 4 records
+2026-11-06 22:52:46,510 INFO History committed 6 records
+2026-11-06 22:52:46,511 INFO History committed 8 records
+2026-11-06 22:52:46,511 INFO Historical publication scan processed=9 records speed=7910.4/s elapsed=0.0s {}
+2026-11-06 22:52:46,511 INFO Historical work deduplication started
+2026-11-06 22:52:46,511 INFO Historical work deduplication processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,512 INFO Author history at t0 started
+2026-11-06 22:52:46,512 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,514 INFO Recalculate four team features started
+2026-11-06 22:52:46,515 INFO Recalculate four team features processed=1 papers speed=651.5/s elapsed=0.0s {}
+.2026-11-06 22:52:46,531 INFO Using XML: /tmp/tmpw6h5nt0g/input/dblp.xml.gz
+2026-11-06 22:52:46,531 INFO Copy XML to runtime started
+2026-11-06 22:52:46,531 INFO Copy XML to runtime processed=346 B speed=346000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,532 INFO Using XML: /tmp/tmpw6h5nt0g/input/dblp.xml.gz
+..2026-11-06 22:52:46,545 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,545 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,545 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,545 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,553 INFO Validate author occurrences started
+2026-11-06 22:52:46,553 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,556 INFO Recalculate four team features started
+2026-11-06 22:52:46,557 INFO Recalculate four team features processed=1 papers speed=781.3/s elapsed=0.0s {}
+2026-11-06 22:52:46,559 INFO Using XML: /tmp/tmpxueu8k8b/input/dblp.xml.gz
+2026-11-06 22:52:46,562 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,562 INFO Profile / Alias index started
+2026-11-06 22:52:46,562 INFO Index committed 2 records
+2026-11-06 22:52:46,563 INFO Index committed 4 records
+2026-11-06 22:52:46,563 INFO Index committed 6 records
+2026-11-06 22:52:46,563 INFO Index committed 8 records
+2026-11-06 22:52:46,564 INFO Profile / Alias index processed=9 records speed=5755.4/s elapsed=0.0s {}
+2026-11-06 22:52:46,565 INFO DBLP paper evidence started
+2026-11-06 22:52:46,566 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,566 INFO Name repair candidates started
+2026-11-06 22:52:46,567 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,567 INFO Identity conflict validation started
+2026-11-06 22:52:46,567 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,572 INFO History alias lookup started
+2026-11-06 22:52:46,572 INFO History alias lookup processed=0 authors speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,572 INFO History scan; committed records=0
+2026-11-06 22:52:46,572 INFO Historical publication scan started
+2026-11-06 22:52:46,572 INFO History committed 2 records
+2026-11-06 22:52:46,572 INFO History committed 4 records
+2026-11-06 22:52:46,572 INFO History committed 6 records
+2026-11-06 22:52:46,572 INFO History committed 8 records
+2026-11-06 22:52:46,572 INFO Historical publication scan processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,572 INFO Historical work deduplication started
+2026-11-06 22:52:46,572 INFO Historical work deduplication processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,573 INFO Author history at t0 started
+2026-11-06 22:52:46,573 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,575 INFO Recalculate four team features started
+2026-11-06 22:52:46,576 INFO Recalculate four team features processed=1 papers speed=595.8/s elapsed=0.0s {}
+.2026-11-06 22:52:46,621 INFO Using XML: /tmp/tmpl3wx32ht/input/dblp.xml.gz
+.2026-11-06 22:52:46,627 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,628 INFO Profile / Alias index started
+2026-11-06 22:52:46,628 INFO Index committed 2 records
+2026-11-06 22:52:46,628 INFO Index committed 4 records
+2026-11-06 22:52:46,628 INFO Index committed 6 records
+2026-11-06 22:52:46,628 INFO Index committed 8 records
+2026-11-06 22:52:46,628 INFO Profile / Alias index processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,630 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,630 INFO Profile / Alias index started
+2026-11-06 22:52:46,630 INFO Index committed 2 records
+2026-11-06 22:52:46,630 INFO Index committed 4 records
+2026-11-06 22:52:46,631 INFO Index committed 6 records
+2026-11-06 22:52:46,631 INFO Index committed 8 records
+2026-11-06 22:52:46,631 INFO Profile / Alias index processed=9 records speed=9000.0/s elapsed=0.0s {}
+.2026-11-06 22:52:46,636 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,636 INFO Profile / Alias index started
+2026-11-06 22:52:46,636 INFO Index committed 2 records
+2026-11-06 22:52:46,636 INFO Profile / Alias index processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,637 INFO Index scan; committed records=2 (gzip replay on resume)
+2026-11-06 22:52:46,638 INFO Profile / Alias index started
+2026-11-06 22:52:46,638 INFO Index committed 4 records
+2026-11-06 22:52:46,639 INFO Index committed 6 records
+2026-11-06 22:52:46,639 INFO Index committed 8 records
+2026-11-06 22:52:46,639 INFO Profile / Alias index processed=9 records speed=7384.3/s elapsed=0.0s {}
+.2026-11-06 22:52:46,647 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,647 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,647 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,647 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,655 INFO Validate author occurrences started
+2026-11-06 22:52:46,655 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,657 INFO Recalculate four team features started
+2026-11-06 22:52:46,658 INFO Recalculate four team features processed=1 papers speed=937.3/s elapsed=0.0s {}
+2026-11-06 22:52:46,660 INFO Using XML: /tmp/tmp3yp0iwvf/input/dblp.xml.gz
+2026-11-06 22:52:46,662 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,662 INFO Profile / Alias index started
+2026-11-06 22:52:46,662 INFO Index committed 2 records
+2026-11-06 22:52:46,663 INFO Index committed 4 records
+2026-11-06 22:52:46,663 INFO Index committed 6 records
+2026-11-06 22:52:46,663 INFO Index committed 8 records
+2026-11-06 22:52:46,663 INFO Index committed 10 records
+2026-11-06 22:52:46,663 INFO Profile / Alias index processed=10 records speed=8873.7/s elapsed=0.0s {}
+2026-11-06 22:52:46,664 INFO DBLP paper evidence started
+2026-11-06 22:52:46,665 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,665 INFO Name repair candidates started
+2026-11-06 22:52:46,666 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,666 INFO Identity conflict validation started
+2026-11-06 22:52:46,666 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,671 INFO History alias lookup started
+2026-11-06 22:52:46,671 INFO History alias lookup processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,671 INFO History scan; committed records=0
+2026-11-06 22:52:46,671 INFO Historical publication scan started
+2026-11-06 22:52:46,672 INFO History committed 2 records
+2026-11-06 22:52:46,672 INFO History committed 4 records
+2026-11-06 22:52:46,672 INFO History committed 6 records
+2026-11-06 22:52:46,672 INFO History committed 8 records
+2026-11-06 22:52:46,672 INFO History committed 10 records
+2026-11-06 22:52:46,672 INFO Historical publication scan processed=10 records speed=10000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,672 INFO Historical work deduplication started
+2026-11-06 22:52:46,673 INFO Historical work deduplication processed=7 records speed=7000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,673 INFO Author history at t0 started
+2026-11-06 22:52:46,674 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,675 INFO Recalculate four team features started
+2026-11-06 22:52:46,677 INFO Recalculate four team features processed=1 papers speed=541.4/s elapsed=0.0s {}
+.2026-11-06 22:52:46,698 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,698 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,698 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,698 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,705 INFO Validate author occurrences started
+2026-11-06 22:52:46,705 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,707 INFO Recalculate four team features started
+2026-11-06 22:52:46,708 INFO Recalculate four team features processed=1 papers speed=829.1/s elapsed=0.0s {}
+2026-11-06 22:52:46,710 INFO Using XML: /tmp/tmp9njkhqny/input/dblp.xml.gz
+2026-11-06 22:52:46,712 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,712 INFO Profile / Alias index started
+2026-11-06 22:52:46,713 INFO Index committed 2 records
+2026-11-06 22:52:46,713 INFO Index committed 4 records
+2026-11-06 22:52:46,713 INFO Index committed 6 records
+2026-11-06 22:52:46,713 INFO Index committed 8 records
+2026-11-06 22:52:46,713 INFO Profile / Alias index processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,715 INFO DBLP paper evidence started
+2026-11-06 22:52:46,715 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,715 INFO Name repair candidates started
+2026-11-06 22:52:46,716 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,716 INFO Identity conflict validation started
+2026-11-06 22:52:46,716 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,721 INFO History alias lookup started
+2026-11-06 22:52:46,721 INFO History alias lookup processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,721 INFO History scan; committed records=0
+2026-11-06 22:52:46,721 INFO Historical publication scan started
+2026-11-06 22:52:46,721 INFO History committed 2 records
+2026-11-06 22:52:46,721 INFO History committed 4 records
+2026-11-06 22:52:46,721 INFO History committed 6 records
+2026-11-06 22:52:46,722 INFO History committed 8 records
+2026-11-06 22:52:46,722 INFO Historical publication scan processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,722 INFO Historical work deduplication started
+2026-11-06 22:52:46,722 INFO Historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,723 INFO Author history at t0 started
+2026-11-06 22:52:46,723 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,725 INFO Recalculate four team features started
+2026-11-06 22:52:46,727 INFO Recalculate four team features processed=1 papers speed=748.1/s elapsed=0.0s {}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmpvxl6xzbt/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 353,
+      "mtime_ns": 1793976766386011478,
+      "sample_sha256": "575ada2c42c8c1ecfe9c6c9c40c2d313f3d5f103be14258db5ce2c871e020fd2"
+    }
+  },
+  "verified_author_count": 1,
+  "unresolved_author_count": 1,
+  "identity_status_counts": {
+    "AMBIGUOUS_DBLP_PERSON_MATCH": 1,
+    "VERIFIED": 1
+  },
+  "history_status_counts": {
+    "UNRESOLVED_IDENTITY": 1,
+    "ZERO_PRIOR_WORKS_IN_DBLP_SNAPSHOT": 1
+  },
+  "history": {
+    "relevant_records": 2,
+    "unique_works": 1,
+    "duplicates_collapsed": 1,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 1,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.05
+}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmpc6y25btd/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 346,
+      "mtime_ns": 1793976766437229499,
+      "sample_sha256": "df4a3f69c4deff81495e1aac0bf02e71265e24dbf04aaf9af5685a9a60f9b65b"
+    }
+  },
+  "verified_author_count": 2,
+  "unresolved_author_count": 0,
+  "identity_status_counts": {
+    "VERIFIED": 2
+  },
+  "history_status_counts": {
+    "COMPLETE_OBSERVED_DBLP_HISTORY": 1,
+    "ZERO_PRIOR_WORKS_IN_DBLP_SNAPSHOT": 1
+  },
+  "history": {
+    "relevant_records": 6,
+    "unique_works": 4,
+    "duplicates_collapsed": 2,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 1,
+    "dblp_team_max_publication_count_pre_t0": 1,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 2,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.04
+}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmpc6y25btd/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 346,
+      "mtime_ns": 1793976766437229499,
+      "sample_sha256": "df4a3f69c4deff81495e1aac0bf02e71265e24dbf04aaf9af5685a9a60f9b65b"
+    }
+  },
+  "verified_author_count": 2,
+  "unresolved_author_count": 0,
+  "identity_status_counts": {
+    "VERIFIED": 2
+  },
+  "history_status_counts": {
+    "COMPLETE_OBSERVED_DBLP_HISTORY": 1,
+    "ZERO_PRIOR_WORKS_IN_DBLP_SNAPSHOT": 1
+  },
+  "history": {
+    "relevant_records": 6,
+    "unique_works": 4,
+    "duplicates_collapsed": 2,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 1,
+    "dblp_team_max_publication_count_pre_t0": 1,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 2,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.04
+}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 2,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmpxueu8k8b/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 346,
+      "mtime_ns": 1793976766532825319,
+      "sample_sha256": "df4a3f69c4deff81495e1aac0bf02e71265e24dbf04aaf9af5685a9a60f9b65b"
+    }
+  },
+  "verified_author_count": 0,
+  "unresolved_author_count": 2,
+  "identity_status_counts": {
+    "DUPLICATE_PERSON_IN_TEAM": 2
+  },
+  "history_status_counts": {
+    "UNRESOLVED_IDENTITY": 2
+  },
+  "history": {
+    "relevant_records": 0,
+    "unique_works": 0,
+    "duplicates_collapsed": 0,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 0,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.05
+}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmp3yp0iwvf/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 361,
+      "mtime_ns": 1793976766641850998,
+      "sample_sha256": "e36fdfd89e01a90c076c63fad0de496cf6ba99b5108523dcad08aad5b8fc3916"
+    }
+  },
+  "verified_author_count": 2,
+  "unresolved_author_count": 0,
+  "identity_status_counts": {
+    "VERIFIED": 2
+  },
+  "history_status_counts": {
+    "COMPLETE_OBSERVED_DBLP_HISTORY": 1,
+    "INCOMPLETE_ALIAS_OR_YEAR_COVERAGE": 1
+  },
+  "history": {
+    "relevant_records": 7,
+    "unique_works": 4,
+    "duplicates_collapsed": 2,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 2,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.04
+}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmp9njkhqny/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 346,
+      "mtime_ns": 1793976766687759398,
+      "sample_sha256": "df4a3f69c4deff81495e1aac0bf02e71265e24dbf04aaf9af5685a9a60f9b65b"
+    }
+  },
+  "verified_author_count": 1,
+  "unresolved_author_count": 1,
+  "identity_status_counts": {
+    "MERGED_AUTHOR_RECORD_REQUIRES_REVIEW": 1,
+    "VERIFIED": 1
+  },
+  "history_status_counts": {
+    "UNRESOLVED_IDENTITY": 1,
+    "ZERO_PRIOR_WORKS_IN_DBLP_SNAPSHOT": 1
+  },
+  "history": {
+    "relevant_records": 2,
+    "unique_works": 1,
+    "duplicates_collapsed": 1,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 1,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.04
+}.2026-11-06 22:52:46,740 INFO Using XML: /tmp/tmp_xm9j8vw/input/dblp.xml.gz
+..2026-11-06 22:52:46,751 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,751 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,751 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,751 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,758 INFO Validate author occurrences started
+2026-11-06 22:52:46,758 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,760 INFO Recalculate four team features started
+2026-11-06 22:52:46,762 INFO Recalculate four team features processed=1 papers speed=743.8/s elapsed=0.0s {}
+2026-11-06 22:52:46,764 INFO Using XML: /tmp/tmp7xp7xjrv/input/dblp.xml.gz
+2026-11-06 22:52:46,766 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,766 INFO Profile / Alias index started
+2026-11-06 22:52:46,767 INFO Index committed 2 records
+2026-11-06 22:52:46,767 INFO Index committed 4 records
+2026-11-06 22:52:46,767 INFO Index committed 6 records
+2026-11-06 22:52:46,767 INFO Index committed 8 records
+2026-11-06 22:52:46,767 INFO Profile / Alias index processed=9 records speed=7871.1/s elapsed=0.0s {}
+2026-11-06 22:52:46,769 INFO DBLP paper evidence started
+2026-11-06 22:52:46,769 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,770 INFO Name repair candidates started
+2026-11-06 22:52:46,770 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,770 INFO Identity conflict validation started
+2026-11-06 22:52:46,770 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,776 INFO History alias lookup started
+2026-11-06 22:52:46,776 INFO History alias lookup processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,776 INFO History scan; committed records=0
+2026-11-06 22:52:46,777 INFO Historical publication scan started
+2026-11-06 22:52:46,777 INFO History committed 2 records
+2026-11-06 22:52:46,777 INFO History committed 4 records
+2026-11-06 22:52:46,777 INFO History committed 6 records
+2026-11-06 22:52:46,777 INFO History committed 8 records
+2026-11-06 22:52:46,777 INFO Historical publication scan processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,777 INFO Historical work deduplication started
+2026-11-06 22:52:46,777 INFO Historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,778 INFO Author history at t0 started
+2026-11-06 22:52:46,778 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,780 INFO Recalculate four team features started
+2026-11-06 22:52:46,781 INFO Recalculate four team features processed=1 papers speed=819.3/s elapsed=0.0s {}
+..2026-11-06 22:52:46,798 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:46,798 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:46,798 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:46,798 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:46,806 INFO Validate author occurrences started
+2026-11-06 22:52:46,806 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,809 INFO Recalculate four team features started
+2026-11-06 22:52:46,810 INFO Recalculate four team features processed=1 papers speed=804.8/s elapsed=0.0s {}
+2026-11-06 22:52:46,811 INFO Using XML: /tmp/tmp3a14k04e/input/dblp.xml.gz
+2026-11-06 22:52:46,813 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:46,814 INFO Profile / Alias index started
+2026-11-06 22:52:46,814 INFO Profile / Alias index processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:46,814 ERROR Recovery failed; partial scans are NOT complete history
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/architecture_review/context/GP_DBLP_Author_Recovery_v2/main.py", line 38, in run
+    db=Store(cfg,xml,dtd,papers);db.build()
+                                 ^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/architecture_review/context/GP_DBLP_Author_Recovery_v2/recovery/xmlstore.py", line 133, in build
+    for n,e in enumerate(records(self.xml,self.dtd,'Profile / Alias index'),1):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/architecture_review/context/GP_DBLP_Author_Recovery_v2/recovery/xmlstore.py", line 88, in records
+    for _,e in it:
+               ^^
+  File "src/lxml/iterparse.pxi", line 213, in lxml.etree.iterparse.__next__
+  File "src/lxml/iterparse.pxi", line 198, in lxml.etree.iterparse.__next__
+  File "src/lxml/iterparse.pxi", line 229, in lxml.etree.iterparse._read_more_events
+  File "src/lxml/parser.pxi", line 1516, in lxml.etree._FeedParser.close
+  File "src/lxml/parser.pxi", line 638, in lxml.etree._ParserContext._handleParseResult
+  File "src/lxml/parser.pxi", line 647, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 765, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 689, in lxml.etree._raiseParseError
+  File "/tmp/tmp3a14k04e/input/dblp.xml.gz", line 1
+lxml.etree.XMLSyntaxError: Premature end of data in tag article line 1, line 1, column 16
+.......2026-11-06 22:52:47,563 INFO Paper identity / segmentation started
+2026-11-06 22:52:47,563 INFO Paper identity / segmentation processed=1 papers speed=1000.0/s elapsed=0.0s {}
+..2026-11-06 22:52:47,569 INFO Paper identity / segmentation started
+2026-11-06 22:52:47,570 INFO Paper identity / segmentation processed=1 papers speed=1000.0/s elapsed=0.0s {}
+...2026-11-06 22:52:47,578 INFO Paper identity / segmentation started
+2026-11-06 22:52:47,579 INFO Paper identity / segmentation processed=1 papers speed=1000.0/s elapsed=0.0s {}
+...2026-11-06 22:52:47,586 INFO Paper identity / segmentation started
+2026-11-06 22:52:47,587 INFO Paper identity / segmentation processed=1 papers speed=1000.0/s elapsed=0.0s {}
+.2026-11-06 22:52:47,599 WARNING Missing input: dblp_candidate_match_audit.csv
+2026-11-06 22:52:47,599 WARNING Missing input: dblp_identity_conflicts.csv
+2026-11-06 22:52:47,599 WARNING Missing input: dblp_identity_priority_audit.csv
+2026-11-06 22:52:47,599 WARNING Missing input: dblp_source_metadata.json
+2026-11-06 22:52:47,605 INFO Validate author occurrences started
+2026-11-06 22:52:47,605 INFO Validate author occurrences processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,607 INFO Recalculate four team features started
+2026-11-06 22:52:47,608 INFO Recalculate four team features processed=1 papers speed=993.9/s elapsed=0.0s {}
+2026-11-06 22:52:47,610 INFO Using XML: /tmp/tmpk5iqkjs2/input/dblp.xml.gz
+2026-11-06 22:52:47,612 INFO Index scan; committed records=0 (gzip replay on resume)
+2026-11-06 22:52:47,612 INFO Profile / Alias index started
+2026-11-06 22:52:47,612 INFO Index committed 2 records
+2026-11-06 22:52:47,612 INFO Index committed 4 records
+2026-11-06 22:52:47,613 INFO Index committed 6 records
+2026-11-06 22:52:47,613 INFO Index committed 8 records
+2026-11-06 22:52:47,613 INFO Profile / Alias index processed=9 records speed=7808.9/s elapsed=0.0s {}
+2026-11-06 22:52:47,614 INFO DBLP paper evidence started
+2026-11-06 22:52:47,614 INFO DBLP paper evidence processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,615 INFO Name repair candidates started
+2026-11-06 22:52:47,615 INFO Name repair candidates processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,615 INFO Identity conflict validation started
+2026-11-06 22:52:47,615 INFO Identity conflict validation processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,620 INFO History alias lookup started
+2026-11-06 22:52:47,620 INFO History alias lookup processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,621 INFO History scan; committed records=0
+2026-11-06 22:52:47,621 INFO Historical publication scan started
+2026-11-06 22:52:47,621 INFO History committed 2 records
+2026-11-06 22:52:47,621 INFO History committed 4 records
+2026-11-06 22:52:47,621 INFO History committed 6 records
+2026-11-06 22:52:47,621 INFO History committed 8 records
+2026-11-06 22:52:47,621 INFO Historical publication scan processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,621 INFO Historical work deduplication started
+2026-11-06 22:52:47,622 INFO Historical work deduplication processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,622 INFO Author history at t0 started
+2026-11-06 22:52:47,622 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,625 INFO Recalculate four team features started
+2026-11-06 22:52:47,626 INFO Recalculate four team features processed=1 papers speed=584.1/s elapsed=0.0s {}
+2026-11-06 22:52:47,642 INFO Using XML: /tmp/tmpk5iqkjs2/input/dblp.xml.gz
+2026-11-06 22:52:47,642 INFO History alias lookup started
+2026-11-06 22:52:47,643 INFO History alias lookup processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,643 INFO History scan; committed records=0
+2026-11-06 22:52:47,643 INFO Historical publication scan started
+2026-11-06 22:52:47,643 INFO Historical publication scan processed=9 records speed=9000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,643 INFO Historical work deduplication started
+2026-11-06 22:52:47,644 INFO Historical work deduplication processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-06 22:52:47,644 INFO Author history at t0 started
+2026-11-06 22:52:47,644 INFO Author history at t0 processed=2 authors speed=2000.0/s elapsed=0.0s {}
+.
+----------------------------------------------------------------------
+Ran 31 tests in 1.266s
+
+OK
+
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmp7xp7xjrv/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 346,
+      "mtime_ns": 1793976766741395767,
+      "sample_sha256": "df4a3f69c4deff81495e1aac0bf02e71265e24dbf04aaf9af5685a9a60f9b65b"
+    }
+  },
+  "verified_author_count": 1,
+  "unresolved_author_count": 1,
+  "identity_status_counts": {
+    "IDENTITY_CONFLICT": 1,
+    "VERIFIED": 1
+  },
+  "history_status_counts": {
+    "UNRESOLVED_IDENTITY": 1,
+    "ZERO_PRIOR_WORKS_IN_DBLP_SNAPSHOT": 1
+  },
+  "history": {
+    "relevant_records": 2,
+    "unique_works": 1,
+    "duplicates_collapsed": 1,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 1,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.04
+}
+{
+  "status": "COMPLETE",
+  "mode": "RECOVERY",
+  "full_xml_recovery_executed": true,
+  "paper_count": 1,
+  "author_occurrences": 2,
+  "legacy_matched_author_count": 0,
+  "targeted_unverified_author_count": 2,
+  "suspicious_name_count": 1,
+  "baseline_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 0,
+    "dblp_team_max_publication_count_pre_t0": 0,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "master_present": true,
+  "xml_source": {
+    "path": "/tmp/tmpk5iqkjs2/input/dblp.xml.gz",
+    "fingerprint": {
+      "size": 346,
+      "mtime_ns": 1793976767592481868,
+      "sample_sha256": "dac20cb6a0a58ccf5fd6493769a1d4a52e9f1f453b60bbe6b6560f20ef411da6"
+    }
+  },
+  "verified_author_count": 2,
+  "unresolved_author_count": 0,
+  "identity_status_counts": {
+    "VERIFIED": 2
+  },
+  "history_status_counts": {
+    "COMPLETE_OBSERVED_DBLP_HISTORY": 1,
+    "ZERO_PRIOR_WORKS_IN_DBLP_SNAPSHOT": 1
+  },
+  "history": {
+    "relevant_records": 6,
+    "unique_works": 4,
+    "duplicates_collapsed": 2,
+    "ambiguous_fallback_keys": 0,
+    "scan_complete": true
+  },
+  "recovered_feature_available": {
+    "dblp_team_mean_publication_count_pre_t0": 1,
+    "dblp_team_max_publication_count_pre_t0": 1,
+    "dblp_team_mean_academic_age_pre_t0": 0,
+    "dblp_team_max_academic_age_pre_t0": 0
+  },
+  "newly_verified_occurrences": 2,
+  "previously_matched_now_unresolved": 0,
+  "input_files_unchanged": true,
+  "elapsed_seconds": 0.04
+}

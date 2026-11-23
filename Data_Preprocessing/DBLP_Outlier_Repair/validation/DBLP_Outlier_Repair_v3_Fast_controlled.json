@@ -1,0 +1,17 @@
+{
+  "mode": "AUDIT_ONLY",
+  "changed_cells": 0,
+  "proposed_cells": 8,
+  "outlier_papers": 3,
+  "author_occurrences_visited": 3,
+  "missing_names": 1,
+  "examined": 8,
+  "logged": 5,
+  "detail_rows": 5,
+  "mock_doi_calls": [
+    "10.9999/ta",
+    "10.9999/bada",
+    "10.9999/tc",
+    "10.9999/badc"
+  ]
+}

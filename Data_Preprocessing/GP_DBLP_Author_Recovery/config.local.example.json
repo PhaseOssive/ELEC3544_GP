@@ -1,0 +1,12 @@
+{
+  "runtime_mode": "local",
+  "FETCH_DATA_ROOT": "./GP_Research_Papers",
+  "DBLP_XML_PATH": "./GP_Research_Papers/data/raw/dblp/dblp.xml.gz",
+  "CACHE_DIR": "./dblp_cache",
+  "PROFILE_INDEX_PATH": null,
+  "DTD_PATH": null,
+  "DERIVED_CACHE_DIR": null,
+  "OUTPUT_DIR": "./recovery_output",
+  "resume_enabled": true,
+  "log_level": "INFO"
+}

@@ -1,0 +1,2676 @@
+2026-11-07 13:59:23,946 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 13:59:24,001 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 13:59:24,001 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 13:59:24,001 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 13:59:24,001 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 13:59:24,001 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 13:59:24,001 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/perf_benchmark_30000/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 13:59:26,566 INFO Build missing profile index locally; committed records=0
+2026-11-07 13:59:26,566 INFO Initial local Profile/Alias index started
+2026-11-07 13:59:28,419 INFO Initial local Profile/Alias index processed=120000 records speed=64787.9/s elapsed=1.9s {}
+2026-11-07 13:59:31,939 INFO Stage: candidate expansion/export
+2026-11-07 13:59:31,939 INFO Expand all profile candidates started
+2026-11-07 13:59:36,939 INFO Expand all profile candidates processed=43024 occurrences speed=8604.8/s elapsed=5.0s {}
+2026-11-07 13:59:38,889 INFO Expand all profile candidates processed=60000 occurrences speed=8633.6/s elapsed=6.9s {}
+2026-11-07 13:59:39,060 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 13:59:39,658 INFO Export complete: matching/expanded_candidate_pids.csv (15.0 MiB)
+2026-11-07 13:59:39,730 INFO Stage: alias preparation and XML scans
+2026-11-07 13:59:39,730 INFO Prepare unique publication aliases started
+2026-11-07 13:59:40,885 INFO Prepare unique publication aliases processed=60000 profiles speed=51959.7/s elapsed=1.2s {}
+2026-11-07 13:59:41,951 INFO XML scan primary: replay to 0 committed records
+2026-11-07 13:59:41,982 INFO Candidate alias membership loaded: 60000 aliases
+2026-11-07 13:59:41,983 INFO Complete local XML primary started
+2026-11-07 13:59:42,128 INFO XML primary committed=50000 target_hits=0 candidate_records=0 person_links=0
+2026-11-07 13:59:46,983 INFO Complete local XML primary processed=89210 records speed=17841.8/s elapsed=5.0s {'targets': 14500, 'history': 58000, 'person_links': 58000}
+2026-11-07 13:59:48,855 INFO XML primary committed=100000 target_hits=20000 candidate_records=80000 person_links=80000
+2026-11-07 13:59:51,983 INFO Complete local XML primary processed=116190 records speed=11618.9/s elapsed=10.0s {'targets': 28000, 'history': 112000, 'person_links': 112000}
+2026-11-07 13:59:52,792 INFO Complete local XML primary processed=120000 records speed=11101.1/s elapsed=10.8s {'targets': 30000, 'history': 120000, 'person_links': 120000}
+2026-11-07 13:59:53,038 INFO Stage: disk deduplication
+2026-11-07 13:59:53,084 INFO Disk historical work deduplication started
+2026-11-07 13:59:55,326 INFO Disk historical work deduplication processed=60000 records speed=26763.7/s elapsed=2.2s {}
+2026-11-07 13:59:55,606 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 13:59:55,701 INFO Export complete: report/focal_work_exclusion_audit.csv (3.0 MiB)
+2026-11-07 13:59:55,701 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 13:59:55,903 INFO Export complete: matching/target_paper_search_results.csv (12.7 MiB)
+2026-11-07 13:59:55,903 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 13:59:56,681 INFO Export complete: matching/candidate_history_evidence.csv (49.7 MiB)
+2026-11-07 13:59:56,681 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 13:59:56,777 INFO Export complete: matching/candidate_history_status.csv (3.0 MiB)
+2026-11-07 13:59:56,777 INFO Stage: network scores and calibration
+2026-11-07 13:59:57,102 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 13:59:57,103 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 13:59:57,109 INFO Network scoring committed=25/60000
+2026-11-07 13:59:57,115 INFO Network scoring committed=50/60000
+2026-11-07 13:59:57,120 INFO Network scoring committed=75/60000
+2026-11-07 13:59:57,123 INFO Network scoring committed=100/60000
+2026-11-07 13:59:57,126 INFO Network scoring committed=125/60000
+2026-11-07 13:59:57,129 INFO Network scoring committed=150/60000
+2026-11-07 13:59:57,132 INFO Network scoring committed=175/60000
+2026-11-07 13:59:57,135 INFO Network scoring committed=200/60000
+2026-11-07 13:59:57,138 INFO Network scoring committed=225/60000
+2026-11-07 13:59:57,141 INFO Network scoring committed=250/60000
+2026-11-07 13:59:57,144 INFO Network scoring committed=275/60000
+2026-11-07 13:59:57,147 INFO Network scoring committed=300/60000
+2026-11-07 13:59:57,150 INFO Network scoring committed=325/60000
+2026-11-07 13:59:57,153 INFO Network scoring committed=350/60000
+2026-11-07 13:59:57,159 INFO Network scoring committed=375/60000
+2026-11-07 13:59:57,162 INFO Network scoring committed=400/60000
+2026-11-07 13:59:57,167 INFO Network scoring committed=425/60000
+2026-11-07 13:59:57,170 INFO Network scoring committed=450/60000
+2026-11-07 13:59:57,174 INFO Network scoring committed=475/60000
+2026-11-07 13:59:57,177 INFO Network scoring committed=500/60000
+2026-11-07 13:59:57,180 INFO Network scoring committed=525/60000
+2026-11-07 13:59:57,183 INFO Network scoring committed=550/60000
+2026-11-07 13:59:57,186 INFO Network scoring committed=575/60000
+2026-11-07 13:59:57,190 INFO Network scoring committed=600/60000
+2026-11-07 13:59:57,192 INFO Network scoring committed=625/60000
+2026-11-07 13:59:57,195 INFO Network scoring committed=650/60000
+2026-11-07 13:59:57,198 INFO Network scoring committed=675/60000
+2026-11-07 13:59:57,200 INFO Network scoring committed=700/60000
+2026-11-07 13:59:57,202 INFO Network scoring committed=725/60000
+2026-11-07 13:59:57,205 INFO Network scoring committed=750/60000
+2026-11-07 13:59:57,208 INFO Network scoring committed=775/60000
+2026-11-07 13:59:57,210 INFO Network scoring committed=800/60000
+2026-11-07 13:59:57,213 INFO Network scoring committed=825/60000
+2026-11-07 13:59:57,215 INFO Network scoring committed=850/60000
+2026-11-07 13:59:57,218 INFO Network scoring committed=875/60000
+2026-11-07 13:59:57,221 INFO Network scoring committed=900/60000
+2026-11-07 13:59:57,224 INFO Network scoring committed=925/60000
+2026-11-07 13:59:57,227 INFO Network scoring committed=950/60000
+2026-11-07 13:59:57,230 INFO Network scoring committed=975/60000
+2026-11-07 13:59:57,233 INFO Network scoring committed=1000/60000
+2026-11-07 13:59:57,235 INFO Network scoring committed=1025/60000
+2026-11-07 13:59:57,238 INFO Network scoring committed=1050/60000
+2026-11-07 13:59:57,240 INFO Network scoring committed=1075/60000
+2026-11-07 13:59:57,243 INFO Network scoring committed=1100/60000
+2026-11-07 13:59:57,245 INFO Network scoring committed=1125/60000
+2026-11-07 13:59:57,248 INFO Network scoring committed=1150/60000
+2026-11-07 13:59:57,250 INFO Network scoring committed=1175/60000
+2026-11-07 13:59:57,253 INFO Network scoring committed=1200/60000
+2026-11-07 13:59:57,255 INFO Network scoring committed=1225/60000
+2026-11-07 13:59:57,258 INFO Network scoring committed=1250/60000
+2026-11-07 13:59:57,260 INFO Network scoring committed=1275/60000
+2026-11-07 13:59:57,263 INFO Network scoring committed=1300/60000
+2026-11-07 13:59:57,266 INFO Network scoring committed=1325/60000
+2026-11-07 13:59:57,268 INFO Network scoring committed=1350/60000
+2026-11-07 13:59:57,270 INFO Network scoring committed=1375/60000
+2026-11-07 13:59:57,273 INFO Network scoring committed=1400/60000
+2026-11-07 13:59:57,276 INFO Network scoring committed=1425/60000
+2026-11-07 13:59:57,278 INFO Network scoring committed=1450/60000
+2026-11-07 13:59:57,281 INFO Network scoring committed=1475/60000
+2026-11-07 13:59:57,284 INFO Network scoring committed=1500/60000
+2026-11-07 13:59:57,286 INFO Network scoring committed=1525/60000
+2026-11-07 13:59:57,289 INFO Network scoring committed=1550/60000
+2026-11-07 13:59:57,292 INFO Network scoring committed=1575/60000
+2026-11-07 13:59:57,294 INFO Network scoring committed=1600/60000
+2026-11-07 13:59:57,297 INFO Network scoring committed=1625/60000
+2026-11-07 13:59:57,299 INFO Network scoring committed=1650/60000
+2026-11-07 13:59:57,302 INFO Network scoring committed=1675/60000
+2026-11-07 13:59:57,306 INFO Network scoring committed=1700/60000
+2026-11-07 13:59:57,309 INFO Network scoring committed=1725/60000
+2026-11-07 13:59:57,315 INFO Network scoring committed=1750/60000
+2026-11-07 13:59:57,319 INFO Network scoring committed=1775/60000
+2026-11-07 13:59:57,321 INFO Network scoring committed=1800/60000
+2026-11-07 13:59:57,324 INFO Network scoring committed=1825/60000
+2026-11-07 13:59:57,327 INFO Network scoring committed=1850/60000
+2026-11-07 13:59:57,331 INFO Network scoring committed=1875/60000
+2026-11-07 13:59:57,333 INFO Network scoring committed=1900/60000
+2026-11-07 13:59:57,336 INFO Network scoring committed=1925/60000
+2026-11-07 13:59:57,339 INFO Network scoring committed=1950/60000
+2026-11-07 13:59:57,341 INFO Network scoring committed=1975/60000
+2026-11-07 13:59:57,344 INFO Network scoring committed=2000/60000
+2026-11-07 13:59:57,347 INFO Network scoring committed=2025/60000
+2026-11-07 13:59:57,350 INFO Network scoring committed=2050/60000
+2026-11-07 13:59:57,354 INFO Network scoring committed=2075/60000
+2026-11-07 13:59:57,357 INFO Network scoring committed=2100/60000
+2026-11-07 13:59:57,360 INFO Network scoring committed=2125/60000
+2026-11-07 13:59:57,365 INFO Network scoring committed=2150/60000
+2026-11-07 13:59:57,368 INFO Network scoring committed=2175/60000
+2026-11-07 13:59:57,371 INFO Network scoring committed=2200/60000
+2026-11-07 13:59:57,376 INFO Network scoring committed=2225/60000
+2026-11-07 13:59:57,379 INFO Network scoring committed=2250/60000
+2026-11-07 13:59:57,384 INFO Network scoring committed=2275/60000
+2026-11-07 13:59:57,387 INFO Network scoring committed=2300/60000
+2026-11-07 13:59:57,390 INFO Network scoring committed=2325/60000
+2026-11-07 13:59:57,392 INFO Network scoring committed=2350/60000
+2026-11-07 13:59:57,395 INFO Network scoring committed=2375/60000
+2026-11-07 13:59:57,398 INFO Network scoring committed=2400/60000
+2026-11-07 13:59:57,400 INFO Network scoring committed=2425/60000
+2026-11-07 13:59:57,403 INFO Network scoring committed=2450/60000
+2026-11-07 13:59:57,405 INFO Network scoring committed=2475/60000
+2026-11-07 13:59:57,408 INFO Network scoring committed=2500/60000
+2026-11-07 13:59:57,410 INFO Network scoring committed=2525/60000
+2026-11-07 13:59:57,415 INFO Network scoring committed=2550/60000
+2026-11-07 13:59:57,417 INFO Network scoring committed=2575/60000
+2026-11-07 13:59:57,420 INFO Network scoring committed=2600/60000
+2026-11-07 13:59:57,423 INFO Network scoring committed=2625/60000
+2026-11-07 13:59:57,426 INFO Network scoring committed=2650/60000
+2026-11-07 13:59:57,429 INFO Network scoring committed=2675/60000
+2026-11-07 13:59:57,432 INFO Network scoring committed=2700/60000
+2026-11-07 13:59:57,434 INFO Network scoring committed=2725/60000
+2026-11-07 13:59:57,437 INFO Network scoring committed=2750/60000
+2026-11-07 13:59:57,439 INFO Network scoring committed=2775/60000
+2026-11-07 13:59:57,442 INFO Network scoring committed=2800/60000
+2026-11-07 13:59:57,445 INFO Network scoring committed=2825/60000
+2026-11-07 13:59:57,447 INFO Network scoring committed=2850/60000
+2026-11-07 13:59:57,450 INFO Network scoring committed=2875/60000
+2026-11-07 13:59:57,452 INFO Network scoring committed=2900/60000
+2026-11-07 13:59:57,455 INFO Network scoring committed=2925/60000
+2026-11-07 13:59:57,458 INFO Network scoring committed=2950/60000
+2026-11-07 13:59:57,460 INFO Network scoring committed=2975/60000
+2026-11-07 13:59:57,463 INFO Network scoring committed=3000/60000
+2026-11-07 13:59:57,465 INFO Network scoring committed=3025/60000
+2026-11-07 13:59:57,468 INFO Network scoring committed=3050/60000
+2026-11-07 13:59:57,471 INFO Network scoring committed=3075/60000
+2026-11-07 13:59:57,476 INFO Network scoring committed=3100/60000
+2026-11-07 13:59:57,486 INFO Network scoring committed=3125/60000
+2026-11-07 13:59:57,493 INFO Network scoring committed=3150/60000
+2026-11-07 13:59:57,500 INFO Network scoring committed=3175/60000
+2026-11-07 13:59:57,503 INFO Network scoring committed=3200/60000
+2026-11-07 13:59:57,509 INFO Network scoring committed=3225/60000
+2026-11-07 13:59:57,516 INFO Network scoring committed=3250/60000
+2026-11-07 13:59:57,522 INFO Network scoring committed=3275/60000
+2026-11-07 13:59:57,530 INFO Network scoring committed=3300/60000
+2026-11-07 13:59:57,534 INFO Network scoring committed=3325/60000
+2026-11-07 13:59:57,536 INFO Network scoring committed=3350/60000
+2026-11-07 13:59:57,539 INFO Network scoring committed=3375/60000
+2026-11-07 13:59:57,542 INFO Network scoring committed=3400/60000
+2026-11-07 13:59:57,545 INFO Network scoring committed=3425/60000
+2026-11-07 13:59:57,547 INFO Network scoring committed=3450/60000
+2026-11-07 13:59:57,550 INFO Network scoring committed=3475/60000
+2026-11-07 13:59:57,552 INFO Network scoring committed=3500/60000
+2026-11-07 13:59:57,556 INFO Network scoring committed=3525/60000
+2026-11-07 13:59:57,558 INFO Network scoring committed=3550/60000
+2026-11-07 13:59:57,561 INFO Network scoring committed=3575/60000
+2026-11-07 13:59:57,567 INFO Network scoring committed=3600/60000
+2026-11-07 13:59:57,574 INFO Network scoring committed=3625/60000
+2026-11-07 13:59:57,577 INFO Network scoring committed=3650/60000
+2026-11-07 13:59:57,581 INFO Network scoring committed=3675/60000
+2026-11-07 13:59:57,583 INFO Network scoring committed=3700/60000
+2026-11-07 13:59:57,586 INFO Network scoring committed=3725/60000
+2026-11-07 13:59:57,589 INFO Network scoring committed=3750/60000
+2026-11-07 13:59:57,592 INFO Network scoring committed=3775/60000
+2026-11-07 13:59:57,595 INFO Network scoring committed=3800/60000
+2026-11-07 13:59:57,599 INFO Network scoring committed=3825/60000
+2026-11-07 13:59:57,603 INFO Network scoring committed=3850/60000
+2026-11-07 13:59:57,605 INFO Network scoring committed=3875/60000
+2026-11-07 13:59:57,608 INFO Network scoring committed=3900/60000
+2026-11-07 13:59:57,611 INFO Network scoring committed=3925/60000
+2026-11-07 13:59:57,614 INFO Network scoring committed=3950/60000
+2026-11-07 13:59:57,616 INFO Network scoring committed=3975/60000
+2026-11-07 13:59:57,619 INFO Network scoring committed=4000/60000
+2026-11-07 13:59:57,621 INFO Network scoring committed=4025/60000
+2026-11-07 13:59:57,624 INFO Network scoring committed=4050/60000
+2026-11-07 13:59:57,627 INFO Network scoring committed=4075/60000
+2026-11-07 13:59:57,631 INFO Network scoring committed=4100/60000
+2026-11-07 13:59:57,633 INFO Network scoring committed=4125/60000
+2026-11-07 13:59:57,636 INFO Network scoring committed=4150/60000
+2026-11-07 13:59:57,639 INFO Network scoring committed=4175/60000
+2026-11-07 13:59:57,642 INFO Network scoring committed=4200/60000
+2026-11-07 13:59:57,645 INFO Network scoring committed=4225/60000
+2026-11-07 13:59:57,647 INFO Network scoring committed=4250/60000
+2026-11-07 13:59:57,651 INFO Network scoring committed=4275/60000
+2026-11-07 13:59:57,653 INFO Network scoring committed=4300/60000
+2026-11-07 13:59:57,656 INFO Network scoring committed=4325/60000
+2026-11-07 13:59:57,658 INFO Network scoring committed=4350/60000
+2026-11-07 13:59:57,661 INFO Network scoring committed=4375/60000
+2026-11-07 13:59:57,664 INFO Network scoring committed=4400/60000
+2026-11-07 13:59:57,666 INFO Network scoring committed=4425/60000
+2026-11-07 13:59:57,669 INFO Network scoring committed=4450/60000
+2026-11-07 13:59:57,672 INFO Network scoring committed=4475/60000
+2026-11-07 13:59:57,675 INFO Network scoring committed=4500/60000
+2026-11-07 13:59:57,678 INFO Network scoring committed=4525/60000
+2026-11-07 13:59:57,681 INFO Network scoring committed=4550/60000
+2026-11-07 13:59:57,684 INFO Network scoring committed=4575/60000
+2026-11-07 13:59:57,687 INFO Network scoring committed=4600/60000
+2026-11-07 13:59:57,690 INFO Network scoring committed=4625/60000
+2026-11-07 13:59:57,693 INFO Network scoring committed=4650/60000
+2026-11-07 13:59:57,695 INFO Network scoring committed=4675/60000
+2026-11-07 13:59:57,700 INFO Network scoring committed=4700/60000
+2026-11-07 13:59:57,703 INFO Network scoring committed=4725/60000
+2026-11-07 13:59:57,707 INFO Network scoring committed=4750/60000
+2026-11-07 13:59:57,710 INFO Network scoring committed=4775/60000
+2026-11-07 13:59:57,714 INFO Network scoring committed=4800/60000
+2026-11-07 13:59:57,717 INFO Network scoring committed=4825/60000
+2026-11-07 13:59:57,720 INFO Network scoring committed=4850/60000
+2026-11-07 13:59:57,723 INFO Network scoring committed=4875/60000
+2026-11-07 13:59:57,726 INFO Network scoring committed=4900/60000
+2026-11-07 13:59:57,730 INFO Network scoring committed=4925/60000
+2026-11-07 13:59:57,733 INFO Network scoring committed=4950/60000
+2026-11-07 13:59:57,736 INFO Network scoring committed=4975/60000
+2026-11-07 13:59:57,740 INFO Network scoring committed=5000/60000
+2026-11-07 13:59:57,743 INFO Network scoring committed=5025/60000
+2026-11-07 13:59:57,746 INFO Network scoring committed=5050/60000
+2026-11-07 13:59:57,750 INFO Network scoring committed=5075/60000
+2026-11-07 13:59:57,753 INFO Network scoring committed=5100/60000
+2026-11-07 13:59:57,756 INFO Network scoring committed=5125/60000
+2026-11-07 13:59:57,760 INFO Network scoring committed=5150/60000
+2026-11-07 13:59:57,763 INFO Network scoring committed=5175/60000
+2026-11-07 13:59:57,766 INFO Network scoring committed=5200/60000
+2026-11-07 13:59:57,768 INFO Network scoring committed=5225/60000
+2026-11-07 13:59:57,771 INFO Network scoring committed=5250/60000
+2026-11-07 13:59:57,775 INFO Network scoring committed=5275/60000
+2026-11-07 13:59:57,777 INFO Network scoring committed=5300/60000
+2026-11-07 13:59:57,780 INFO Network scoring committed=5325/60000
+2026-11-07 13:59:57,783 INFO Network scoring committed=5350/60000
+2026-11-07 13:59:57,786 INFO Network scoring committed=5375/60000
+2026-11-07 13:59:57,789 INFO Network scoring committed=5400/60000
+2026-11-07 13:59:57,793 INFO Network scoring committed=5425/60000
+2026-11-07 13:59:57,795 INFO Network scoring committed=5450/60000
+2026-11-07 13:59:57,798 INFO Network scoring committed=5475/60000
+2026-11-07 13:59:57,801 INFO Network scoring committed=5500/60000
+2026-11-07 13:59:57,803 INFO Network scoring committed=5525/60000
+2026-11-07 13:59:57,806 INFO Network scoring committed=5550/60000
+2026-11-07 13:59:57,809 INFO Network scoring committed=5575/60000
+2026-11-07 13:59:57,812 INFO Network scoring committed=5600/60000
+2026-11-07 13:59:57,815 INFO Network scoring committed=5625/60000
+2026-11-07 13:59:57,818 INFO Network scoring committed=5650/60000
+2026-11-07 13:59:57,821 INFO Network scoring committed=5675/60000
+2026-11-07 13:59:57,824 INFO Network scoring committed=5700/60000
+2026-11-07 13:59:57,827 INFO Network scoring committed=5725/60000
+2026-11-07 13:59:57,830 INFO Network scoring committed=5750/60000
+2026-11-07 13:59:57,839 INFO Network scoring committed=5775/60000
+2026-11-07 13:59:57,842 INFO Network scoring committed=5800/60000
+2026-11-07 13:59:57,844 INFO Network scoring committed=5825/60000
+2026-11-07 13:59:57,847 INFO Network scoring committed=5850/60000
+2026-11-07 13:59:57,852 INFO Network scoring committed=5875/60000
+2026-11-07 13:59:57,855 INFO Network scoring committed=5900/60000
+2026-11-07 13:59:57,859 INFO Network scoring committed=5925/60000
+2026-11-07 13:59:57,862 INFO Network scoring committed=5950/60000
+2026-11-07 13:59:57,864 INFO Network scoring committed=5975/60000
+2026-11-07 13:59:57,868 INFO Network scoring committed=6000/60000
+2026-11-07 13:59:57,871 INFO Network scoring committed=6025/60000
+2026-11-07 13:59:57,874 INFO Network scoring committed=6050/60000
+2026-11-07 13:59:57,876 INFO Network scoring committed=6075/60000
+2026-11-07 13:59:57,878 INFO Network scoring committed=6100/60000
+2026-11-07 13:59:57,882 INFO Network scoring committed=6125/60000
+2026-11-07 13:59:57,885 INFO Network scoring committed=6150/60000
+2026-11-07 13:59:57,887 INFO Network scoring committed=6175/60000
+2026-11-07 13:59:57,890 INFO Network scoring committed=6200/60000
+2026-11-07 13:59:57,893 INFO Network scoring committed=6225/60000
+2026-11-07 13:59:57,896 INFO Network scoring committed=6250/60000
+2026-11-07 13:59:57,898 INFO Network scoring committed=6275/60000
+2026-11-07 13:59:57,901 INFO Network scoring committed=6300/60000
+2026-11-07 13:59:57,904 INFO Network scoring committed=6325/60000
+2026-11-07 13:59:57,907 INFO Network scoring committed=6350/60000
+2026-11-07 13:59:57,909 INFO Network scoring committed=6375/60000
+2026-11-07 13:59:57,912 INFO Network scoring committed=6400/60000
+2026-11-07 13:59:57,915 INFO Network scoring committed=6425/60000
+2026-11-07 13:59:57,917 INFO Network scoring committed=6450/60000
+2026-11-07 13:59:57,920 INFO Network scoring committed=6475/60000
+2026-11-07 13:59:57,924 INFO Network scoring committed=6500/60000
+2026-11-07 13:59:57,928 INFO Network scoring committed=6525/60000
+2026-11-07 13:59:57,931 INFO Network scoring committed=6550/60000
+2026-11-07 13:59:57,934 INFO Network scoring committed=6575/60000
+2026-11-07 13:59:57,937 INFO Network scoring committed=6600/60000
+2026-11-07 13:59:57,940 INFO Network scoring committed=6625/60000
+2026-11-07 13:59:57,942 INFO Network scoring committed=6650/60000
+2026-11-07 13:59:57,945 INFO Network scoring committed=6675/60000
+2026-11-07 13:59:57,948 INFO Network scoring committed=6700/60000
+2026-11-07 13:59:57,951 INFO Network scoring committed=6725/60000
+2026-11-07 13:59:57,954 INFO Network scoring committed=6750/60000
+2026-11-07 13:59:57,957 INFO Network scoring committed=6775/60000
+2026-11-07 13:59:57,960 INFO Network scoring committed=6800/60000
+2026-11-07 13:59:57,963 INFO Network scoring committed=6825/60000
+2026-11-07 13:59:57,966 INFO Network scoring committed=6850/60000
+2026-11-07 13:59:57,968 INFO Network scoring committed=6875/60000
+2026-11-07 13:59:57,971 INFO Network scoring committed=6900/60000
+2026-11-07 13:59:57,974 INFO Network scoring committed=6925/60000
+2026-11-07 13:59:57,977 INFO Network scoring committed=6950/60000
+2026-11-07 13:59:57,981 INFO Network scoring committed=6975/60000
+2026-11-07 13:59:57,984 INFO Network scoring committed=7000/60000
+2026-11-07 13:59:57,987 INFO Network scoring committed=7025/60000
+2026-11-07 13:59:57,990 INFO Network scoring committed=7050/60000
+2026-11-07 13:59:57,993 INFO Network scoring committed=7075/60000
+2026-11-07 13:59:57,996 INFO Network scoring committed=7100/60000
+2026-11-07 13:59:57,999 INFO Network scoring committed=7125/60000
+2026-11-07 13:59:58,002 INFO Network scoring committed=7150/60000
+2026-11-07 13:59:58,006 INFO Network scoring committed=7175/60000
+2026-11-07 13:59:58,010 INFO Network scoring committed=7200/60000
+2026-11-07 13:59:58,014 INFO Network scoring committed=7225/60000
+2026-11-07 13:59:58,016 INFO Network scoring committed=7250/60000
+2026-11-07 13:59:58,019 INFO Network scoring committed=7275/60000
+2026-11-07 13:59:58,022 INFO Network scoring committed=7300/60000
+2026-11-07 13:59:58,025 INFO Network scoring committed=7325/60000
+2026-11-07 13:59:58,028 INFO Network scoring committed=7350/60000
+2026-11-07 13:59:58,030 INFO Network scoring committed=7375/60000
+2026-11-07 13:59:58,033 INFO Network scoring committed=7400/60000
+2026-11-07 13:59:58,035 INFO Network scoring committed=7425/60000
+2026-11-07 13:59:58,038 INFO Network scoring committed=7450/60000
+2026-11-07 13:59:58,041 INFO Network scoring committed=7475/60000
+2026-11-07 13:59:58,044 INFO Network scoring committed=7500/60000
+2026-11-07 13:59:58,047 INFO Network scoring committed=7525/60000
+2026-11-07 13:59:58,050 INFO Network scoring committed=7550/60000
+2026-11-07 13:59:58,053 INFO Network scoring committed=7575/60000
+2026-11-07 13:59:58,056 INFO Network scoring committed=7600/60000
+2026-11-07 13:59:58,059 INFO Network scoring committed=7625/60000
+2026-11-07 13:59:58,062 INFO Network scoring committed=7650/60000
+2026-11-07 13:59:58,064 INFO Network scoring committed=7675/60000
+2026-11-07 13:59:58,066 INFO Network scoring committed=7700/60000
+2026-11-07 13:59:58,069 INFO Network scoring committed=7725/60000
+2026-11-07 13:59:58,072 INFO Network scoring committed=7750/60000
+2026-11-07 13:59:58,075 INFO Network scoring committed=7775/60000
+2026-11-07 13:59:58,078 INFO Network scoring committed=7800/60000
+2026-11-07 13:59:58,080 INFO Network scoring committed=7825/60000
+2026-11-07 13:59:58,083 INFO Network scoring committed=7850/60000
+2026-11-07 13:59:58,085 INFO Network scoring committed=7875/60000
+2026-11-07 13:59:58,088 INFO Network scoring committed=7900/60000
+2026-11-07 13:59:58,091 INFO Network scoring committed=7925/60000
+2026-11-07 13:59:58,094 INFO Network scoring committed=7950/60000
+2026-11-07 13:59:58,096 INFO Network scoring committed=7975/60000
+2026-11-07 13:59:58,099 INFO Network scoring committed=8000/60000
+2026-11-07 13:59:58,103 INFO Network scoring committed=8025/60000
+2026-11-07 13:59:58,106 INFO Network scoring committed=8050/60000
+2026-11-07 13:59:58,109 INFO Network scoring committed=8075/60000
+2026-11-07 13:59:58,111 INFO Network scoring committed=8100/60000
+2026-11-07 13:59:58,114 INFO Network scoring committed=8125/60000
+2026-11-07 13:59:58,117 INFO Network scoring committed=8150/60000
+2026-11-07 13:59:58,119 INFO Network scoring committed=8175/60000
+2026-11-07 13:59:58,122 INFO Network scoring committed=8200/60000
+2026-11-07 13:59:58,125 INFO Network scoring committed=8225/60000
+2026-11-07 13:59:58,128 INFO Network scoring committed=8250/60000
+2026-11-07 13:59:58,132 INFO Network scoring committed=8275/60000
+2026-11-07 13:59:58,135 INFO Network scoring committed=8300/60000
+2026-11-07 13:59:58,138 INFO Network scoring committed=8325/60000
+2026-11-07 13:59:58,141 INFO Network scoring committed=8350/60000
+2026-11-07 13:59:58,143 INFO Network scoring committed=8375/60000
+2026-11-07 13:59:58,146 INFO Network scoring committed=8400/60000
+2026-11-07 13:59:58,148 INFO Network scoring committed=8425/60000
+2026-11-07 13:59:58,151 INFO Network scoring committed=8450/60000
+2026-11-07 13:59:58,153 INFO Network scoring committed=8475/60000
+2026-11-07 13:59:58,156 INFO Network scoring committed=8500/60000
+2026-11-07 13:59:58,159 INFO Network scoring committed=8525/60000
+2026-11-07 13:59:58,162 INFO Network scoring committed=8550/60000
+2026-11-07 13:59:58,164 INFO Network scoring committed=8575/60000
+2026-11-07 13:59:58,167 INFO Network scoring committed=8600/60000
+2026-11-07 13:59:58,169 INFO Network scoring committed=8625/60000
+2026-11-07 13:59:58,172 INFO Network scoring committed=8650/60000
+2026-11-07 13:59:58,177 INFO Network scoring committed=8675/60000
+2026-11-07 13:59:58,180 INFO Network scoring committed=8700/60000
+2026-11-07 13:59:58,182 INFO Network scoring committed=8725/60000
+2026-11-07 13:59:58,185 INFO Network scoring committed=8750/60000
+2026-11-07 13:59:58,189 INFO Network scoring committed=8775/60000
+2026-11-07 13:59:58,192 INFO Network scoring committed=8800/60000
+2026-11-07 13:59:58,195 INFO Network scoring committed=8825/60000
+2026-11-07 13:59:58,200 INFO Network scoring committed=8850/60000
+2026-11-07 13:59:58,203 INFO Network scoring committed=8875/60000
+2026-11-07 13:59:58,206 INFO Network scoring committed=8900/60000
+2026-11-07 13:59:58,210 INFO Network scoring committed=8925/60000
+2026-11-07 13:59:58,212 INFO Network scoring committed=8950/60000
+2026-11-07 13:59:58,215 INFO Network scoring committed=8975/60000
+2026-11-07 13:59:58,217 INFO Network scoring committed=9000/60000
+2026-11-07 13:59:58,221 INFO Network scoring committed=9025/60000
+2026-11-07 13:59:58,225 INFO Network scoring committed=9050/60000
+2026-11-07 13:59:58,228 INFO Network scoring committed=9075/60000
+2026-11-07 13:59:58,232 INFO Network scoring committed=9100/60000
+2026-11-07 13:59:58,235 INFO Network scoring committed=9125/60000
+2026-11-07 13:59:58,238 INFO Network scoring committed=9150/60000
+2026-11-07 13:59:58,241 INFO Network scoring committed=9175/60000
+2026-11-07 13:59:58,244 INFO Network scoring committed=9200/60000
+2026-11-07 13:59:58,247 INFO Network scoring committed=9225/60000
+2026-11-07 13:59:58,251 INFO Network scoring committed=9250/60000
+2026-11-07 13:59:58,254 INFO Network scoring committed=9275/60000
+2026-11-07 13:59:58,258 INFO Network scoring committed=9300/60000
+2026-11-07 13:59:58,260 INFO Network scoring committed=9325/60000
+2026-11-07 13:59:58,263 INFO Network scoring committed=9350/60000
+2026-11-07 13:59:58,266 INFO Network scoring committed=9375/60000
+2026-11-07 13:59:58,268 INFO Network scoring committed=9400/60000
+2026-11-07 13:59:58,273 INFO Network scoring committed=9425/60000
+2026-11-07 13:59:58,277 INFO Network scoring committed=9450/60000
+2026-11-07 13:59:58,281 INFO Network scoring committed=9475/60000
+2026-11-07 13:59:58,284 INFO Network scoring committed=9500/60000
+2026-11-07 13:59:58,288 INFO Network scoring committed=9525/60000
+2026-11-07 13:59:58,293 INFO Network scoring committed=9550/60000
+2026-11-07 13:59:58,296 INFO Network scoring committed=9575/60000
+2026-11-07 13:59:58,302 INFO Network scoring committed=9600/60000
+2026-11-07 13:59:58,309 INFO Network scoring committed=9625/60000
+2026-11-07 13:59:58,318 INFO Network scoring committed=9650/60000
+2026-11-07 13:59:58,321 INFO Network scoring committed=9675/60000
+2026-11-07 13:59:58,324 INFO Network scoring committed=9700/60000
+2026-11-07 13:59:58,327 INFO Network scoring committed=9725/60000
+2026-11-07 13:59:58,330 INFO Network scoring committed=9750/60000
+2026-11-07 13:59:58,333 INFO Network scoring committed=9775/60000
+2026-11-07 13:59:58,341 INFO Network scoring committed=9800/60000
+2026-11-07 13:59:58,345 INFO Network scoring committed=9825/60000
+2026-11-07 13:59:58,358 INFO Network scoring committed=9850/60000
+2026-11-07 13:59:58,367 INFO Network scoring committed=9875/60000
+2026-11-07 13:59:58,370 INFO Network scoring committed=9900/60000
+2026-11-07 13:59:58,376 INFO Network scoring committed=9925/60000
+2026-11-07 13:59:58,381 INFO Network scoring committed=9950/60000
+2026-11-07 13:59:58,384 INFO Network scoring committed=9975/60000
+2026-11-07 13:59:58,390 INFO Network scoring committed=10000/60000
+2026-11-07 13:59:58,395 INFO Network scoring committed=10025/60000
+2026-11-07 13:59:58,398 INFO Network scoring committed=10050/60000
+2026-11-07 13:59:58,401 INFO Network scoring committed=10075/60000
+2026-11-07 13:59:58,405 INFO Network scoring committed=10100/60000
+2026-11-07 13:59:58,409 INFO Network scoring committed=10125/60000
+2026-11-07 13:59:58,412 INFO Network scoring committed=10150/60000
+2026-11-07 13:59:58,416 INFO Network scoring committed=10175/60000
+2026-11-07 13:59:58,419 INFO Network scoring committed=10200/60000
+2026-11-07 13:59:58,423 INFO Network scoring committed=10225/60000
+2026-11-07 13:59:58,431 INFO Network scoring committed=10250/60000
+2026-11-07 13:59:58,438 INFO Network scoring committed=10275/60000
+2026-11-07 13:59:58,441 INFO Network scoring committed=10300/60000
+2026-11-07 13:59:58,445 INFO Network scoring committed=10325/60000
+2026-11-07 13:59:58,450 INFO Network scoring committed=10350/60000
+2026-11-07 13:59:58,455 INFO Network scoring committed=10375/60000
+2026-11-07 13:59:58,458 INFO Network scoring committed=10400/60000
+2026-11-07 13:59:58,461 INFO Network scoring committed=10425/60000
+2026-11-07 13:59:58,465 INFO Network scoring committed=10450/60000
+2026-11-07 13:59:58,468 INFO Network scoring committed=10475/60000
+2026-11-07 13:59:58,471 INFO Network scoring committed=10500/60000
+2026-11-07 13:59:58,474 INFO Network scoring committed=10525/60000
+2026-11-07 13:59:58,476 INFO Network scoring committed=10550/60000
+2026-11-07 13:59:58,480 INFO Network scoring committed=10575/60000
+2026-11-07 13:59:58,484 INFO Network scoring committed=10600/60000
+2026-11-07 13:59:58,487 INFO Network scoring committed=10625/60000
+2026-11-07 13:59:58,491 INFO Network scoring committed=10650/60000
+2026-11-07 13:59:58,493 INFO Network scoring committed=10675/60000
+2026-11-07 13:59:58,496 INFO Network scoring committed=10700/60000
+2026-11-07 13:59:58,500 INFO Network scoring committed=10725/60000
+2026-11-07 13:59:58,503 INFO Network scoring committed=10750/60000
+2026-11-07 13:59:58,506 INFO Network scoring committed=10775/60000
+2026-11-07 13:59:58,509 INFO Network scoring committed=10800/60000
+2026-11-07 13:59:58,512 INFO Network scoring committed=10825/60000
+2026-11-07 13:59:58,515 INFO Network scoring committed=10850/60000
+2026-11-07 13:59:58,518 INFO Network scoring committed=10875/60000
+2026-11-07 13:59:58,522 INFO Network scoring committed=10900/60000
+2026-11-07 13:59:58,525 INFO Network scoring committed=10925/60000
+2026-11-07 13:59:58,528 INFO Network scoring committed=10950/60000
+2026-11-07 13:59:58,532 INFO Network scoring committed=10975/60000
+2026-11-07 13:59:58,535 INFO Network scoring committed=11000/60000
+2026-11-07 13:59:58,538 INFO Network scoring committed=11025/60000
+2026-11-07 13:59:58,540 INFO Network scoring committed=11050/60000
+2026-11-07 13:59:58,544 INFO Network scoring committed=11075/60000
+2026-11-07 13:59:58,547 INFO Network scoring committed=11100/60000
+2026-11-07 13:59:58,550 INFO Network scoring committed=11125/60000
+2026-11-07 13:59:58,553 INFO Network scoring committed=11150/60000
+2026-11-07 13:59:58,555 INFO Network scoring committed=11175/60000
+2026-11-07 13:59:58,558 INFO Network scoring committed=11200/60000
+2026-11-07 13:59:58,561 INFO Network scoring committed=11225/60000
+2026-11-07 13:59:58,564 INFO Network scoring committed=11250/60000
+2026-11-07 13:59:58,568 INFO Network scoring committed=11275/60000
+2026-11-07 13:59:58,572 INFO Network scoring committed=11300/60000
+2026-11-07 13:59:58,575 INFO Network scoring committed=11325/60000
+2026-11-07 13:59:58,578 INFO Network scoring committed=11350/60000
+2026-11-07 13:59:58,583 INFO Network scoring committed=11375/60000
+2026-11-07 13:59:58,587 INFO Network scoring committed=11400/60000
+2026-11-07 13:59:58,591 INFO Network scoring committed=11425/60000
+2026-11-07 13:59:58,594 INFO Network scoring committed=11450/60000
+2026-11-07 13:59:58,598 INFO Network scoring committed=11475/60000
+2026-11-07 13:59:58,601 INFO Network scoring committed=11500/60000
+2026-11-07 13:59:58,604 INFO Network scoring committed=11525/60000
+2026-11-07 13:59:58,607 INFO Network scoring committed=11550/60000
+2026-11-07 13:59:58,610 INFO Network scoring committed=11575/60000
+2026-11-07 13:59:58,613 INFO Network scoring committed=11600/60000
+2026-11-07 13:59:58,616 INFO Network scoring committed=11625/60000
+2026-11-07 13:59:58,619 INFO Network scoring committed=11650/60000
+2026-11-07 13:59:58,622 INFO Network scoring committed=11675/60000
+2026-11-07 13:59:58,625 INFO Network scoring committed=11700/60000
+2026-11-07 13:59:58,628 INFO Network scoring committed=11725/60000
+2026-11-07 13:59:58,631 INFO Network scoring committed=11750/60000
+2026-11-07 13:59:58,634 INFO Network scoring committed=11775/60000
+2026-11-07 13:59:58,636 INFO Network scoring committed=11800/60000
+2026-11-07 13:59:58,640 INFO Network scoring committed=11825/60000
+2026-11-07 13:59:58,643 INFO Network scoring committed=11850/60000
+2026-11-07 13:59:58,646 INFO Network scoring committed=11875/60000
+2026-11-07 13:59:58,649 INFO Network scoring committed=11900/60000
+2026-11-07 13:59:58,652 INFO Network scoring committed=11925/60000
+2026-11-07 13:59:58,655 INFO Network scoring committed=11950/60000
+2026-11-07 13:59:58,658 INFO Network scoring committed=11975/60000
+2026-11-07 13:59:58,664 INFO Network scoring committed=12000/60000
+2026-11-07 13:59:58,667 INFO Network scoring committed=12025/60000
+2026-11-07 13:59:58,670 INFO Network scoring committed=12050/60000
+2026-11-07 13:59:58,673 INFO Network scoring committed=12075/60000
+2026-11-07 13:59:58,678 INFO Network scoring committed=12100/60000
+2026-11-07 13:59:58,682 INFO Network scoring committed=12125/60000
+2026-11-07 13:59:58,688 INFO Network scoring committed=12150/60000
+2026-11-07 13:59:58,692 INFO Network scoring committed=12175/60000
+2026-11-07 13:59:58,694 INFO Network scoring committed=12200/60000
+2026-11-07 13:59:58,700 INFO Network scoring committed=12225/60000
+2026-11-07 13:59:58,703 INFO Network scoring committed=12250/60000
+2026-11-07 13:59:58,708 INFO Network scoring committed=12275/60000
+2026-11-07 13:59:58,711 INFO Network scoring committed=12300/60000
+2026-11-07 13:59:58,714 INFO Network scoring committed=12325/60000
+2026-11-07 13:59:58,716 INFO Network scoring committed=12350/60000
+2026-11-07 13:59:58,723 INFO Network scoring committed=12375/60000
+2026-11-07 13:59:58,725 INFO Network scoring committed=12400/60000
+2026-11-07 13:59:58,730 INFO Network scoring committed=12425/60000
+2026-11-07 13:59:58,733 INFO Network scoring committed=12450/60000
+2026-11-07 13:59:58,736 INFO Network scoring committed=12475/60000
+2026-11-07 13:59:58,739 INFO Network scoring committed=12500/60000
+2026-11-07 13:59:58,742 INFO Network scoring committed=12525/60000
+2026-11-07 13:59:58,745 INFO Network scoring committed=12550/60000
+2026-11-07 13:59:58,748 INFO Network scoring committed=12575/60000
+2026-11-07 13:59:58,750 INFO Network scoring committed=12600/60000
+2026-11-07 13:59:58,753 INFO Network scoring committed=12625/60000
+2026-11-07 13:59:58,756 INFO Network scoring committed=12650/60000
+2026-11-07 13:59:58,759 INFO Network scoring committed=12675/60000
+2026-11-07 13:59:58,762 INFO Network scoring committed=12700/60000
+2026-11-07 13:59:58,765 INFO Network scoring committed=12725/60000
+2026-11-07 13:59:58,770 INFO Network scoring committed=12750/60000
+2026-11-07 13:59:58,774 INFO Network scoring committed=12775/60000
+2026-11-07 13:59:58,776 INFO Network scoring committed=12800/60000
+2026-11-07 13:59:58,780 INFO Network scoring committed=12825/60000
+2026-11-07 13:59:58,782 INFO Network scoring committed=12850/60000
+2026-11-07 13:59:58,785 INFO Network scoring committed=12875/60000
+2026-11-07 13:59:58,788 INFO Network scoring committed=12900/60000
+2026-11-07 13:59:58,791 INFO Network scoring committed=12925/60000
+2026-11-07 13:59:58,794 INFO Network scoring committed=12950/60000
+2026-11-07 13:59:58,796 INFO Network scoring committed=12975/60000
+2026-11-07 13:59:58,799 INFO Network scoring committed=13000/60000
+2026-11-07 13:59:58,801 INFO Network scoring committed=13025/60000
+2026-11-07 13:59:58,806 INFO Network scoring committed=13050/60000
+2026-11-07 13:59:58,809 INFO Network scoring committed=13075/60000
+2026-11-07 13:59:58,812 INFO Network scoring committed=13100/60000
+2026-11-07 13:59:58,815 INFO Network scoring committed=13125/60000
+2026-11-07 13:59:58,819 INFO Network scoring committed=13150/60000
+2026-11-07 13:59:58,823 INFO Network scoring committed=13175/60000
+2026-11-07 13:59:58,826 INFO Network scoring committed=13200/60000
+2026-11-07 13:59:58,829 INFO Network scoring committed=13225/60000
+2026-11-07 13:59:58,832 INFO Network scoring committed=13250/60000
+2026-11-07 13:59:58,835 INFO Network scoring committed=13275/60000
+2026-11-07 13:59:58,838 INFO Network scoring committed=13300/60000
+2026-11-07 13:59:58,841 INFO Network scoring committed=13325/60000
+2026-11-07 13:59:58,844 INFO Network scoring committed=13350/60000
+2026-11-07 13:59:58,848 INFO Network scoring committed=13375/60000
+2026-11-07 13:59:58,851 INFO Network scoring committed=13400/60000
+2026-11-07 13:59:58,854 INFO Network scoring committed=13425/60000
+2026-11-07 13:59:58,858 INFO Network scoring committed=13450/60000
+2026-11-07 13:59:58,861 INFO Network scoring committed=13475/60000
+2026-11-07 13:59:58,863 INFO Network scoring committed=13500/60000
+2026-11-07 13:59:58,867 INFO Network scoring committed=13525/60000
+2026-11-07 13:59:58,872 INFO Network scoring committed=13550/60000
+2026-11-07 13:59:58,876 INFO Network scoring committed=13575/60000
+2026-11-07 13:59:58,878 INFO Network scoring committed=13600/60000
+2026-11-07 13:59:58,882 INFO Network scoring committed=13625/60000
+2026-11-07 13:59:58,884 INFO Network scoring committed=13650/60000
+2026-11-07 13:59:58,887 INFO Network scoring committed=13675/60000
+2026-11-07 13:59:58,890 INFO Network scoring committed=13700/60000
+2026-11-07 13:59:58,893 INFO Network scoring committed=13725/60000
+2026-11-07 13:59:58,896 INFO Network scoring committed=13750/60000
+2026-11-07 13:59:58,898 INFO Network scoring committed=13775/60000
+2026-11-07 13:59:58,901 INFO Network scoring committed=13800/60000
+2026-11-07 13:59:58,904 INFO Network scoring committed=13825/60000
+2026-11-07 13:59:58,907 INFO Network scoring committed=13850/60000
+2026-11-07 13:59:58,910 INFO Network scoring committed=13875/60000
+2026-11-07 13:59:58,912 INFO Network scoring committed=13900/60000
+2026-11-07 13:59:58,916 INFO Network scoring committed=13925/60000
+2026-11-07 13:59:58,919 INFO Network scoring committed=13950/60000
+2026-11-07 13:59:58,921 INFO Network scoring committed=13975/60000
+2026-11-07 13:59:58,924 INFO Network scoring committed=14000/60000
+2026-11-07 13:59:58,927 INFO Network scoring committed=14025/60000
+2026-11-07 13:59:58,931 INFO Network scoring committed=14050/60000
+2026-11-07 13:59:58,933 INFO Network scoring committed=14075/60000
+2026-11-07 13:59:58,936 INFO Network scoring committed=14100/60000
+2026-11-07 13:59:58,939 INFO Network scoring committed=14125/60000
+2026-11-07 13:59:58,941 INFO Network scoring committed=14150/60000
+2026-11-07 13:59:58,944 INFO Network scoring committed=14175/60000
+2026-11-07 13:59:58,947 INFO Network scoring committed=14200/60000
+2026-11-07 13:59:58,950 INFO Network scoring committed=14225/60000
+2026-11-07 13:59:58,952 INFO Network scoring committed=14250/60000
+2026-11-07 13:59:58,955 INFO Network scoring committed=14275/60000
+2026-11-07 13:59:58,957 INFO Network scoring committed=14300/60000
+2026-11-07 13:59:58,960 INFO Network scoring committed=14325/60000
+2026-11-07 13:59:58,963 INFO Network scoring committed=14350/60000
+2026-11-07 13:59:58,966 INFO Network scoring committed=14375/60000
+2026-11-07 13:59:58,969 INFO Network scoring committed=14400/60000
+2026-11-07 13:59:58,972 INFO Network scoring committed=14425/60000
+2026-11-07 13:59:58,975 INFO Network scoring committed=14450/60000
+2026-11-07 13:59:58,978 INFO Network scoring committed=14475/60000
+2026-11-07 13:59:58,981 INFO Network scoring committed=14500/60000
+2026-11-07 13:59:58,986 INFO Network scoring committed=14525/60000
+2026-11-07 13:59:58,989 INFO Network scoring committed=14550/60000
+2026-11-07 13:59:58,992 INFO Network scoring committed=14575/60000
+2026-11-07 13:59:58,995 INFO Network scoring committed=14600/60000
+2026-11-07 13:59:58,998 INFO Network scoring committed=14625/60000
+2026-11-07 13:59:59,002 INFO Network scoring committed=14650/60000
+2026-11-07 13:59:59,004 INFO Network scoring committed=14675/60000
+2026-11-07 13:59:59,008 INFO Network scoring committed=14700/60000
+2026-11-07 13:59:59,011 INFO Network scoring committed=14725/60000
+2026-11-07 13:59:59,014 INFO Network scoring committed=14750/60000
+2026-11-07 13:59:59,017 INFO Network scoring committed=14775/60000
+2026-11-07 13:59:59,020 INFO Network scoring committed=14800/60000
+2026-11-07 13:59:59,023 INFO Network scoring committed=14825/60000
+2026-11-07 13:59:59,027 INFO Network scoring committed=14850/60000
+2026-11-07 13:59:59,029 INFO Network scoring committed=14875/60000
+2026-11-07 13:59:59,032 INFO Network scoring committed=14900/60000
+2026-11-07 13:59:59,035 INFO Network scoring committed=14925/60000
+2026-11-07 13:59:59,038 INFO Network scoring committed=14950/60000
+2026-11-07 13:59:59,041 INFO Network scoring committed=14975/60000
+2026-11-07 13:59:59,044 INFO Network scoring committed=15000/60000
+2026-11-07 13:59:59,047 INFO Network scoring committed=15025/60000
+2026-11-07 13:59:59,049 INFO Network scoring committed=15050/60000
+2026-11-07 13:59:59,052 INFO Network scoring committed=15075/60000
+2026-11-07 13:59:59,055 INFO Network scoring committed=15100/60000
+2026-11-07 13:59:59,058 INFO Network scoring committed=15125/60000
+2026-11-07 13:59:59,061 INFO Network scoring committed=15150/60000
+2026-11-07 13:59:59,064 INFO Network scoring committed=15175/60000
+2026-11-07 13:59:59,066 INFO Network scoring committed=15200/60000
+2026-11-07 13:59:59,070 INFO Network scoring committed=15225/60000
+2026-11-07 13:59:59,073 INFO Network scoring committed=15250/60000
+2026-11-07 13:59:59,076 INFO Network scoring committed=15275/60000
+2026-11-07 13:59:59,078 INFO Network scoring committed=15300/60000
+2026-11-07 13:59:59,081 INFO Network scoring committed=15325/60000
+2026-11-07 13:59:59,085 INFO Network scoring committed=15350/60000
+2026-11-07 13:59:59,087 INFO Network scoring committed=15375/60000
+2026-11-07 13:59:59,091 INFO Network scoring committed=15400/60000
+2026-11-07 13:59:59,094 INFO Network scoring committed=15425/60000
+2026-11-07 13:59:59,097 INFO Network scoring committed=15450/60000
+2026-11-07 13:59:59,100 INFO Network scoring committed=15475/60000
+2026-11-07 13:59:59,103 INFO Network scoring committed=15500/60000
+2026-11-07 13:59:59,105 INFO Network scoring committed=15525/60000
+2026-11-07 13:59:59,109 INFO Network scoring committed=15550/60000
+2026-11-07 13:59:59,111 INFO Network scoring committed=15575/60000
+2026-11-07 13:59:59,115 INFO Network scoring committed=15600/60000
+2026-11-07 13:59:59,118 INFO Network scoring committed=15625/60000
+2026-11-07 13:59:59,121 INFO Network scoring committed=15650/60000
+2026-11-07 13:59:59,123 INFO Network scoring committed=15675/60000
+2026-11-07 13:59:59,129 INFO Network scoring committed=15700/60000
+2026-11-07 13:59:59,131 INFO Network scoring committed=15725/60000
+2026-11-07 13:59:59,134 INFO Network scoring committed=15750/60000
+2026-11-07 13:59:59,137 INFO Network scoring committed=15775/60000
+2026-11-07 13:59:59,140 INFO Network scoring committed=15800/60000
+2026-11-07 13:59:59,143 INFO Network scoring committed=15825/60000
+2026-11-07 13:59:59,146 INFO Network scoring committed=15850/60000
+2026-11-07 13:59:59,149 INFO Network scoring committed=15875/60000
+2026-11-07 13:59:59,151 INFO Network scoring committed=15900/60000
+2026-11-07 13:59:59,154 INFO Network scoring committed=15925/60000
+2026-11-07 13:59:59,157 INFO Network scoring committed=15950/60000
+2026-11-07 13:59:59,163 INFO Network scoring committed=15975/60000
+2026-11-07 13:59:59,166 INFO Network scoring committed=16000/60000
+2026-11-07 13:59:59,170 INFO Network scoring committed=16025/60000
+2026-11-07 13:59:59,173 INFO Network scoring committed=16050/60000
+2026-11-07 13:59:59,175 INFO Network scoring committed=16075/60000
+2026-11-07 13:59:59,178 INFO Network scoring committed=16100/60000
+2026-11-07 13:59:59,181 INFO Network scoring committed=16125/60000
+2026-11-07 13:59:59,185 INFO Network scoring committed=16150/60000
+2026-11-07 13:59:59,187 INFO Network scoring committed=16175/60000
+2026-11-07 13:59:59,190 INFO Network scoring committed=16200/60000
+2026-11-07 13:59:59,193 INFO Network scoring committed=16225/60000
+2026-11-07 13:59:59,195 INFO Network scoring committed=16250/60000
+2026-11-07 13:59:59,198 INFO Network scoring committed=16275/60000
+2026-11-07 13:59:59,201 INFO Network scoring committed=16300/60000
+2026-11-07 13:59:59,203 INFO Network scoring committed=16325/60000
+2026-11-07 13:59:59,206 INFO Network scoring committed=16350/60000
+2026-11-07 13:59:59,209 INFO Network scoring committed=16375/60000
+2026-11-07 13:59:59,212 INFO Network scoring committed=16400/60000
+2026-11-07 13:59:59,214 INFO Network scoring committed=16425/60000
+2026-11-07 13:59:59,218 INFO Network scoring committed=16450/60000
+2026-11-07 13:59:59,220 INFO Network scoring committed=16475/60000
+2026-11-07 13:59:59,223 INFO Network scoring committed=16500/60000
+2026-11-07 13:59:59,225 INFO Network scoring committed=16525/60000
+2026-11-07 13:59:59,228 INFO Network scoring committed=16550/60000
+2026-11-07 13:59:59,231 INFO Network scoring committed=16575/60000
+2026-11-07 13:59:59,233 INFO Network scoring committed=16600/60000
+2026-11-07 13:59:59,236 INFO Network scoring committed=16625/60000
+2026-11-07 13:59:59,239 INFO Network scoring committed=16650/60000
+2026-11-07 13:59:59,241 INFO Network scoring committed=16675/60000
+2026-11-07 13:59:59,244 INFO Network scoring committed=16700/60000
+2026-11-07 13:59:59,247 INFO Network scoring committed=16725/60000
+2026-11-07 13:59:59,250 INFO Network scoring committed=16750/60000
+2026-11-07 13:59:59,252 INFO Network scoring committed=16775/60000
+2026-11-07 13:59:59,255 INFO Network scoring committed=16800/60000
+2026-11-07 13:59:59,258 INFO Network scoring committed=16825/60000
+2026-11-07 13:59:59,261 INFO Network scoring committed=16850/60000
+2026-11-07 13:59:59,263 INFO Network scoring committed=16875/60000
+2026-11-07 13:59:59,266 INFO Network scoring committed=16900/60000
+2026-11-07 13:59:59,269 INFO Network scoring committed=16925/60000
+2026-11-07 13:59:59,271 INFO Network scoring committed=16950/60000
+2026-11-07 13:59:59,274 INFO Network scoring committed=16975/60000
+2026-11-07 13:59:59,276 INFO Network scoring committed=17000/60000
+2026-11-07 13:59:59,279 INFO Network scoring committed=17025/60000
+2026-11-07 13:59:59,281 INFO Network scoring committed=17050/60000
+2026-11-07 13:59:59,283 INFO Network scoring committed=17075/60000
+2026-11-07 13:59:59,286 INFO Network scoring committed=17100/60000
+2026-11-07 13:59:59,289 INFO Network scoring committed=17125/60000
+2026-11-07 13:59:59,292 INFO Network scoring committed=17150/60000
+2026-11-07 13:59:59,294 INFO Network scoring committed=17175/60000
+2026-11-07 13:59:59,297 INFO Network scoring committed=17200/60000
+2026-11-07 13:59:59,301 INFO Network scoring committed=17225/60000
+2026-11-07 13:59:59,307 INFO Network scoring committed=17250/60000
+2026-11-07 13:59:59,312 INFO Network scoring committed=17275/60000
+2026-11-07 13:59:59,315 INFO Network scoring committed=17300/60000
+2026-11-07 13:59:59,319 INFO Network scoring committed=17325/60000
+2026-11-07 13:59:59,322 INFO Network scoring committed=17350/60000
+2026-11-07 13:59:59,326 INFO Network scoring committed=17375/60000
+2026-11-07 13:59:59,329 INFO Network scoring committed=17400/60000
+2026-11-07 13:59:59,333 INFO Network scoring committed=17425/60000
+2026-11-07 13:59:59,336 INFO Network scoring committed=17450/60000
+2026-11-07 13:59:59,340 INFO Network scoring committed=17475/60000
+2026-11-07 13:59:59,342 INFO Network scoring committed=17500/60000
+2026-11-07 13:59:59,345 INFO Network scoring committed=17525/60000
+2026-11-07 13:59:59,348 INFO Network scoring committed=17550/60000
+2026-11-07 13:59:59,351 INFO Network scoring committed=17575/60000
+2026-11-07 13:59:59,354 INFO Network scoring committed=17600/60000
+2026-11-07 13:59:59,358 INFO Network scoring committed=17625/60000
+2026-11-07 13:59:59,362 INFO Network scoring committed=17650/60000
+2026-11-07 13:59:59,364 INFO Network scoring committed=17675/60000
+2026-11-07 13:59:59,367 INFO Network scoring committed=17700/60000
+2026-11-07 13:59:59,371 INFO Network scoring committed=17725/60000
+2026-11-07 13:59:59,373 INFO Network scoring committed=17750/60000
+2026-11-07 13:59:59,376 INFO Network scoring committed=17775/60000
+2026-11-07 13:59:59,379 INFO Network scoring committed=17800/60000
+2026-11-07 13:59:59,382 INFO Network scoring committed=17825/60000
+2026-11-07 13:59:59,385 INFO Network scoring committed=17850/60000
+2026-11-07 13:59:59,387 INFO Network scoring committed=17875/60000
+2026-11-07 13:59:59,390 INFO Network scoring committed=17900/60000
+2026-11-07 13:59:59,393 INFO Network scoring committed=17925/60000
+2026-11-07 13:59:59,397 INFO Network scoring committed=17950/60000
+2026-11-07 13:59:59,401 INFO Network scoring committed=17975/60000
+2026-11-07 13:59:59,404 INFO Network scoring committed=18000/60000
+2026-11-07 13:59:59,406 INFO Network scoring committed=18025/60000
+2026-11-07 13:59:59,410 INFO Network scoring committed=18050/60000
+2026-11-07 13:59:59,413 INFO Network scoring committed=18075/60000
+2026-11-07 13:59:59,417 INFO Network scoring committed=18100/60000
+2026-11-07 13:59:59,421 INFO Network scoring committed=18125/60000
+2026-11-07 13:59:59,424 INFO Network scoring committed=18150/60000
+2026-11-07 13:59:59,427 INFO Network scoring committed=18175/60000
+2026-11-07 13:59:59,430 INFO Network scoring committed=18200/60000
+2026-11-07 13:59:59,434 INFO Network scoring committed=18225/60000
+2026-11-07 13:59:59,437 INFO Network scoring committed=18250/60000
+2026-11-07 13:59:59,440 INFO Network scoring committed=18275/60000
+2026-11-07 13:59:59,444 INFO Network scoring committed=18300/60000
+2026-11-07 13:59:59,447 INFO Network scoring committed=18325/60000
+2026-11-07 13:59:59,449 INFO Network scoring committed=18350/60000
+2026-11-07 13:59:59,452 INFO Network scoring committed=18375/60000
+2026-11-07 13:59:59,455 INFO Network scoring committed=18400/60000
+2026-11-07 13:59:59,461 INFO Network scoring committed=18425/60000
+2026-11-07 13:59:59,464 INFO Network scoring committed=18450/60000
+2026-11-07 13:59:59,468 INFO Network scoring committed=18475/60000
+2026-11-07 13:59:59,471 INFO Network scoring committed=18500/60000
+2026-11-07 13:59:59,475 INFO Network scoring committed=18525/60000
+2026-11-07 13:59:59,477 INFO Network scoring committed=18550/60000
+2026-11-07 13:59:59,481 INFO Network scoring committed=18575/60000
+2026-11-07 13:59:59,484 INFO Network scoring committed=18600/60000
+2026-11-07 13:59:59,486 INFO Network scoring committed=18625/60000
+2026-11-07 13:59:59,489 INFO Network scoring committed=18650/60000
+2026-11-07 13:59:59,492 INFO Network scoring committed=18675/60000
+2026-11-07 13:59:59,497 INFO Network scoring committed=18700/60000
+2026-11-07 13:59:59,503 INFO Network scoring committed=18725/60000
+2026-11-07 13:59:59,506 INFO Network scoring committed=18750/60000
+2026-11-07 13:59:59,509 INFO Network scoring committed=18775/60000
+2026-11-07 13:59:59,512 INFO Network scoring committed=18800/60000
+2026-11-07 13:59:59,515 INFO Network scoring committed=18825/60000
+2026-11-07 13:59:59,519 INFO Network scoring committed=18850/60000
+2026-11-07 13:59:59,525 INFO Network scoring committed=18875/60000
+2026-11-07 13:59:59,531 INFO Network scoring committed=18900/60000
+2026-11-07 13:59:59,533 INFO Network scoring committed=18925/60000
+2026-11-07 13:59:59,537 INFO Network scoring committed=18950/60000
+2026-11-07 13:59:59,544 INFO Network scoring committed=18975/60000
+2026-11-07 13:59:59,551 INFO Network scoring committed=19000/60000
+2026-11-07 13:59:59,554 INFO Network scoring committed=19025/60000
+2026-11-07 13:59:59,559 INFO Network scoring committed=19050/60000
+2026-11-07 13:59:59,562 INFO Network scoring committed=19075/60000
+2026-11-07 13:59:59,564 INFO Network scoring committed=19100/60000
+2026-11-07 13:59:59,567 INFO Network scoring committed=19125/60000
+2026-11-07 13:59:59,570 INFO Network scoring committed=19150/60000
+2026-11-07 13:59:59,573 INFO Network scoring committed=19175/60000
+2026-11-07 13:59:59,575 INFO Network scoring committed=19200/60000
+2026-11-07 13:59:59,578 INFO Network scoring committed=19225/60000
+2026-11-07 13:59:59,581 INFO Network scoring committed=19250/60000
+2026-11-07 13:59:59,584 INFO Network scoring committed=19275/60000
+2026-11-07 13:59:59,587 INFO Network scoring committed=19300/60000
+2026-11-07 13:59:59,590 INFO Network scoring committed=19325/60000
+2026-11-07 13:59:59,593 INFO Network scoring committed=19350/60000
+2026-11-07 13:59:59,596 INFO Network scoring committed=19375/60000
+2026-11-07 13:59:59,600 INFO Network scoring committed=19400/60000
+2026-11-07 13:59:59,603 INFO Network scoring committed=19425/60000
+2026-11-07 13:59:59,607 INFO Network scoring committed=19450/60000
+2026-11-07 13:59:59,611 INFO Network scoring committed=19475/60000
+2026-11-07 13:59:59,615 INFO Network scoring committed=19500/60000
+2026-11-07 13:59:59,618 INFO Network scoring committed=19525/60000
+2026-11-07 13:59:59,622 INFO Network scoring committed=19550/60000
+2026-11-07 13:59:59,626 INFO Network scoring committed=19575/60000
+2026-11-07 13:59:59,630 INFO Network scoring committed=19600/60000
+2026-11-07 13:59:59,633 INFO Network scoring committed=19625/60000
+2026-11-07 13:59:59,636 INFO Network scoring committed=19650/60000
+2026-11-07 13:59:59,639 INFO Network scoring committed=19675/60000
+2026-11-07 13:59:59,642 INFO Network scoring committed=19700/60000
+2026-11-07 13:59:59,645 INFO Network scoring committed=19725/60000
+2026-11-07 13:59:59,651 INFO Network scoring committed=19750/60000
+2026-11-07 13:59:59,656 INFO Network scoring committed=19775/60000
+2026-11-07 13:59:59,660 INFO Network scoring committed=19800/60000
+2026-11-07 13:59:59,663 INFO Network scoring committed=19825/60000
+2026-11-07 13:59:59,666 INFO Network scoring committed=19850/60000
+2026-11-07 13:59:59,669 INFO Network scoring committed=19875/60000
+2026-11-07 13:59:59,672 INFO Network scoring committed=19900/60000
+2026-11-07 13:59:59,676 INFO Network scoring committed=19925/60000
+2026-11-07 13:59:59,679 INFO Network scoring committed=19950/60000
+2026-11-07 13:59:59,681 INFO Network scoring committed=19975/60000
+2026-11-07 13:59:59,684 INFO Network scoring committed=20000/60000
+2026-11-07 13:59:59,687 INFO Network scoring committed=20025/60000
+2026-11-07 13:59:59,690 INFO Network scoring committed=20050/60000
+2026-11-07 13:59:59,693 INFO Network scoring committed=20075/60000
+2026-11-07 13:59:59,696 INFO Network scoring committed=20100/60000
+2026-11-07 13:59:59,698 INFO Network scoring committed=20125/60000
+2026-11-07 13:59:59,701 INFO Network scoring committed=20150/60000
+2026-11-07 13:59:59,704 INFO Network scoring committed=20175/60000
+2026-11-07 13:59:59,706 INFO Network scoring committed=20200/60000
+2026-11-07 13:59:59,709 INFO Network scoring committed=20225/60000
+2026-11-07 13:59:59,712 INFO Network scoring committed=20250/60000
+2026-11-07 13:59:59,714 INFO Network scoring committed=20275/60000
+2026-11-07 13:59:59,716 INFO Network scoring committed=20300/60000
+2026-11-07 13:59:59,719 INFO Network scoring committed=20325/60000
+2026-11-07 13:59:59,721 INFO Network scoring committed=20350/60000
+2026-11-07 13:59:59,724 INFO Network scoring committed=20375/60000
+2026-11-07 13:59:59,727 INFO Network scoring committed=20400/60000
+2026-11-07 13:59:59,729 INFO Network scoring committed=20425/60000
+2026-11-07 13:59:59,732 INFO Network scoring committed=20450/60000
+2026-11-07 13:59:59,735 INFO Network scoring committed=20475/60000
+2026-11-07 13:59:59,738 INFO Network scoring committed=20500/60000
+2026-11-07 13:59:59,740 INFO Network scoring committed=20525/60000
+2026-11-07 13:59:59,743 INFO Network scoring committed=20550/60000
+2026-11-07 13:59:59,745 INFO Network scoring committed=20575/60000
+2026-11-07 13:59:59,748 INFO Network scoring committed=20600/60000
+2026-11-07 13:59:59,751 INFO Network scoring committed=20625/60000
+2026-11-07 13:59:59,754 INFO Network scoring committed=20650/60000
+2026-11-07 13:59:59,757 INFO Network scoring committed=20675/60000
+2026-11-07 13:59:59,764 INFO Network scoring committed=20700/60000
+2026-11-07 13:59:59,767 INFO Network scoring committed=20725/60000
+2026-11-07 13:59:59,769 INFO Network scoring committed=20750/60000
+2026-11-07 13:59:59,772 INFO Network scoring committed=20775/60000
+2026-11-07 13:59:59,775 INFO Network scoring committed=20800/60000
+2026-11-07 13:59:59,778 INFO Network scoring committed=20825/60000
+2026-11-07 13:59:59,781 INFO Network scoring committed=20850/60000
+2026-11-07 13:59:59,783 INFO Network scoring committed=20875/60000
+2026-11-07 13:59:59,787 INFO Network scoring committed=20900/60000
+2026-11-07 13:59:59,790 INFO Network scoring committed=20925/60000
+2026-11-07 13:59:59,792 INFO Network scoring committed=20950/60000
+2026-11-07 13:59:59,796 INFO Network scoring committed=20975/60000
+2026-11-07 13:59:59,799 INFO Network scoring committed=21000/60000
+2026-11-07 13:59:59,802 INFO Network scoring committed=21025/60000
+2026-11-07 13:59:59,805 INFO Network scoring committed=21050/60000
+2026-11-07 13:59:59,809 INFO Network scoring committed=21075/60000
+2026-11-07 13:59:59,815 INFO Network scoring committed=21100/60000
+2026-11-07 13:59:59,818 INFO Network scoring committed=21125/60000
+2026-11-07 13:59:59,822 INFO Network scoring committed=21150/60000
+2026-11-07 13:59:59,824 INFO Network scoring committed=21175/60000
+2026-11-07 13:59:59,827 INFO Network scoring committed=21200/60000
+2026-11-07 13:59:59,830 INFO Network scoring committed=21225/60000
+2026-11-07 13:59:59,833 INFO Network scoring committed=21250/60000
+2026-11-07 13:59:59,836 INFO Network scoring committed=21275/60000
+2026-11-07 13:59:59,839 INFO Network scoring committed=21300/60000
+2026-11-07 13:59:59,842 INFO Network scoring committed=21325/60000
+2026-11-07 13:59:59,844 INFO Network scoring committed=21350/60000
+2026-11-07 13:59:59,847 INFO Network scoring committed=21375/60000
+2026-11-07 13:59:59,850 INFO Network scoring committed=21400/60000
+2026-11-07 13:59:59,853 INFO Network scoring committed=21425/60000
+2026-11-07 13:59:59,855 INFO Network scoring committed=21450/60000
+2026-11-07 13:59:59,858 INFO Network scoring committed=21475/60000
+2026-11-07 13:59:59,860 INFO Network scoring committed=21500/60000
+2026-11-07 13:59:59,863 INFO Network scoring committed=21525/60000
+2026-11-07 13:59:59,866 INFO Network scoring committed=21550/60000
+2026-11-07 13:59:59,868 INFO Network scoring committed=21575/60000
+2026-11-07 13:59:59,872 INFO Network scoring committed=21600/60000
+2026-11-07 13:59:59,875 INFO Network scoring committed=21625/60000
+2026-11-07 13:59:59,878 INFO Network scoring committed=21650/60000
+2026-11-07 13:59:59,882 INFO Network scoring committed=21675/60000
+2026-11-07 13:59:59,885 INFO Network scoring committed=21700/60000
+2026-11-07 13:59:59,888 INFO Network scoring committed=21725/60000
+2026-11-07 13:59:59,892 INFO Network scoring committed=21750/60000
+2026-11-07 13:59:59,895 INFO Network scoring committed=21775/60000
+2026-11-07 13:59:59,898 INFO Network scoring committed=21800/60000
+2026-11-07 13:59:59,901 INFO Network scoring committed=21825/60000
+2026-11-07 13:59:59,904 INFO Network scoring committed=21850/60000
+2026-11-07 13:59:59,907 INFO Network scoring committed=21875/60000
+2026-11-07 13:59:59,910 INFO Network scoring committed=21900/60000
+2026-11-07 13:59:59,913 INFO Network scoring committed=21925/60000
+2026-11-07 13:59:59,916 INFO Network scoring committed=21950/60000
+2026-11-07 13:59:59,919 INFO Network scoring committed=21975/60000
+2026-11-07 13:59:59,923 INFO Network scoring committed=22000/60000
+2026-11-07 13:59:59,926 INFO Network scoring committed=22025/60000
+2026-11-07 13:59:59,929 INFO Network scoring committed=22050/60000
+2026-11-07 13:59:59,932 INFO Network scoring committed=22075/60000
+2026-11-07 13:59:59,935 INFO Network scoring committed=22100/60000
+2026-11-07 13:59:59,938 INFO Network scoring committed=22125/60000
+2026-11-07 13:59:59,941 INFO Network scoring committed=22150/60000
+2026-11-07 13:59:59,944 INFO Network scoring committed=22175/60000
+2026-11-07 13:59:59,947 INFO Network scoring committed=22200/60000
+2026-11-07 13:59:59,950 INFO Network scoring committed=22225/60000
+2026-11-07 13:59:59,952 INFO Network scoring committed=22250/60000
+2026-11-07 13:59:59,956 INFO Network scoring committed=22275/60000
+2026-11-07 13:59:59,960 INFO Network scoring committed=22300/60000
+2026-11-07 13:59:59,963 INFO Network scoring committed=22325/60000
+2026-11-07 13:59:59,966 INFO Network scoring committed=22350/60000
+2026-11-07 13:59:59,968 INFO Network scoring committed=22375/60000
+2026-11-07 13:59:59,971 INFO Network scoring committed=22400/60000
+2026-11-07 13:59:59,974 INFO Network scoring committed=22425/60000
+2026-11-07 13:59:59,977 INFO Network scoring committed=22450/60000
+2026-11-07 13:59:59,979 INFO Network scoring committed=22475/60000
+2026-11-07 13:59:59,982 INFO Network scoring committed=22500/60000
+2026-11-07 13:59:59,984 INFO Network scoring committed=22525/60000
+2026-11-07 13:59:59,987 INFO Network scoring committed=22550/60000
+2026-11-07 13:59:59,989 INFO Network scoring committed=22575/60000
+2026-11-07 13:59:59,992 INFO Network scoring committed=22600/60000
+2026-11-07 13:59:59,995 INFO Network scoring committed=22625/60000
+2026-11-07 13:59:59,999 INFO Network scoring committed=22650/60000
+2026-11-07 14:00:00,004 INFO Network scoring committed=22675/60000
+2026-11-07 14:00:00,008 INFO Network scoring committed=22700/60000
+2026-11-07 14:00:00,011 INFO Network scoring committed=22725/60000
+2026-11-07 14:00:00,013 INFO Network scoring committed=22750/60000
+2026-11-07 14:00:00,016 INFO Network scoring committed=22775/60000
+2026-11-07 14:00:00,019 INFO Network scoring committed=22800/60000
+2026-11-07 14:00:00,022 INFO Network scoring committed=22825/60000
+2026-11-07 14:00:00,024 INFO Network scoring committed=22850/60000
+2026-11-07 14:00:00,027 INFO Network scoring committed=22875/60000
+2026-11-07 14:00:00,030 INFO Network scoring committed=22900/60000
+2026-11-07 14:00:00,033 INFO Network scoring committed=22925/60000
+2026-11-07 14:00:00,037 INFO Network scoring committed=22950/60000
+2026-11-07 14:00:00,040 INFO Network scoring committed=22975/60000
+2026-11-07 14:00:00,044 INFO Network scoring committed=23000/60000
+2026-11-07 14:00:00,047 INFO Network scoring committed=23025/60000
+2026-11-07 14:00:00,049 INFO Network scoring committed=23050/60000
+2026-11-07 14:00:00,052 INFO Network scoring committed=23075/60000
+2026-11-07 14:00:00,055 INFO Network scoring committed=23100/60000
+2026-11-07 14:00:00,058 INFO Network scoring committed=23125/60000
+2026-11-07 14:00:00,061 INFO Network scoring committed=23150/60000
+2026-11-07 14:00:00,063 INFO Network scoring committed=23175/60000
+2026-11-07 14:00:00,066 INFO Network scoring committed=23200/60000
+2026-11-07 14:00:00,068 INFO Network scoring committed=23225/60000
+2026-11-07 14:00:00,071 INFO Network scoring committed=23250/60000
+2026-11-07 14:00:00,074 INFO Network scoring committed=23275/60000
+2026-11-07 14:00:00,077 INFO Network scoring committed=23300/60000
+2026-11-07 14:00:00,080 INFO Network scoring committed=23325/60000
+2026-11-07 14:00:00,083 INFO Network scoring committed=23350/60000
+2026-11-07 14:00:00,086 INFO Network scoring committed=23375/60000
+2026-11-07 14:00:00,089 INFO Network scoring committed=23400/60000
+2026-11-07 14:00:00,092 INFO Network scoring committed=23425/60000
+2026-11-07 14:00:00,094 INFO Network scoring committed=23450/60000
+2026-11-07 14:00:00,097 INFO Network scoring committed=23475/60000
+2026-11-07 14:00:00,100 INFO Network scoring committed=23500/60000
+2026-11-07 14:00:00,103 INFO Network scoring committed=23525/60000
+2026-11-07 14:00:00,106 INFO Network scoring committed=23550/60000
+2026-11-07 14:00:00,108 INFO Network scoring committed=23575/60000
+2026-11-07 14:00:00,111 INFO Network scoring committed=23600/60000
+2026-11-07 14:00:00,114 INFO Network scoring committed=23625/60000
+2026-11-07 14:00:00,116 INFO Network scoring committed=23650/60000
+2026-11-07 14:00:00,119 INFO Network scoring committed=23675/60000
+2026-11-07 14:00:00,122 INFO Network scoring committed=23700/60000
+2026-11-07 14:00:00,124 INFO Network scoring committed=23725/60000
+2026-11-07 14:00:00,127 INFO Network scoring committed=23750/60000
+2026-11-07 14:00:00,129 INFO Network scoring committed=23775/60000
+2026-11-07 14:00:00,132 INFO Network scoring committed=23800/60000
+2026-11-07 14:00:00,135 INFO Network scoring committed=23825/60000
+2026-11-07 14:00:00,137 INFO Network scoring committed=23850/60000
+2026-11-07 14:00:00,140 INFO Network scoring committed=23875/60000
+2026-11-07 14:00:00,143 INFO Network scoring committed=23900/60000
+2026-11-07 14:00:00,146 INFO Network scoring committed=23925/60000
+2026-11-07 14:00:00,149 INFO Network scoring committed=23950/60000
+2026-11-07 14:00:00,152 INFO Network scoring committed=23975/60000
+2026-11-07 14:00:00,155 INFO Network scoring committed=24000/60000
+2026-11-07 14:00:00,157 INFO Network scoring committed=24025/60000
+2026-11-07 14:00:00,160 INFO Network scoring committed=24050/60000
+2026-11-07 14:00:00,163 INFO Network scoring committed=24075/60000
+2026-11-07 14:00:00,165 INFO Network scoring committed=24100/60000
+2026-11-07 14:00:00,168 INFO Network scoring committed=24125/60000
+2026-11-07 14:00:00,172 INFO Network scoring committed=24150/60000
+2026-11-07 14:00:00,174 INFO Network scoring committed=24175/60000
+2026-11-07 14:00:00,177 INFO Network scoring committed=24200/60000
+2026-11-07 14:00:00,180 INFO Network scoring committed=24225/60000
+2026-11-07 14:00:00,183 INFO Network scoring committed=24250/60000
+2026-11-07 14:00:00,186 INFO Network scoring committed=24275/60000
+2026-11-07 14:00:00,189 INFO Network scoring committed=24300/60000
+2026-11-07 14:00:00,192 INFO Network scoring committed=24325/60000
+2026-11-07 14:00:00,195 INFO Network scoring committed=24350/60000
+2026-11-07 14:00:00,197 INFO Network scoring committed=24375/60000
+2026-11-07 14:00:00,200 INFO Network scoring committed=24400/60000
+2026-11-07 14:00:00,202 INFO Network scoring committed=24425/60000
+2026-11-07 14:00:00,205 INFO Network scoring committed=24450/60000
+2026-11-07 14:00:00,208 INFO Network scoring committed=24475/60000
+2026-11-07 14:00:00,210 INFO Network scoring committed=24500/60000
+2026-11-07 14:00:00,212 INFO Network scoring committed=24525/60000
+2026-11-07 14:00:00,214 INFO Network scoring committed=24550/60000
+2026-11-07 14:00:00,217 INFO Network scoring committed=24575/60000
+2026-11-07 14:00:00,220 INFO Network scoring committed=24600/60000
+2026-11-07 14:00:00,223 INFO Network scoring committed=24625/60000
+2026-11-07 14:00:00,225 INFO Network scoring committed=24650/60000
+2026-11-07 14:00:00,227 INFO Network scoring committed=24675/60000
+2026-11-07 14:00:00,230 INFO Network scoring committed=24700/60000
+2026-11-07 14:00:00,233 INFO Network scoring committed=24725/60000
+2026-11-07 14:00:00,235 INFO Network scoring committed=24750/60000
+2026-11-07 14:00:00,238 INFO Network scoring committed=24775/60000
+2026-11-07 14:00:00,241 INFO Network scoring committed=24800/60000
+2026-11-07 14:00:00,243 INFO Network scoring committed=24825/60000
+2026-11-07 14:00:00,246 INFO Network scoring committed=24850/60000
+2026-11-07 14:00:00,249 INFO Network scoring committed=24875/60000
+2026-11-07 14:00:00,251 INFO Network scoring committed=24900/60000
+2026-11-07 14:00:00,255 INFO Network scoring committed=24925/60000
+2026-11-07 14:00:00,257 INFO Network scoring committed=24950/60000
+2026-11-07 14:00:00,260 INFO Network scoring committed=24975/60000
+2026-11-07 14:00:00,263 INFO Network scoring committed=25000/60000
+2026-11-07 14:00:00,266 INFO Network scoring committed=25025/60000
+2026-11-07 14:00:00,268 INFO Network scoring committed=25050/60000
+2026-11-07 14:00:00,270 INFO Network scoring committed=25075/60000
+2026-11-07 14:00:00,273 INFO Network scoring committed=25100/60000
+2026-11-07 14:00:00,276 INFO Network scoring committed=25125/60000
+2026-11-07 14:00:00,278 INFO Network scoring committed=25150/60000
+2026-11-07 14:00:00,281 INFO Network scoring committed=25175/60000
+2026-11-07 14:00:00,286 INFO Network scoring committed=25200/60000
+2026-11-07 14:00:00,290 INFO Network scoring committed=25225/60000
+2026-11-07 14:00:00,293 INFO Network scoring committed=25250/60000
+2026-11-07 14:00:00,296 INFO Network scoring committed=25275/60000
+2026-11-07 14:00:00,300 INFO Network scoring committed=25300/60000
+2026-11-07 14:00:00,305 INFO Network scoring committed=25325/60000
+2026-11-07 14:00:00,308 INFO Network scoring committed=25350/60000
+2026-11-07 14:00:00,311 INFO Network scoring committed=25375/60000
+2026-11-07 14:00:00,314 INFO Network scoring committed=25400/60000
+2026-11-07 14:00:00,317 INFO Network scoring committed=25425/60000
+2026-11-07 14:00:00,323 INFO Network scoring committed=25450/60000
+2026-11-07 14:00:00,326 INFO Network scoring committed=25475/60000
+2026-11-07 14:00:00,329 INFO Network scoring committed=25500/60000
+2026-11-07 14:00:00,332 INFO Network scoring committed=25525/60000
+2026-11-07 14:00:00,335 INFO Network scoring committed=25550/60000
+2026-11-07 14:00:00,338 INFO Network scoring committed=25575/60000
+2026-11-07 14:00:00,341 INFO Network scoring committed=25600/60000
+2026-11-07 14:00:00,344 INFO Network scoring committed=25625/60000
+2026-11-07 14:00:00,351 INFO Network scoring committed=25650/60000
+2026-11-07 14:00:00,353 INFO Network scoring committed=25675/60000
+2026-11-07 14:00:00,356 INFO Network scoring committed=25700/60000
+2026-11-07 14:00:00,358 INFO Network scoring committed=25725/60000
+2026-11-07 14:00:00,362 INFO Network scoring committed=25750/60000
+2026-11-07 14:00:00,365 INFO Network scoring committed=25775/60000
+2026-11-07 14:00:00,368 INFO Network scoring committed=25800/60000
+2026-11-07 14:00:00,371 INFO Network scoring committed=25825/60000
+2026-11-07 14:00:00,374 INFO Network scoring committed=25850/60000
+2026-11-07 14:00:00,377 INFO Network scoring committed=25875/60000
+2026-11-07 14:00:00,380 INFO Network scoring committed=25900/60000
+2026-11-07 14:00:00,383 INFO Network scoring committed=25925/60000
+2026-11-07 14:00:00,387 INFO Network scoring committed=25950/60000
+2026-11-07 14:00:00,390 INFO Network scoring committed=25975/60000
+2026-11-07 14:00:00,393 INFO Network scoring committed=26000/60000
+2026-11-07 14:00:00,397 INFO Network scoring committed=26025/60000
+2026-11-07 14:00:00,400 INFO Network scoring committed=26050/60000
+2026-11-07 14:00:00,403 INFO Network scoring committed=26075/60000
+2026-11-07 14:00:00,406 INFO Network scoring committed=26100/60000
+2026-11-07 14:00:00,409 INFO Network scoring committed=26125/60000
+2026-11-07 14:00:00,411 INFO Network scoring committed=26150/60000
+2026-11-07 14:00:00,414 INFO Network scoring committed=26175/60000
+2026-11-07 14:00:00,416 INFO Network scoring committed=26200/60000
+2026-11-07 14:00:00,419 INFO Network scoring committed=26225/60000
+2026-11-07 14:00:00,422 INFO Network scoring committed=26250/60000
+2026-11-07 14:00:00,425 INFO Network scoring committed=26275/60000
+2026-11-07 14:00:00,428 INFO Network scoring committed=26300/60000
+2026-11-07 14:00:00,430 INFO Network scoring committed=26325/60000
+2026-11-07 14:00:00,433 INFO Network scoring committed=26350/60000
+2026-11-07 14:00:00,436 INFO Network scoring committed=26375/60000
+2026-11-07 14:00:00,439 INFO Network scoring committed=26400/60000
+2026-11-07 14:00:00,442 INFO Network scoring committed=26425/60000
+2026-11-07 14:00:00,444 INFO Network scoring committed=26450/60000
+2026-11-07 14:00:00,447 INFO Network scoring committed=26475/60000
+2026-11-07 14:00:00,449 INFO Network scoring committed=26500/60000
+2026-11-07 14:00:00,451 INFO Network scoring committed=26525/60000
+2026-11-07 14:00:00,454 INFO Network scoring committed=26550/60000
+2026-11-07 14:00:00,457 INFO Network scoring committed=26575/60000
+2026-11-07 14:00:00,460 INFO Network scoring committed=26600/60000
+2026-11-07 14:00:00,462 INFO Network scoring committed=26625/60000
+2026-11-07 14:00:00,466 INFO Network scoring committed=26650/60000
+2026-11-07 14:00:00,469 INFO Network scoring committed=26675/60000
+2026-11-07 14:00:00,471 INFO Network scoring committed=26700/60000
+2026-11-07 14:00:00,474 INFO Network scoring committed=26725/60000
+2026-11-07 14:00:00,477 INFO Network scoring committed=26750/60000
+2026-11-07 14:00:00,479 INFO Network scoring committed=26775/60000
+2026-11-07 14:00:00,482 INFO Network scoring committed=26800/60000
+2026-11-07 14:00:00,484 INFO Network scoring committed=26825/60000
+2026-11-07 14:00:00,487 INFO Network scoring committed=26850/60000
+2026-11-07 14:00:00,489 INFO Network scoring committed=26875/60000
+2026-11-07 14:00:00,492 INFO Network scoring committed=26900/60000
+2026-11-07 14:00:00,494 INFO Network scoring committed=26925/60000
+2026-11-07 14:00:00,497 INFO Network scoring committed=26950/60000
+2026-11-07 14:00:00,500 INFO Network scoring committed=26975/60000
+2026-11-07 14:00:00,502 INFO Network scoring committed=27000/60000
+2026-11-07 14:00:00,504 INFO Network scoring committed=27025/60000
+2026-11-07 14:00:00,507 INFO Network scoring committed=27050/60000
+2026-11-07 14:00:00,509 INFO Network scoring committed=27075/60000
+2026-11-07 14:00:00,512 INFO Network scoring committed=27100/60000
+2026-11-07 14:00:00,514 INFO Network scoring committed=27125/60000
+2026-11-07 14:00:00,517 INFO Network scoring committed=27150/60000
+2026-11-07 14:00:00,520 INFO Network scoring committed=27175/60000
+2026-11-07 14:00:00,522 INFO Network scoring committed=27200/60000
+2026-11-07 14:00:00,524 INFO Network scoring committed=27225/60000
+2026-11-07 14:00:00,527 INFO Network scoring committed=27250/60000
+2026-11-07 14:00:00,529 INFO Network scoring committed=27275/60000
+2026-11-07 14:00:00,532 INFO Network scoring committed=27300/60000
+2026-11-07 14:00:00,535 INFO Network scoring committed=27325/60000
+2026-11-07 14:00:00,537 INFO Network scoring committed=27350/60000
+2026-11-07 14:00:00,540 INFO Network scoring committed=27375/60000
+2026-11-07 14:00:00,543 INFO Network scoring committed=27400/60000
+2026-11-07 14:00:00,547 INFO Network scoring committed=27425/60000
+2026-11-07 14:00:00,552 INFO Network scoring committed=27450/60000
+2026-11-07 14:00:00,555 INFO Network scoring committed=27475/60000
+2026-11-07 14:00:00,558 INFO Network scoring committed=27500/60000
+2026-11-07 14:00:00,561 INFO Network scoring committed=27525/60000
+2026-11-07 14:00:00,564 INFO Network scoring committed=27550/60000
+2026-11-07 14:00:00,567 INFO Network scoring committed=27575/60000
+2026-11-07 14:00:00,572 INFO Network scoring committed=27600/60000
+2026-11-07 14:00:00,575 INFO Network scoring committed=27625/60000
+2026-11-07 14:00:00,578 INFO Network scoring committed=27650/60000
+2026-11-07 14:00:00,581 INFO Network scoring committed=27675/60000
+2026-11-07 14:00:00,584 INFO Network scoring committed=27700/60000
+2026-11-07 14:00:00,588 INFO Network scoring committed=27725/60000
+2026-11-07 14:00:00,590 INFO Network scoring committed=27750/60000
+2026-11-07 14:00:00,593 INFO Network scoring committed=27775/60000
+2026-11-07 14:00:00,596 INFO Network scoring committed=27800/60000
+2026-11-07 14:00:00,599 INFO Network scoring committed=27825/60000
+2026-11-07 14:00:00,604 INFO Network scoring committed=27850/60000
+2026-11-07 14:00:00,607 INFO Network scoring committed=27875/60000
+2026-11-07 14:00:00,609 INFO Network scoring committed=27900/60000
+2026-11-07 14:00:00,611 INFO Network scoring committed=27925/60000
+2026-11-07 14:00:00,614 INFO Network scoring committed=27950/60000
+2026-11-07 14:00:00,617 INFO Network scoring committed=27975/60000
+2026-11-07 14:00:00,619 INFO Network scoring committed=28000/60000
+2026-11-07 14:00:00,622 INFO Network scoring committed=28025/60000
+2026-11-07 14:00:00,624 INFO Network scoring committed=28050/60000
+2026-11-07 14:00:00,627 INFO Network scoring committed=28075/60000
+2026-11-07 14:00:00,630 INFO Network scoring committed=28100/60000
+2026-11-07 14:00:00,632 INFO Network scoring committed=28125/60000
+2026-11-07 14:00:00,635 INFO Network scoring committed=28150/60000
+2026-11-07 14:00:00,638 INFO Network scoring committed=28175/60000
+2026-11-07 14:00:00,640 INFO Network scoring committed=28200/60000
+2026-11-07 14:00:00,643 INFO Network scoring committed=28225/60000
+2026-11-07 14:00:00,646 INFO Network scoring committed=28250/60000
+2026-11-07 14:00:00,648 INFO Network scoring committed=28275/60000
+2026-11-07 14:00:00,650 INFO Network scoring committed=28300/60000
+2026-11-07 14:00:00,653 INFO Network scoring committed=28325/60000
+2026-11-07 14:00:00,659 INFO Network scoring committed=28350/60000
+2026-11-07 14:00:00,664 INFO Network scoring committed=28375/60000
+2026-11-07 14:00:00,667 INFO Network scoring committed=28400/60000
+2026-11-07 14:00:00,670 INFO Network scoring committed=28425/60000
+2026-11-07 14:00:00,672 INFO Network scoring committed=28450/60000
+2026-11-07 14:00:00,675 INFO Network scoring committed=28475/60000
+2026-11-07 14:00:00,678 INFO Network scoring committed=28500/60000
+2026-11-07 14:00:00,681 INFO Network scoring committed=28525/60000
+2026-11-07 14:00:00,684 INFO Network scoring committed=28550/60000
+2026-11-07 14:00:00,687 INFO Network scoring committed=28575/60000
+2026-11-07 14:00:00,690 INFO Network scoring committed=28600/60000
+2026-11-07 14:00:00,692 INFO Network scoring committed=28625/60000
+2026-11-07 14:00:00,694 INFO Network scoring committed=28650/60000
+2026-11-07 14:00:00,697 INFO Network scoring committed=28675/60000
+2026-11-07 14:00:00,699 INFO Network scoring committed=28700/60000
+2026-11-07 14:00:00,701 INFO Network scoring committed=28725/60000
+2026-11-07 14:00:00,704 INFO Network scoring committed=28750/60000
+2026-11-07 14:00:00,706 INFO Network scoring committed=28775/60000
+2026-11-07 14:00:00,709 INFO Network scoring committed=28800/60000
+2026-11-07 14:00:00,711 INFO Network scoring committed=28825/60000
+2026-11-07 14:00:00,713 INFO Network scoring committed=28850/60000
+2026-11-07 14:00:00,716 INFO Network scoring committed=28875/60000
+2026-11-07 14:00:00,718 INFO Network scoring committed=28900/60000
+2026-11-07 14:00:00,721 INFO Network scoring committed=28925/60000
+2026-11-07 14:00:00,723 INFO Network scoring committed=28950/60000
+2026-11-07 14:00:00,726 INFO Network scoring committed=28975/60000
+2026-11-07 14:00:00,728 INFO Network scoring committed=29000/60000
+2026-11-07 14:00:00,731 INFO Network scoring committed=29025/60000
+2026-11-07 14:00:00,733 INFO Network scoring committed=29050/60000
+2026-11-07 14:00:00,736 INFO Network scoring committed=29075/60000
+2026-11-07 14:00:00,739 INFO Network scoring committed=29100/60000
+2026-11-07 14:00:00,741 INFO Network scoring committed=29125/60000
+2026-11-07 14:00:00,743 INFO Network scoring committed=29150/60000
+2026-11-07 14:00:00,746 INFO Network scoring committed=29175/60000
+2026-11-07 14:00:00,749 INFO Network scoring committed=29200/60000
+2026-11-07 14:00:00,751 INFO Network scoring committed=29225/60000
+2026-11-07 14:00:00,754 INFO Network scoring committed=29250/60000
+2026-11-07 14:00:00,756 INFO Network scoring committed=29275/60000
+2026-11-07 14:00:00,759 INFO Network scoring committed=29300/60000
+2026-11-07 14:00:00,761 INFO Network scoring committed=29325/60000
+2026-11-07 14:00:00,764 INFO Network scoring committed=29350/60000
+2026-11-07 14:00:00,768 INFO Network scoring committed=29375/60000
+2026-11-07 14:00:00,772 INFO Network scoring committed=29400/60000
+2026-11-07 14:00:00,776 INFO Network scoring committed=29425/60000
+2026-11-07 14:00:00,778 INFO Network scoring committed=29450/60000
+2026-11-07 14:00:00,781 INFO Network scoring committed=29475/60000
+2026-11-07 14:00:00,784 INFO Network scoring committed=29500/60000
+2026-11-07 14:00:00,787 INFO Network scoring committed=29525/60000
+2026-11-07 14:00:00,790 INFO Network scoring committed=29550/60000
+2026-11-07 14:00:00,792 INFO Network scoring committed=29575/60000
+2026-11-07 14:00:00,795 INFO Network scoring committed=29600/60000
+2026-11-07 14:00:00,798 INFO Network scoring committed=29625/60000
+2026-11-07 14:00:00,800 INFO Network scoring committed=29650/60000
+2026-11-07 14:00:00,803 INFO Network scoring committed=29675/60000
+2026-11-07 14:00:00,806 INFO Network scoring committed=29700/60000
+2026-11-07 14:00:00,810 INFO Network scoring committed=29725/60000
+2026-11-07 14:00:00,813 INFO Network scoring committed=29750/60000
+2026-11-07 14:00:00,815 INFO Network scoring committed=29775/60000
+2026-11-07 14:00:00,818 INFO Network scoring committed=29800/60000
+2026-11-07 14:00:00,821 INFO Network scoring committed=29825/60000
+2026-11-07 14:00:00,825 INFO Network scoring committed=29850/60000
+2026-11-07 14:00:00,828 INFO Network scoring committed=29875/60000
+2026-11-07 14:00:00,831 INFO Network scoring committed=29900/60000
+2026-11-07 14:00:00,833 INFO Network scoring committed=29925/60000
+2026-11-07 14:00:00,836 INFO Network scoring committed=29950/60000
+2026-11-07 14:00:00,839 INFO Network scoring committed=29975/60000
+2026-11-07 14:00:00,841 INFO Network scoring committed=30000/60000
+2026-11-07 14:00:00,845 INFO Network scoring committed=30025/60000
+2026-11-07 14:00:00,848 INFO Network scoring committed=30050/60000
+2026-11-07 14:00:00,852 INFO Network scoring committed=30075/60000
+2026-11-07 14:00:00,855 INFO Network scoring committed=30100/60000
+2026-11-07 14:00:00,858 INFO Network scoring committed=30125/60000
+2026-11-07 14:00:00,862 INFO Network scoring committed=30150/60000
+2026-11-07 14:00:00,865 INFO Network scoring committed=30175/60000
+2026-11-07 14:00:00,868 INFO Network scoring committed=30200/60000
+2026-11-07 14:00:00,871 INFO Network scoring committed=30225/60000
+2026-11-07 14:00:00,874 INFO Network scoring committed=30250/60000
+2026-11-07 14:00:00,876 INFO Network scoring committed=30275/60000
+2026-11-07 14:00:00,879 INFO Network scoring committed=30300/60000
+2026-11-07 14:00:00,881 INFO Network scoring committed=30325/60000
+2026-11-07 14:00:00,884 INFO Network scoring committed=30350/60000
+2026-11-07 14:00:00,887 INFO Network scoring committed=30375/60000
+2026-11-07 14:00:00,890 INFO Network scoring committed=30400/60000
+2026-11-07 14:00:00,893 INFO Network scoring committed=30425/60000
+2026-11-07 14:00:00,896 INFO Network scoring committed=30450/60000
+2026-11-07 14:00:00,898 INFO Network scoring committed=30475/60000
+2026-11-07 14:00:00,902 INFO Network scoring committed=30500/60000
+2026-11-07 14:00:00,904 INFO Network scoring committed=30525/60000
+2026-11-07 14:00:00,907 INFO Network scoring committed=30550/60000
+2026-11-07 14:00:00,909 INFO Network scoring committed=30575/60000
+2026-11-07 14:00:00,912 INFO Network scoring committed=30600/60000
+2026-11-07 14:00:00,914 INFO Network scoring committed=30625/60000
+2026-11-07 14:00:00,917 INFO Network scoring committed=30650/60000
+2026-11-07 14:00:00,920 INFO Network scoring committed=30675/60000
+2026-11-07 14:00:00,923 INFO Network scoring committed=30700/60000
+2026-11-07 14:00:00,925 INFO Network scoring committed=30725/60000
+2026-11-07 14:00:00,928 INFO Network scoring committed=30750/60000
+2026-11-07 14:00:00,931 INFO Network scoring committed=30775/60000
+2026-11-07 14:00:00,933 INFO Network scoring committed=30800/60000
+2026-11-07 14:00:00,936 INFO Network scoring committed=30825/60000
+2026-11-07 14:00:00,939 INFO Network scoring committed=30850/60000
+2026-11-07 14:00:00,942 INFO Network scoring committed=30875/60000
+2026-11-07 14:00:00,945 INFO Network scoring committed=30900/60000
+2026-11-07 14:00:00,947 INFO Network scoring committed=30925/60000
+2026-11-07 14:00:00,949 INFO Network scoring committed=30950/60000
+2026-11-07 14:00:00,952 INFO Network scoring committed=30975/60000
+2026-11-07 14:00:00,955 INFO Network scoring committed=31000/60000
+2026-11-07 14:00:00,957 INFO Network scoring committed=31025/60000
+2026-11-07 14:00:00,960 INFO Network scoring committed=31050/60000
+2026-11-07 14:00:00,962 INFO Network scoring committed=31075/60000
+2026-11-07 14:00:00,965 INFO Network scoring committed=31100/60000
+2026-11-07 14:00:00,968 INFO Network scoring committed=31125/60000
+2026-11-07 14:00:00,971 INFO Network scoring committed=31150/60000
+2026-11-07 14:00:00,974 INFO Network scoring committed=31175/60000
+2026-11-07 14:00:00,976 INFO Network scoring committed=31200/60000
+2026-11-07 14:00:00,979 INFO Network scoring committed=31225/60000
+2026-11-07 14:00:00,982 INFO Network scoring committed=31250/60000
+2026-11-07 14:00:00,984 INFO Network scoring committed=31275/60000
+2026-11-07 14:00:00,987 INFO Network scoring committed=31300/60000
+2026-11-07 14:00:00,989 INFO Network scoring committed=31325/60000
+2026-11-07 14:00:00,995 INFO Network scoring committed=31350/60000
+2026-11-07 14:00:00,998 INFO Network scoring committed=31375/60000
+2026-11-07 14:00:01,000 INFO Network scoring committed=31400/60000
+2026-11-07 14:00:01,003 INFO Network scoring committed=31425/60000
+2026-11-07 14:00:01,005 INFO Network scoring committed=31450/60000
+2026-11-07 14:00:01,008 INFO Network scoring committed=31475/60000
+2026-11-07 14:00:01,011 INFO Network scoring committed=31500/60000
+2026-11-07 14:00:01,014 INFO Network scoring committed=31525/60000
+2026-11-07 14:00:01,016 INFO Network scoring committed=31550/60000
+2026-11-07 14:00:01,019 INFO Network scoring committed=31575/60000
+2026-11-07 14:00:01,022 INFO Network scoring committed=31600/60000
+2026-11-07 14:00:01,024 INFO Network scoring committed=31625/60000
+2026-11-07 14:00:01,027 INFO Network scoring committed=31650/60000
+2026-11-07 14:00:01,030 INFO Network scoring committed=31675/60000
+2026-11-07 14:00:01,032 INFO Network scoring committed=31700/60000
+2026-11-07 14:00:01,035 INFO Network scoring committed=31725/60000
+2026-11-07 14:00:01,037 INFO Network scoring committed=31750/60000
+2026-11-07 14:00:01,040 INFO Network scoring committed=31775/60000
+2026-11-07 14:00:01,043 INFO Network scoring committed=31800/60000
+2026-11-07 14:00:01,046 INFO Network scoring committed=31825/60000
+2026-11-07 14:00:01,048 INFO Network scoring committed=31850/60000
+2026-11-07 14:00:01,051 INFO Network scoring committed=31875/60000
+2026-11-07 14:00:01,054 INFO Network scoring committed=31900/60000
+2026-11-07 14:00:01,057 INFO Network scoring committed=31925/60000
+2026-11-07 14:00:01,060 INFO Network scoring committed=31950/60000
+2026-11-07 14:00:01,062 INFO Network scoring committed=31975/60000
+2026-11-07 14:00:01,065 INFO Network scoring committed=32000/60000
+2026-11-07 14:00:01,067 INFO Network scoring committed=32025/60000
+2026-11-07 14:00:01,071 INFO Network scoring committed=32050/60000
+2026-11-07 14:00:01,074 INFO Network scoring committed=32075/60000
+2026-11-07 14:00:01,077 INFO Network scoring committed=32100/60000
+2026-11-07 14:00:01,080 INFO Network scoring committed=32125/60000
+2026-11-07 14:00:01,083 INFO Network scoring committed=32150/60000
+2026-11-07 14:00:01,086 INFO Network scoring committed=32175/60000
+2026-11-07 14:00:01,088 INFO Network scoring committed=32200/60000
+2026-11-07 14:00:01,091 INFO Network scoring committed=32225/60000
+2026-11-07 14:00:01,094 INFO Network scoring committed=32250/60000
+2026-11-07 14:00:01,097 INFO Network scoring committed=32275/60000
+2026-11-07 14:00:01,099 INFO Network scoring committed=32300/60000
+2026-11-07 14:00:01,102 INFO Network scoring committed=32325/60000
+2026-11-07 14:00:01,105 INFO Network scoring committed=32350/60000
+2026-11-07 14:00:01,108 INFO Network scoring committed=32375/60000
+2026-11-07 14:00:01,111 INFO Network scoring committed=32400/60000
+2026-11-07 14:00:01,114 INFO Network scoring committed=32425/60000
+2026-11-07 14:00:01,116 INFO Network scoring committed=32450/60000
+2026-11-07 14:00:01,119 INFO Network scoring committed=32475/60000
+2026-11-07 14:00:01,122 INFO Network scoring committed=32500/60000
+2026-11-07 14:00:01,124 INFO Network scoring committed=32525/60000
+2026-11-07 14:00:01,126 INFO Network scoring committed=32550/60000
+2026-11-07 14:00:01,129 INFO Network scoring committed=32575/60000
+2026-11-07 14:00:01,132 INFO Network scoring committed=32600/60000
+2026-11-07 14:00:01,135 INFO Network scoring committed=32625/60000
+2026-11-07 14:00:01,137 INFO Network scoring committed=32650/60000
+2026-11-07 14:00:01,140 INFO Network scoring committed=32675/60000
+2026-11-07 14:00:01,142 INFO Network scoring committed=32700/60000
+2026-11-07 14:00:01,145 INFO Network scoring committed=32725/60000
+2026-11-07 14:00:01,147 INFO Network scoring committed=32750/60000
+2026-11-07 14:00:01,150 INFO Network scoring committed=32775/60000
+2026-11-07 14:00:01,155 INFO Network scoring committed=32800/60000
+2026-11-07 14:00:01,157 INFO Network scoring committed=32825/60000
+2026-11-07 14:00:01,162 INFO Network scoring committed=32850/60000
+2026-11-07 14:00:01,164 INFO Network scoring committed=32875/60000
+2026-11-07 14:00:01,167 INFO Network scoring committed=32900/60000
+2026-11-07 14:00:01,170 INFO Network scoring committed=32925/60000
+2026-11-07 14:00:01,172 INFO Network scoring committed=32950/60000
+2026-11-07 14:00:01,175 INFO Network scoring committed=32975/60000
+2026-11-07 14:00:01,177 INFO Network scoring committed=33000/60000
+2026-11-07 14:00:01,180 INFO Network scoring committed=33025/60000
+2026-11-07 14:00:01,183 INFO Network scoring committed=33050/60000
+2026-11-07 14:00:01,186 INFO Network scoring committed=33075/60000
+2026-11-07 14:00:01,190 INFO Network scoring committed=33100/60000
+2026-11-07 14:00:01,193 INFO Network scoring committed=33125/60000
+2026-11-07 14:00:01,196 INFO Network scoring committed=33150/60000
+2026-11-07 14:00:01,199 INFO Network scoring committed=33175/60000
+2026-11-07 14:00:01,201 INFO Network scoring committed=33200/60000
+2026-11-07 14:00:01,204 INFO Network scoring committed=33225/60000
+2026-11-07 14:00:01,207 INFO Network scoring committed=33250/60000
+2026-11-07 14:00:01,209 INFO Network scoring committed=33275/60000
+2026-11-07 14:00:01,212 INFO Network scoring committed=33300/60000
+2026-11-07 14:00:01,215 INFO Network scoring committed=33325/60000
+2026-11-07 14:00:01,217 INFO Network scoring committed=33350/60000
+2026-11-07 14:00:01,220 INFO Network scoring committed=33375/60000
+2026-11-07 14:00:01,223 INFO Network scoring committed=33400/60000
+2026-11-07 14:00:01,225 INFO Network scoring committed=33425/60000
+2026-11-07 14:00:01,228 INFO Network scoring committed=33450/60000
+2026-11-07 14:00:01,231 INFO Network scoring committed=33475/60000
+2026-11-07 14:00:01,233 INFO Network scoring committed=33500/60000
+2026-11-07 14:00:01,236 INFO Network scoring committed=33525/60000
+2026-11-07 14:00:01,239 INFO Network scoring committed=33550/60000
+2026-11-07 14:00:01,241 INFO Network scoring committed=33575/60000
+2026-11-07 14:00:01,244 INFO Network scoring committed=33600/60000
+2026-11-07 14:00:01,247 INFO Network scoring committed=33625/60000
+2026-11-07 14:00:01,250 INFO Network scoring committed=33650/60000
+2026-11-07 14:00:01,253 INFO Network scoring committed=33675/60000
+2026-11-07 14:00:01,256 INFO Network scoring committed=33700/60000
+2026-11-07 14:00:01,258 INFO Network scoring committed=33725/60000
+2026-11-07 14:00:01,261 INFO Network scoring committed=33750/60000
+2026-11-07 14:00:01,263 INFO Network scoring committed=33775/60000
+2026-11-07 14:00:01,266 INFO Network scoring committed=33800/60000
+2026-11-07 14:00:01,269 INFO Network scoring committed=33825/60000
+2026-11-07 14:00:01,271 INFO Network scoring committed=33850/60000
+2026-11-07 14:00:01,274 INFO Network scoring committed=33875/60000
+2026-11-07 14:00:01,276 INFO Network scoring committed=33900/60000
+2026-11-07 14:00:01,279 INFO Network scoring committed=33925/60000
+2026-11-07 14:00:01,281 INFO Network scoring committed=33950/60000
+2026-11-07 14:00:01,284 INFO Network scoring committed=33975/60000
+2026-11-07 14:00:01,291 INFO Network scoring committed=34000/60000
+2026-11-07 14:00:01,294 INFO Network scoring committed=34025/60000
+2026-11-07 14:00:01,298 INFO Network scoring committed=34050/60000
+2026-11-07 14:00:01,301 INFO Network scoring committed=34075/60000
+2026-11-07 14:00:01,304 INFO Network scoring committed=34100/60000
+2026-11-07 14:00:01,307 INFO Network scoring committed=34125/60000
+2026-11-07 14:00:01,312 INFO Network scoring committed=34150/60000
+2026-11-07 14:00:01,315 INFO Network scoring committed=34175/60000
+2026-11-07 14:00:01,318 INFO Network scoring committed=34200/60000
+2026-11-07 14:00:01,321 INFO Network scoring committed=34225/60000
+2026-11-07 14:00:01,326 INFO Network scoring committed=34250/60000
+2026-11-07 14:00:01,329 INFO Network scoring committed=34275/60000
+2026-11-07 14:00:01,332 INFO Network scoring committed=34300/60000
+2026-11-07 14:00:01,335 INFO Network scoring committed=34325/60000
+2026-11-07 14:00:01,338 INFO Network scoring committed=34350/60000
+2026-11-07 14:00:01,340 INFO Network scoring committed=34375/60000
+2026-11-07 14:00:01,343 INFO Network scoring committed=34400/60000
+2026-11-07 14:00:01,346 INFO Network scoring committed=34425/60000
+2026-11-07 14:00:01,348 INFO Network scoring committed=34450/60000
+2026-11-07 14:00:01,351 INFO Network scoring committed=34475/60000
+2026-11-07 14:00:01,354 INFO Network scoring committed=34500/60000
+2026-11-07 14:00:01,357 INFO Network scoring committed=34525/60000
+2026-11-07 14:00:01,360 INFO Network scoring committed=34550/60000
+2026-11-07 14:00:01,363 INFO Network scoring committed=34575/60000
+2026-11-07 14:00:01,366 INFO Network scoring committed=34600/60000
+2026-11-07 14:00:01,368 INFO Network scoring committed=34625/60000
+2026-11-07 14:00:01,371 INFO Network scoring committed=34650/60000
+2026-11-07 14:00:01,374 INFO Network scoring committed=34675/60000
+2026-11-07 14:00:01,377 INFO Network scoring committed=34700/60000
+2026-11-07 14:00:01,379 INFO Network scoring committed=34725/60000
+2026-11-07 14:00:01,382 INFO Network scoring committed=34750/60000
+2026-11-07 14:00:01,384 INFO Network scoring committed=34775/60000
+2026-11-07 14:00:01,386 INFO Network scoring committed=34800/60000
+2026-11-07 14:00:01,390 INFO Network scoring committed=34825/60000
+2026-11-07 14:00:01,392 INFO Network scoring committed=34850/60000
+2026-11-07 14:00:01,396 INFO Network scoring committed=34875/60000
+2026-11-07 14:00:01,399 INFO Network scoring committed=34900/60000
+2026-11-07 14:00:01,402 INFO Network scoring committed=34925/60000
+2026-11-07 14:00:01,404 INFO Network scoring committed=34950/60000
+2026-11-07 14:00:01,407 INFO Network scoring committed=34975/60000
+2026-11-07 14:00:01,410 INFO Network scoring committed=35000/60000
+2026-11-07 14:00:01,412 INFO Network scoring committed=35025/60000
+2026-11-07 14:00:01,415 INFO Network scoring committed=35050/60000
+2026-11-07 14:00:01,417 INFO Network scoring committed=35075/60000
+2026-11-07 14:00:01,423 INFO Network scoring committed=35100/60000
+2026-11-07 14:00:01,427 INFO Network scoring committed=35125/60000
+2026-11-07 14:00:01,429 INFO Network scoring committed=35150/60000
+2026-11-07 14:00:01,432 INFO Network scoring committed=35175/60000
+2026-11-07 14:00:01,434 INFO Network scoring committed=35200/60000
+2026-11-07 14:00:01,438 INFO Network scoring committed=35225/60000
+2026-11-07 14:00:01,441 INFO Network scoring committed=35250/60000
+2026-11-07 14:00:01,443 INFO Network scoring committed=35275/60000
+2026-11-07 14:00:01,447 INFO Network scoring committed=35300/60000
+2026-11-07 14:00:01,450 INFO Network scoring committed=35325/60000
+2026-11-07 14:00:01,452 INFO Network scoring committed=35350/60000
+2026-11-07 14:00:01,454 INFO Network scoring committed=35375/60000
+2026-11-07 14:00:01,457 INFO Network scoring committed=35400/60000
+2026-11-07 14:00:01,460 INFO Network scoring committed=35425/60000
+2026-11-07 14:00:01,462 INFO Network scoring committed=35450/60000
+2026-11-07 14:00:01,465 INFO Network scoring committed=35475/60000
+2026-11-07 14:00:01,467 INFO Network scoring committed=35500/60000
+2026-11-07 14:00:01,471 INFO Network scoring committed=35525/60000
+2026-11-07 14:00:01,474 INFO Network scoring committed=35550/60000
+2026-11-07 14:00:01,476 INFO Network scoring committed=35575/60000
+2026-11-07 14:00:01,479 INFO Network scoring committed=35600/60000
+2026-11-07 14:00:01,482 INFO Network scoring committed=35625/60000
+2026-11-07 14:00:01,484 INFO Network scoring committed=35650/60000
+2026-11-07 14:00:01,487 INFO Network scoring committed=35675/60000
+2026-11-07 14:00:01,489 INFO Network scoring committed=35700/60000
+2026-11-07 14:00:01,492 INFO Network scoring committed=35725/60000
+2026-11-07 14:00:01,495 INFO Network scoring committed=35750/60000
+2026-11-07 14:00:01,497 INFO Network scoring committed=35775/60000
+2026-11-07 14:00:01,500 INFO Network scoring committed=35800/60000
+2026-11-07 14:00:01,503 INFO Network scoring committed=35825/60000
+2026-11-07 14:00:01,505 INFO Network scoring committed=35850/60000
+2026-11-07 14:00:01,508 INFO Network scoring committed=35875/60000
+2026-11-07 14:00:01,510 INFO Network scoring committed=35900/60000
+2026-11-07 14:00:01,513 INFO Network scoring committed=35925/60000
+2026-11-07 14:00:01,515 INFO Network scoring committed=35950/60000
+2026-11-07 14:00:01,518 INFO Network scoring committed=35975/60000
+2026-11-07 14:00:01,520 INFO Network scoring committed=36000/60000
+2026-11-07 14:00:01,523 INFO Network scoring committed=36025/60000
+2026-11-07 14:00:01,525 INFO Network scoring committed=36050/60000
+2026-11-07 14:00:01,528 INFO Network scoring committed=36075/60000
+2026-11-07 14:00:01,532 INFO Network scoring committed=36100/60000
+2026-11-07 14:00:01,535 INFO Network scoring committed=36125/60000
+2026-11-07 14:00:01,538 INFO Network scoring committed=36150/60000
+2026-11-07 14:00:01,542 INFO Network scoring committed=36175/60000
+2026-11-07 14:00:01,546 INFO Network scoring committed=36200/60000
+2026-11-07 14:00:01,549 INFO Network scoring committed=36225/60000
+2026-11-07 14:00:01,552 INFO Network scoring committed=36250/60000
+2026-11-07 14:00:01,555 INFO Network scoring committed=36275/60000
+2026-11-07 14:00:01,559 INFO Network scoring committed=36300/60000
+2026-11-07 14:00:01,562 INFO Network scoring committed=36325/60000
+2026-11-07 14:00:01,565 INFO Network scoring committed=36350/60000
+2026-11-07 14:00:01,568 INFO Network scoring committed=36375/60000
+2026-11-07 14:00:01,571 INFO Network scoring committed=36400/60000
+2026-11-07 14:00:01,574 INFO Network scoring committed=36425/60000
+2026-11-07 14:00:01,579 INFO Network scoring committed=36450/60000
+2026-11-07 14:00:01,582 INFO Network scoring committed=36475/60000
+2026-11-07 14:00:01,585 INFO Network scoring committed=36500/60000
+2026-11-07 14:00:01,588 INFO Network scoring committed=36525/60000
+2026-11-07 14:00:01,591 INFO Network scoring committed=36550/60000
+2026-11-07 14:00:01,594 INFO Network scoring committed=36575/60000
+2026-11-07 14:00:01,597 INFO Network scoring committed=36600/60000
+2026-11-07 14:00:01,602 INFO Network scoring committed=36625/60000
+2026-11-07 14:00:01,604 INFO Network scoring committed=36650/60000
+2026-11-07 14:00:01,607 INFO Network scoring committed=36675/60000
+2026-11-07 14:00:01,610 INFO Network scoring committed=36700/60000
+2026-11-07 14:00:01,613 INFO Network scoring committed=36725/60000
+2026-11-07 14:00:01,615 INFO Network scoring committed=36750/60000
+2026-11-07 14:00:01,618 INFO Network scoring committed=36775/60000
+2026-11-07 14:00:01,620 INFO Network scoring committed=36800/60000
+2026-11-07 14:00:01,623 INFO Network scoring committed=36825/60000
+2026-11-07 14:00:01,626 INFO Network scoring committed=36850/60000
+2026-11-07 14:00:01,629 INFO Network scoring committed=36875/60000
+2026-11-07 14:00:01,632 INFO Network scoring committed=36900/60000
+2026-11-07 14:00:01,634 INFO Network scoring committed=36925/60000
+2026-11-07 14:00:01,637 INFO Network scoring committed=36950/60000
+2026-11-07 14:00:01,639 INFO Network scoring committed=36975/60000
+2026-11-07 14:00:01,642 INFO Network scoring committed=37000/60000
+2026-11-07 14:00:01,645 INFO Network scoring committed=37025/60000
+2026-11-07 14:00:01,647 INFO Network scoring committed=37050/60000
+2026-11-07 14:00:01,651 INFO Network scoring committed=37075/60000
+2026-11-07 14:00:01,654 INFO Network scoring committed=37100/60000
+2026-11-07 14:00:01,657 INFO Network scoring committed=37125/60000
+2026-11-07 14:00:01,660 INFO Network scoring committed=37150/60000
+2026-11-07 14:00:01,664 INFO Network scoring committed=37175/60000
+2026-11-07 14:00:01,667 INFO Network scoring committed=37200/60000
+2026-11-07 14:00:01,670 INFO Network scoring committed=37225/60000
+2026-11-07 14:00:01,673 INFO Network scoring committed=37250/60000
+2026-11-07 14:00:01,677 INFO Network scoring committed=37275/60000
+2026-11-07 14:00:01,680 INFO Network scoring committed=37300/60000
+2026-11-07 14:00:01,683 INFO Network scoring committed=37325/60000
+2026-11-07 14:00:01,686 INFO Network scoring committed=37350/60000
+2026-11-07 14:00:01,689 INFO Network scoring committed=37375/60000
+2026-11-07 14:00:01,692 INFO Network scoring committed=37400/60000
+2026-11-07 14:00:01,695 INFO Network scoring committed=37425/60000
+2026-11-07 14:00:01,702 INFO Network scoring committed=37450/60000
+2026-11-07 14:00:01,705 INFO Network scoring committed=37475/60000
+2026-11-07 14:00:01,708 INFO Network scoring committed=37500/60000
+2026-11-07 14:00:01,711 INFO Network scoring committed=37525/60000
+2026-11-07 14:00:01,713 INFO Network scoring committed=37550/60000
+2026-11-07 14:00:01,716 INFO Network scoring committed=37575/60000
+2026-11-07 14:00:01,719 INFO Network scoring committed=37600/60000
+2026-11-07 14:00:01,723 INFO Network scoring committed=37625/60000
+2026-11-07 14:00:01,726 INFO Network scoring committed=37650/60000
+2026-11-07 14:00:01,729 INFO Network scoring committed=37675/60000
+2026-11-07 14:00:01,732 INFO Network scoring committed=37700/60000
+2026-11-07 14:00:01,735 INFO Network scoring committed=37725/60000
+2026-11-07 14:00:01,738 INFO Network scoring committed=37750/60000
+2026-11-07 14:00:01,741 INFO Network scoring committed=37775/60000
+2026-11-07 14:00:01,744 INFO Network scoring committed=37800/60000
+2026-11-07 14:00:01,747 INFO Network scoring committed=37825/60000
+2026-11-07 14:00:01,750 INFO Network scoring committed=37850/60000
+2026-11-07 14:00:01,753 INFO Network scoring committed=37875/60000
+2026-11-07 14:00:01,756 INFO Network scoring committed=37900/60000
+2026-11-07 14:00:01,762 INFO Network scoring committed=37925/60000
+2026-11-07 14:00:01,765 INFO Network scoring committed=37950/60000
+2026-11-07 14:00:01,769 INFO Network scoring committed=37975/60000
+2026-11-07 14:00:01,772 INFO Network scoring committed=38000/60000
+2026-11-07 14:00:01,775 INFO Network scoring committed=38025/60000
+2026-11-07 14:00:01,778 INFO Network scoring committed=38050/60000
+2026-11-07 14:00:01,781 INFO Network scoring committed=38075/60000
+2026-11-07 14:00:01,783 INFO Network scoring committed=38100/60000
+2026-11-07 14:00:01,786 INFO Network scoring committed=38125/60000
+2026-11-07 14:00:01,789 INFO Network scoring committed=38150/60000
+2026-11-07 14:00:01,792 INFO Network scoring committed=38175/60000
+2026-11-07 14:00:01,795 INFO Network scoring committed=38200/60000
+2026-11-07 14:00:01,797 INFO Network scoring committed=38225/60000
+2026-11-07 14:00:01,801 INFO Network scoring committed=38250/60000
+2026-11-07 14:00:01,804 INFO Network scoring committed=38275/60000
+2026-11-07 14:00:01,808 INFO Network scoring committed=38300/60000
+2026-11-07 14:00:01,810 INFO Network scoring committed=38325/60000
+2026-11-07 14:00:01,813 INFO Network scoring committed=38350/60000
+2026-11-07 14:00:01,815 INFO Network scoring committed=38375/60000
+2026-11-07 14:00:01,818 INFO Network scoring committed=38400/60000
+2026-11-07 14:00:01,821 INFO Network scoring committed=38425/60000
+2026-11-07 14:00:01,824 INFO Network scoring committed=38450/60000
+2026-11-07 14:00:01,827 INFO Network scoring committed=38475/60000
+2026-11-07 14:00:01,831 INFO Network scoring committed=38500/60000
+2026-11-07 14:00:01,834 INFO Network scoring committed=38525/60000
+2026-11-07 14:00:01,836 INFO Network scoring committed=38550/60000
+2026-11-07 14:00:01,839 INFO Network scoring committed=38575/60000
+2026-11-07 14:00:01,842 INFO Network scoring committed=38600/60000
+2026-11-07 14:00:01,845 INFO Network scoring committed=38625/60000
+2026-11-07 14:00:01,848 INFO Network scoring committed=38650/60000
+2026-11-07 14:00:01,851 INFO Network scoring committed=38675/60000
+2026-11-07 14:00:01,853 INFO Network scoring committed=38700/60000
+2026-11-07 14:00:01,857 INFO Network scoring committed=38725/60000
+2026-11-07 14:00:01,860 INFO Network scoring committed=38750/60000
+2026-11-07 14:00:01,863 INFO Network scoring committed=38775/60000
+2026-11-07 14:00:01,866 INFO Network scoring committed=38800/60000
+2026-11-07 14:00:01,869 INFO Network scoring committed=38825/60000
+2026-11-07 14:00:01,871 INFO Network scoring committed=38850/60000
+2026-11-07 14:00:01,874 INFO Network scoring committed=38875/60000
+2026-11-07 14:00:01,877 INFO Network scoring committed=38900/60000
+2026-11-07 14:00:01,881 INFO Network scoring committed=38925/60000
+2026-11-07 14:00:01,883 INFO Network scoring committed=38950/60000
+2026-11-07 14:00:01,886 INFO Network scoring committed=38975/60000
+2026-11-07 14:00:01,889 INFO Network scoring committed=39000/60000
+2026-11-07 14:00:01,891 INFO Network scoring committed=39025/60000
+2026-11-07 14:00:01,893 INFO Network scoring committed=39050/60000
+2026-11-07 14:00:01,896 INFO Network scoring committed=39075/60000
+2026-11-07 14:00:01,898 INFO Network scoring committed=39100/60000
+2026-11-07 14:00:01,901 INFO Network scoring committed=39125/60000
+2026-11-07 14:00:01,903 INFO Network scoring committed=39150/60000
+2026-11-07 14:00:01,906 INFO Network scoring committed=39175/60000
+2026-11-07 14:00:01,909 INFO Network scoring committed=39200/60000
+2026-11-07 14:00:01,911 INFO Network scoring committed=39225/60000
+2026-11-07 14:00:01,914 INFO Network scoring committed=39250/60000
+2026-11-07 14:00:01,916 INFO Network scoring committed=39275/60000
+2026-11-07 14:00:01,920 INFO Network scoring committed=39300/60000
+2026-11-07 14:00:01,922 INFO Network scoring committed=39325/60000
+2026-11-07 14:00:01,925 INFO Network scoring committed=39350/60000
+2026-11-07 14:00:01,927 INFO Network scoring committed=39375/60000
+2026-11-07 14:00:01,930 INFO Network scoring committed=39400/60000
+2026-11-07 14:00:01,933 INFO Network scoring committed=39425/60000
+2026-11-07 14:00:01,935 INFO Network scoring committed=39450/60000
+2026-11-07 14:00:01,938 INFO Network scoring committed=39475/60000
+2026-11-07 14:00:01,941 INFO Network scoring committed=39500/60000
+2026-11-07 14:00:01,944 INFO Network scoring committed=39525/60000
+2026-11-07 14:00:01,947 INFO Network scoring committed=39550/60000
+2026-11-07 14:00:01,949 INFO Network scoring committed=39575/60000
+2026-11-07 14:00:01,952 INFO Network scoring committed=39600/60000
+2026-11-07 14:00:01,954 INFO Network scoring committed=39625/60000
+2026-11-07 14:00:01,957 INFO Network scoring committed=39650/60000
+2026-11-07 14:00:01,960 INFO Network scoring committed=39675/60000
+2026-11-07 14:00:01,963 INFO Network scoring committed=39700/60000
+2026-11-07 14:00:01,965 INFO Network scoring committed=39725/60000
+2026-11-07 14:00:01,967 INFO Network scoring committed=39750/60000
+2026-11-07 14:00:01,970 INFO Network scoring committed=39775/60000
+2026-11-07 14:00:01,972 INFO Network scoring committed=39800/60000
+2026-11-07 14:00:01,975 INFO Network scoring committed=39825/60000
+2026-11-07 14:00:01,978 INFO Network scoring committed=39850/60000
+2026-11-07 14:00:01,980 INFO Network scoring committed=39875/60000
+2026-11-07 14:00:01,982 INFO Network scoring committed=39900/60000
+2026-11-07 14:00:01,985 INFO Network scoring committed=39925/60000
+2026-11-07 14:00:01,987 INFO Network scoring committed=39950/60000
+2026-11-07 14:00:01,990 INFO Network scoring committed=39975/60000
+2026-11-07 14:00:01,993 INFO Network scoring committed=40000/60000
+2026-11-07 14:00:01,995 INFO Network scoring committed=40025/60000
+2026-11-07 14:00:01,998 INFO Network scoring committed=40050/60000
+2026-11-07 14:00:02,001 INFO Network scoring committed=40075/60000
+2026-11-07 14:00:02,003 INFO Network scoring committed=40100/60000
+2026-11-07 14:00:02,005 INFO Network scoring committed=40125/60000
+2026-11-07 14:00:02,008 INFO Network scoring committed=40150/60000
+2026-11-07 14:00:02,011 INFO Network scoring committed=40175/60000
+2026-11-07 14:00:02,014 INFO Network scoring committed=40200/60000
+2026-11-07 14:00:02,017 INFO Network scoring committed=40225/60000
+2026-11-07 14:00:02,019 INFO Network scoring committed=40250/60000
+2026-11-07 14:00:02,022 INFO Network scoring committed=40275/60000
+2026-11-07 14:00:02,025 INFO Network scoring committed=40300/60000
+2026-11-07 14:00:02,027 INFO Network scoring committed=40325/60000
+2026-11-07 14:00:02,030 INFO Network scoring committed=40350/60000
+2026-11-07 14:00:02,033 INFO Network scoring committed=40375/60000
+2026-11-07 14:00:02,035 INFO Network scoring committed=40400/60000
+2026-11-07 14:00:02,038 INFO Network scoring committed=40425/60000
+2026-11-07 14:00:02,041 INFO Network scoring committed=40450/60000
+2026-11-07 14:00:02,044 INFO Network scoring committed=40475/60000
+2026-11-07 14:00:02,047 INFO Network scoring committed=40500/60000
+2026-11-07 14:00:02,050 INFO Network scoring committed=40525/60000
+2026-11-07 14:00:02,052 INFO Network scoring committed=40550/60000
+2026-11-07 14:00:02,055 INFO Network scoring committed=40575/60000
+2026-11-07 14:00:02,057 INFO Network scoring committed=40600/60000
+2026-11-07 14:00:02,060 INFO Network scoring committed=40625/60000
+2026-11-07 14:00:02,063 INFO Network scoring committed=40650/60000
+2026-11-07 14:00:02,065 INFO Network scoring committed=40675/60000
+2026-11-07 14:00:02,068 INFO Network scoring committed=40700/60000
+2026-11-07 14:00:02,071 INFO Network scoring committed=40725/60000
+2026-11-07 14:00:02,075 INFO Network scoring committed=40750/60000
+2026-11-07 14:00:02,078 INFO Network scoring committed=40775/60000
+2026-11-07 14:00:02,080 INFO Network scoring committed=40800/60000
+2026-11-07 14:00:02,083 INFO Network scoring committed=40825/60000
+2026-11-07 14:00:02,086 INFO Network scoring committed=40850/60000
+2026-11-07 14:00:02,089 INFO Network scoring committed=40875/60000
+2026-11-07 14:00:02,092 INFO Network scoring committed=40900/60000
+2026-11-07 14:00:02,094 INFO Network scoring committed=40925/60000
+2026-11-07 14:00:02,097 INFO Network scoring committed=40950/60000
+2026-11-07 14:00:02,099 INFO Network scoring committed=40975/60000
+2026-11-07 14:00:02,102 INFO Network scoring committed=41000/60000
+2026-11-07 14:00:02,103 INFO Historical coauthor evidence / hidden PID processed=41014 authors speed=8202.8/s elapsed=5.0s {}
+2026-11-07 14:00:02,105 INFO Network scoring committed=41025/60000
+2026-11-07 14:00:02,107 INFO Network scoring committed=41050/60000
+2026-11-07 14:00:02,110 INFO Network scoring committed=41075/60000
+2026-11-07 14:00:02,112 INFO Network scoring committed=41100/60000
+2026-11-07 14:00:02,115 INFO Network scoring committed=41125/60000
+2026-11-07 14:00:02,117 INFO Network scoring committed=41150/60000
+2026-11-07 14:00:02,120 INFO Network scoring committed=41175/60000
+2026-11-07 14:00:02,123 INFO Network scoring committed=41200/60000
+2026-11-07 14:00:02,125 INFO Network scoring committed=41225/60000
+2026-11-07 14:00:02,128 INFO Network scoring committed=41250/60000
+2026-11-07 14:00:02,130 INFO Network scoring committed=41275/60000
+2026-11-07 14:00:02,132 INFO Network scoring committed=41300/60000
+2026-11-07 14:00:02,135 INFO Network scoring committed=41325/60000
+2026-11-07 14:00:02,137 INFO Network scoring committed=41350/60000
+2026-11-07 14:00:02,140 INFO Network scoring committed=41375/60000
+2026-11-07 14:00:02,143 INFO Network scoring committed=41400/60000
+2026-11-07 14:00:02,146 INFO Network scoring committed=41425/60000
+2026-11-07 14:00:02,148 INFO Network scoring committed=41450/60000
+2026-11-07 14:00:02,151 INFO Network scoring committed=41475/60000
+2026-11-07 14:00:02,154 INFO Network scoring committed=41500/60000
+2026-11-07 14:00:02,156 INFO Network scoring committed=41525/60000
+2026-11-07 14:00:02,159 INFO Network scoring committed=41550/60000
+2026-11-07 14:00:02,162 INFO Network scoring committed=41575/60000
+2026-11-07 14:00:02,164 INFO Network scoring committed=41600/60000
+2026-11-07 14:00:02,167 INFO Network scoring committed=41625/60000
+2026-11-07 14:00:02,169 INFO Network scoring committed=41650/60000
+2026-11-07 14:00:02,172 INFO Network scoring committed=41675/60000
+2026-11-07 14:00:02,175 INFO Network scoring committed=41700/60000
+2026-11-07 14:00:02,177 INFO Network scoring committed=41725/60000
+2026-11-07 14:00:02,180 INFO Network scoring committed=41750/60000
+2026-11-07 14:00:02,182 INFO Network scoring committed=41775/60000
+2026-11-07 14:00:02,185 INFO Network scoring committed=41800/60000
+2026-11-07 14:00:02,188 INFO Network scoring committed=41825/60000
+2026-11-07 14:00:02,190 INFO Network scoring committed=41850/60000
+2026-11-07 14:00:02,193 INFO Network scoring committed=41875/60000
+2026-11-07 14:00:02,195 INFO Network scoring committed=41900/60000
+2026-11-07 14:00:02,198 INFO Network scoring committed=41925/60000
+2026-11-07 14:00:02,201 INFO Network scoring committed=41950/60000
+2026-11-07 14:00:02,203 INFO Network scoring committed=41975/60000
+2026-11-07 14:00:02,206 INFO Network scoring committed=42000/60000
+2026-11-07 14:00:02,208 INFO Network scoring committed=42025/60000
+2026-11-07 14:00:02,211 INFO Network scoring committed=42050/60000
+2026-11-07 14:00:02,214 INFO Network scoring committed=42075/60000
+2026-11-07 14:00:02,216 INFO Network scoring committed=42100/60000
+2026-11-07 14:00:02,219 INFO Network scoring committed=42125/60000
+2026-11-07 14:00:02,221 INFO Network scoring committed=42150/60000
+2026-11-07 14:00:02,224 INFO Network scoring committed=42175/60000
+2026-11-07 14:00:02,226 INFO Network scoring committed=42200/60000
+2026-11-07 14:00:02,229 INFO Network scoring committed=42225/60000
+2026-11-07 14:00:02,231 INFO Network scoring committed=42250/60000
+2026-11-07 14:00:02,234 INFO Network scoring committed=42275/60000
+2026-11-07 14:00:02,237 INFO Network scoring committed=42300/60000
+2026-11-07 14:00:02,239 INFO Network scoring committed=42325/60000
+2026-11-07 14:00:02,242 INFO Network scoring committed=42350/60000
+2026-11-07 14:00:02,244 INFO Network scoring committed=42375/60000
+2026-11-07 14:00:02,246 INFO Network scoring committed=42400/60000
+2026-11-07 14:00:02,249 INFO Network scoring committed=42425/60000
+2026-11-07 14:00:02,252 INFO Network scoring committed=42450/60000
+2026-11-07 14:00:02,254 INFO Network scoring committed=42475/60000
+2026-11-07 14:00:02,257 INFO Network scoring committed=42500/60000
+2026-11-07 14:00:02,259 INFO Network scoring committed=42525/60000
+2026-11-07 14:00:02,262 INFO Network scoring committed=42550/60000
+2026-11-07 14:00:02,264 INFO Network scoring committed=42575/60000
+2026-11-07 14:00:02,267 INFO Network scoring committed=42600/60000
+2026-11-07 14:00:02,269 INFO Network scoring committed=42625/60000
+2026-11-07 14:00:02,272 INFO Network scoring committed=42650/60000
+2026-11-07 14:00:02,274 INFO Network scoring committed=42675/60000
+2026-11-07 14:00:02,277 INFO Network scoring committed=42700/60000
+2026-11-07 14:00:02,279 INFO Network scoring committed=42725/60000
+2026-11-07 14:00:02,282 INFO Network scoring committed=42750/60000
+2026-11-07 14:00:02,284 INFO Network scoring committed=42775/60000
+2026-11-07 14:00:02,287 INFO Network scoring committed=42800/60000
+2026-11-07 14:00:02,289 INFO Network scoring committed=42825/60000
+2026-11-07 14:00:02,292 INFO Network scoring committed=42850/60000
+2026-11-07 14:00:02,295 INFO Network scoring committed=42875/60000
+2026-11-07 14:00:02,297 INFO Network scoring committed=42900/60000
+2026-11-07 14:00:02,300 INFO Network scoring committed=42925/60000
+2026-11-07 14:00:02,303 INFO Network scoring committed=42950/60000
+2026-11-07 14:00:02,306 INFO Network scoring committed=42975/60000
+2026-11-07 14:00:02,309 INFO Network scoring committed=43000/60000
+2026-11-07 14:00:02,311 INFO Network scoring committed=43025/60000
+2026-11-07 14:00:02,314 INFO Network scoring committed=43050/60000
+2026-11-07 14:00:02,316 INFO Network scoring committed=43075/60000
+2026-11-07 14:00:02,319 INFO Network scoring committed=43100/60000
+2026-11-07 14:00:02,322 INFO Network scoring committed=43125/60000
+2026-11-07 14:00:02,324 INFO Network scoring committed=43150/60000
+2026-11-07 14:00:02,327 INFO Network scoring committed=43175/60000
+2026-11-07 14:00:02,329 INFO Network scoring committed=43200/60000
+2026-11-07 14:00:02,332 INFO Network scoring committed=43225/60000
+2026-11-07 14:00:02,334 INFO Network scoring committed=43250/60000
+2026-11-07 14:00:02,337 INFO Network scoring committed=43275/60000
+2026-11-07 14:00:02,339 INFO Network scoring committed=43300/60000
+2026-11-07 14:00:02,342 INFO Network scoring committed=43325/60000
+2026-11-07 14:00:02,345 INFO Network scoring committed=43350/60000
+2026-11-07 14:00:02,348 INFO Network scoring committed=43375/60000
+2026-11-07 14:00:02,351 INFO Network scoring committed=43400/60000
+2026-11-07 14:00:02,353 INFO Network scoring committed=43425/60000
+2026-11-07 14:00:02,356 INFO Network scoring committed=43450/60000
+2026-11-07 14:00:02,359 INFO Network scoring committed=43475/60000
+2026-11-07 14:00:02,361 INFO Network scoring committed=43500/60000
+2026-11-07 14:00:02,364 INFO Network scoring committed=43525/60000
+2026-11-07 14:00:02,367 INFO Network scoring committed=43550/60000
+2026-11-07 14:00:02,371 INFO Network scoring committed=43575/60000
+2026-11-07 14:00:02,373 INFO Network scoring committed=43600/60000
+2026-11-07 14:00:02,376 INFO Network scoring committed=43625/60000
+2026-11-07 14:00:02,378 INFO Network scoring committed=43650/60000
+2026-11-07 14:00:02,381 INFO Network scoring committed=43675/60000
+2026-11-07 14:00:02,384 INFO Network scoring committed=43700/60000
+2026-11-07 14:00:02,387 INFO Network scoring committed=43725/60000
+2026-11-07 14:00:02,390 INFO Network scoring committed=43750/60000
+2026-11-07 14:00:02,393 INFO Network scoring committed=43775/60000
+2026-11-07 14:00:02,396 INFO Network scoring committed=43800/60000
+2026-11-07 14:00:02,399 INFO Network scoring committed=43825/60000
+2026-11-07 14:00:02,402 INFO Network scoring committed=43850/60000
+2026-11-07 14:00:02,405 INFO Network scoring committed=43875/60000
+2026-11-07 14:00:02,407 INFO Network scoring committed=43900/60000
+2026-11-07 14:00:02,410 INFO Network scoring committed=43925/60000
+2026-11-07 14:00:02,412 INFO Network scoring committed=43950/60000
+2026-11-07 14:00:02,415 INFO Network scoring committed=43975/60000
+2026-11-07 14:00:02,418 INFO Network scoring committed=44000/60000
+2026-11-07 14:00:02,420 INFO Network scoring committed=44025/60000
+2026-11-07 14:00:02,423 INFO Network scoring committed=44050/60000
+2026-11-07 14:00:02,426 INFO Network scoring committed=44075/60000
+2026-11-07 14:00:02,429 INFO Network scoring committed=44100/60000
+2026-11-07 14:00:02,431 INFO Network scoring committed=44125/60000
+2026-11-07 14:00:02,434 INFO Network scoring committed=44150/60000
+2026-11-07 14:00:02,438 INFO Network scoring committed=44175/60000
+2026-11-07 14:00:02,440 INFO Network scoring committed=44200/60000
+2026-11-07 14:00:02,444 INFO Network scoring committed=44225/60000
+2026-11-07 14:00:02,448 INFO Network scoring committed=44250/60000
+2026-11-07 14:00:02,452 INFO Network scoring committed=44275/60000
+2026-11-07 14:00:02,457 INFO Network scoring committed=44300/60000
+2026-11-07 14:00:02,462 INFO Network scoring committed=44325/60000
+2026-11-07 14:00:02,468 INFO Network scoring committed=44350/60000
+2026-11-07 14:00:02,480 INFO Network scoring committed=44375/60000
+2026-11-07 14:00:02,491 INFO Network scoring committed=44400/60000
+2026-11-07 14:00:02,498 INFO Network scoring committed=44425/60000
+2026-11-07 14:00:02,502 INFO Network scoring committed=44450/60000
+2026-11-07 14:00:02,509 INFO Network scoring committed=44475/60000
+2026-11-07 14:00:02,513 INFO Network scoring committed=44500/60000
+2026-11-07 14:00:02,516 INFO Network scoring committed=44525/60000
+2026-11-07 14:00:02,520 INFO Network scoring committed=44550/60000
+2026-11-07 14:00:02,523 INFO Network scoring committed=44575/60000
+2026-11-07 14:00:02,527 INFO Network scoring committed=44600/60000
+2026-11-07 14:00:02,531 INFO Network scoring committed=44625/60000
+2026-11-07 14:00:02,534 INFO Network scoring committed=44650/60000
+2026-11-07 14:00:02,541 INFO Network scoring committed=44675/60000
+2026-11-07 14:00:02,544 INFO Network scoring committed=44700/60000
+2026-11-07 14:00:02,548 INFO Network scoring committed=44725/60000
+2026-11-07 14:00:02,551 INFO Network scoring committed=44750/60000
+2026-11-07 14:00:02,554 INFO Network scoring committed=44775/60000
+2026-11-07 14:00:02,557 INFO Network scoring committed=44800/60000
+2026-11-07 14:00:02,560 INFO Network scoring committed=44825/60000
+2026-11-07 14:00:02,564 INFO Network scoring committed=44850/60000
+2026-11-07 14:00:02,570 INFO Network scoring committed=44875/60000
+2026-11-07 14:00:02,576 INFO Network scoring committed=44900/60000
+2026-11-07 14:00:02,581 INFO Network scoring committed=44925/60000
+2026-11-07 14:00:02,584 INFO Network scoring committed=44950/60000
+2026-11-07 14:00:02,587 INFO Network scoring committed=44975/60000
+2026-11-07 14:00:02,592 INFO Network scoring committed=45000/60000
+2026-11-07 14:00:02,596 INFO Network scoring committed=45025/60000
+2026-11-07 14:00:02,599 INFO Network scoring committed=45050/60000
+2026-11-07 14:00:02,602 INFO Network scoring committed=45075/60000
+2026-11-07 14:00:02,605 INFO Network scoring committed=45100/60000
+2026-11-07 14:00:02,608 INFO Network scoring committed=45125/60000
+2026-11-07 14:00:02,611 INFO Network scoring committed=45150/60000
+2026-11-07 14:00:02,613 INFO Network scoring committed=45175/60000
+2026-11-07 14:00:02,617 INFO Network scoring committed=45200/60000
+2026-11-07 14:00:02,620 INFO Network scoring committed=45225/60000
+2026-11-07 14:00:02,622 INFO Network scoring committed=45250/60000
+2026-11-07 14:00:02,625 INFO Network scoring committed=45275/60000
+2026-11-07 14:00:02,627 INFO Network scoring committed=45300/60000
+2026-11-07 14:00:02,630 INFO Network scoring committed=45325/60000
+2026-11-07 14:00:02,632 INFO Network scoring committed=45350/60000
+2026-11-07 14:00:02,635 INFO Network scoring committed=45375/60000
+2026-11-07 14:00:02,637 INFO Network scoring committed=45400/60000
+2026-11-07 14:00:02,640 INFO Network scoring committed=45425/60000
+2026-11-07 14:00:02,642 INFO Network scoring committed=45450/60000
+2026-11-07 14:00:02,645 INFO Network scoring committed=45475/60000
+2026-11-07 14:00:02,647 INFO Network scoring committed=45500/60000
+2026-11-07 14:00:02,650 INFO Network scoring committed=45525/60000
+2026-11-07 14:00:02,653 INFO Network scoring committed=45550/60000
+2026-11-07 14:00:02,655 INFO Network scoring committed=45575/60000
+2026-11-07 14:00:02,659 INFO Network scoring committed=45600/60000
+2026-11-07 14:00:02,663 INFO Network scoring committed=45625/60000
+2026-11-07 14:00:02,665 INFO Network scoring committed=45650/60000
+2026-11-07 14:00:02,668 INFO Network scoring committed=45675/60000
+2026-11-07 14:00:02,671 INFO Network scoring committed=45700/60000
+2026-11-07 14:00:02,673 INFO Network scoring committed=45725/60000
+2026-11-07 14:00:02,676 INFO Network scoring committed=45750/60000
+2026-11-07 14:00:02,679 INFO Network scoring committed=45775/60000
+2026-11-07 14:00:02,682 INFO Network scoring committed=45800/60000
+2026-11-07 14:00:02,684 INFO Network scoring committed=45825/60000
+2026-11-07 14:00:02,686 INFO Network scoring committed=45850/60000
+2026-11-07 14:00:02,689 INFO Network scoring committed=45875/60000
+2026-11-07 14:00:02,691 INFO Network scoring committed=45900/60000
+2026-11-07 14:00:02,694 INFO Network scoring committed=45925/60000
+2026-11-07 14:00:02,697 INFO Network scoring committed=45950/60000
+2026-11-07 14:00:02,700 INFO Network scoring committed=45975/60000
+2026-11-07 14:00:02,703 INFO Network scoring committed=46000/60000
+2026-11-07 14:00:02,706 INFO Network scoring committed=46025/60000
+2026-11-07 14:00:02,708 INFO Network scoring committed=46050/60000
+2026-11-07 14:00:02,711 INFO Network scoring committed=46075/60000
+2026-11-07 14:00:02,713 INFO Network scoring committed=46100/60000
+2026-11-07 14:00:02,716 INFO Network scoring committed=46125/60000
+2026-11-07 14:00:02,719 INFO Network scoring committed=46150/60000
+2026-11-07 14:00:02,722 INFO Network scoring committed=46175/60000
+2026-11-07 14:00:02,726 INFO Network scoring committed=46200/60000
+2026-11-07 14:00:02,728 INFO Network scoring committed=46225/60000
+2026-11-07 14:00:02,730 INFO Network scoring committed=46250/60000
+2026-11-07 14:00:02,734 INFO Network scoring committed=46275/60000
+2026-11-07 14:00:02,737 INFO Network scoring committed=46300/60000
+2026-11-07 14:00:02,741 INFO Network scoring committed=46325/60000
+2026-11-07 14:00:02,744 INFO Network scoring committed=46350/60000
+2026-11-07 14:00:02,746 INFO Network scoring committed=46375/60000
+2026-11-07 14:00:02,748 INFO Network scoring committed=46400/60000
+2026-11-07 14:00:02,751 INFO Network scoring committed=46425/60000
+2026-11-07 14:00:02,754 INFO Network scoring committed=46450/60000
+2026-11-07 14:00:02,758 INFO Network scoring committed=46475/60000
+2026-11-07 14:00:02,762 INFO Network scoring committed=46500/60000
+2026-11-07 14:00:02,768 INFO Network scoring committed=46525/60000
+2026-11-07 14:00:02,771 INFO Network scoring committed=46550/60000
+2026-11-07 14:00:02,774 INFO Network scoring committed=46575/60000
+2026-11-07 14:00:02,776 INFO Network scoring committed=46600/60000
+2026-11-07 14:00:02,779 INFO Network scoring committed=46625/60000
+2026-11-07 14:00:02,782 INFO Network scoring committed=46650/60000
+2026-11-07 14:00:02,784 INFO Network scoring committed=46675/60000
+2026-11-07 14:00:02,787 INFO Network scoring committed=46700/60000
+2026-11-07 14:00:02,790 INFO Network scoring committed=46725/60000
+2026-11-07 14:00:02,792 INFO Network scoring committed=46750/60000
+2026-11-07 14:00:02,795 INFO Network scoring committed=46775/60000
+2026-11-07 14:00:02,797 INFO Network scoring committed=46800/60000
+2026-11-07 14:00:02,800 INFO Network scoring committed=46825/60000
+2026-11-07 14:00:02,803 INFO Network scoring committed=46850/60000
+2026-11-07 14:00:02,805 INFO Network scoring committed=46875/60000
+2026-11-07 14:00:02,810 INFO Network scoring committed=46900/60000
+2026-11-07 14:00:02,812 INFO Network scoring committed=46925/60000
+2026-11-07 14:00:02,815 INFO Network scoring committed=46950/60000
+2026-11-07 14:00:02,817 INFO Network scoring committed=46975/60000
+2026-11-07 14:00:02,819 INFO Network scoring committed=47000/60000
+2026-11-07 14:00:02,822 INFO Network scoring committed=47025/60000
+2026-11-07 14:00:02,825 INFO Network scoring committed=47050/60000
+2026-11-07 14:00:02,827 INFO Network scoring committed=47075/60000
+2026-11-07 14:00:02,829 INFO Network scoring committed=47100/60000
+2026-11-07 14:00:02,832 INFO Network scoring committed=47125/60000
+2026-11-07 14:00:02,836 INFO Network scoring committed=47150/60000
+2026-11-07 14:00:02,839 INFO Network scoring committed=47175/60000
+2026-11-07 14:00:02,841 INFO Network scoring committed=47200/60000
+2026-11-07 14:00:02,844 INFO Network scoring committed=47225/60000
+2026-11-07 14:00:02,846 INFO Network scoring committed=47250/60000
+2026-11-07 14:00:02,849 INFO Network scoring committed=47275/60000
+2026-11-07 14:00:02,852 INFO Network scoring committed=47300/60000
+2026-11-07 14:00:02,855 INFO Network scoring committed=47325/60000
+2026-11-07 14:00:02,857 INFO Network scoring committed=47350/60000
+2026-11-07 14:00:02,860 INFO Network scoring committed=47375/60000
+2026-11-07 14:00:02,862 INFO Network scoring committed=47400/60000
+2026-11-07 14:00:02,865 INFO Network scoring committed=47425/60000
+2026-11-07 14:00:02,868 INFO Network scoring committed=47450/60000
+2026-11-07 14:00:02,870 INFO Network scoring committed=47475/60000
+2026-11-07 14:00:02,872 INFO Network scoring committed=47500/60000
+2026-11-07 14:00:02,874 INFO Network scoring committed=47525/60000
+2026-11-07 14:00:02,877 INFO Network scoring committed=47550/60000
+2026-11-07 14:00:02,879 INFO Network scoring committed=47575/60000
+2026-11-07 14:00:02,884 INFO Network scoring committed=47600/60000
+2026-11-07 14:00:02,886 INFO Network scoring committed=47625/60000
+2026-11-07 14:00:02,889 INFO Network scoring committed=47650/60000
+2026-11-07 14:00:02,891 INFO Network scoring committed=47675/60000
+2026-11-07 14:00:02,894 INFO Network scoring committed=47700/60000
+2026-11-07 14:00:02,897 INFO Network scoring committed=47725/60000
+2026-11-07 14:00:02,899 INFO Network scoring committed=47750/60000
+2026-11-07 14:00:02,902 INFO Network scoring committed=47775/60000
+2026-11-07 14:00:02,904 INFO Network scoring committed=47800/60000
+2026-11-07 14:00:02,908 INFO Network scoring committed=47825/60000
+2026-11-07 14:00:02,911 INFO Network scoring committed=47850/60000
+2026-11-07 14:00:02,913 INFO Network scoring committed=47875/60000
+2026-11-07 14:00:02,916 INFO Network scoring committed=47900/60000
+2026-11-07 14:00:02,919 INFO Network scoring committed=47925/60000
+2026-11-07 14:00:02,921 INFO Network scoring committed=47950/60000
+2026-11-07 14:00:02,923 INFO Network scoring committed=47975/60000
+2026-11-07 14:00:02,926 INFO Network scoring committed=48000/60000
+2026-11-07 14:00:02,929 INFO Network scoring committed=48025/60000
+2026-11-07 14:00:02,931 INFO Network scoring committed=48050/60000
+2026-11-07 14:00:02,934 INFO Network scoring committed=48075/60000
+2026-11-07 14:00:02,937 INFO Network scoring committed=48100/60000
+2026-11-07 14:00:02,939 INFO Network scoring committed=48125/60000
+2026-11-07 14:00:02,941 INFO Network scoring committed=48150/60000
+2026-11-07 14:00:02,944 INFO Network scoring committed=48175/60000
+2026-11-07 14:00:02,947 INFO Network scoring committed=48200/60000
+2026-11-07 14:00:02,949 INFO Network scoring committed=48225/60000
+2026-11-07 14:00:02,951 INFO Network scoring committed=48250/60000
+2026-11-07 14:00:02,954 INFO Network scoring committed=48275/60000
+2026-11-07 14:00:02,956 INFO Network scoring committed=48300/60000
+2026-11-07 14:00:02,958 INFO Network scoring committed=48325/60000
+2026-11-07 14:00:02,961 INFO Network scoring committed=48350/60000
+2026-11-07 14:00:02,963 INFO Network scoring committed=48375/60000
+2026-11-07 14:00:02,966 INFO Network scoring committed=48400/60000
+2026-11-07 14:00:02,968 INFO Network scoring committed=48425/60000
+2026-11-07 14:00:02,971 INFO Network scoring committed=48450/60000
+2026-11-07 14:00:02,974 INFO Network scoring committed=48475/60000
+2026-11-07 14:00:02,976 INFO Network scoring committed=48500/60000
+2026-11-07 14:00:02,979 INFO Network scoring committed=48525/60000
+2026-11-07 14:00:02,982 INFO Network scoring committed=48550/60000
+2026-11-07 14:00:02,984 INFO Network scoring committed=48575/60000
+2026-11-07 14:00:02,988 INFO Network scoring committed=48600/60000
+2026-11-07 14:00:02,990 INFO Network scoring committed=48625/60000
+2026-11-07 14:00:02,993 INFO Network scoring committed=48650/60000
+2026-11-07 14:00:02,995 INFO Network scoring committed=48675/60000
+2026-11-07 14:00:02,998 INFO Network scoring committed=48700/60000
+2026-11-07 14:00:03,000 INFO Network scoring committed=48725/60000
+2026-11-07 14:00:03,005 INFO Network scoring committed=48750/60000
+2026-11-07 14:00:03,007 INFO Network scoring committed=48775/60000
+2026-11-07 14:00:03,010 INFO Network scoring committed=48800/60000
+2026-11-07 14:00:03,013 INFO Network scoring committed=48825/60000
+2026-11-07 14:00:03,015 INFO Network scoring committed=48850/60000
+2026-11-07 14:00:03,018 INFO Network scoring committed=48875/60000
+2026-11-07 14:00:03,020 INFO Network scoring committed=48900/60000
+2026-11-07 14:00:03,023 INFO Network scoring committed=48925/60000
+2026-11-07 14:00:03,025 INFO Network scoring committed=48950/60000
+2026-11-07 14:00:03,029 INFO Network scoring committed=48975/60000
+2026-11-07 14:00:03,032 INFO Network scoring committed=49000/60000
+2026-11-07 14:00:03,034 INFO Network scoring committed=49025/60000
+2026-11-07 14:00:03,037 INFO Network scoring committed=49050/60000
+2026-11-07 14:00:03,040 INFO Network scoring committed=49075/60000
+2026-11-07 14:00:03,042 INFO Network scoring committed=49100/60000
+2026-11-07 14:00:03,045 INFO Network scoring committed=49125/60000
+2026-11-07 14:00:03,047 INFO Network scoring committed=49150/60000
+2026-11-07 14:00:03,050 INFO Network scoring committed=49175/60000
+2026-11-07 14:00:03,052 INFO Network scoring committed=49200/60000
+2026-11-07 14:00:03,055 INFO Network scoring committed=49225/60000
+2026-11-07 14:00:03,057 INFO Network scoring committed=49250/60000
+2026-11-07 14:00:03,059 INFO Network scoring committed=49275/60000
+2026-11-07 14:00:03,062 INFO Network scoring committed=49300/60000
+2026-11-07 14:00:03,065 INFO Network scoring committed=49325/60000
+2026-11-07 14:00:03,067 INFO Network scoring committed=49350/60000
+2026-11-07 14:00:03,070 INFO Network scoring committed=49375/60000
+2026-11-07 14:00:03,073 INFO Network scoring committed=49400/60000
+2026-11-07 14:00:03,075 INFO Network scoring committed=49425/60000
+2026-11-07 14:00:03,078 INFO Network scoring committed=49450/60000
+2026-11-07 14:00:03,080 INFO Network scoring committed=49475/60000
+2026-11-07 14:00:03,083 INFO Network scoring committed=49500/60000
+2026-11-07 14:00:03,085 INFO Network scoring committed=49525/60000
+2026-11-07 14:00:03,088 INFO Network scoring committed=49550/60000
+2026-11-07 14:00:03,091 INFO Network scoring committed=49575/60000
+2026-11-07 14:00:03,093 INFO Network scoring committed=49600/60000
+2026-11-07 14:00:03,096 INFO Network scoring committed=49625/60000
+2026-11-07 14:00:03,099 INFO Network scoring committed=49650/60000
+2026-11-07 14:00:03,101 INFO Network scoring committed=49675/60000
+2026-11-07 14:00:03,104 INFO Network scoring committed=49700/60000
+2026-11-07 14:00:03,106 INFO Network scoring committed=49725/60000
+2026-11-07 14:00:03,109 INFO Network scoring committed=49750/60000
+2026-11-07 14:00:03,111 INFO Network scoring committed=49775/60000
+2026-11-07 14:00:03,114 INFO Network scoring committed=49800/60000
+2026-11-07 14:00:03,116 INFO Network scoring committed=49825/60000
+2026-11-07 14:00:03,119 INFO Network scoring committed=49850/60000
+2026-11-07 14:00:03,122 INFO Network scoring committed=49875/60000
+2026-11-07 14:00:03,124 INFO Network scoring committed=49900/60000
+2026-11-07 14:00:03,127 INFO Network scoring committed=49925/60000
+2026-11-07 14:00:03,129 INFO Network scoring committed=49950/60000
+2026-11-07 14:00:03,131 INFO Network scoring committed=49975/60000
+2026-11-07 14:00:03,134 INFO Network scoring committed=50000/60000
+2026-11-07 14:00:03,136 INFO Network scoring committed=50025/60000
+2026-11-07 14:00:03,139 INFO Network scoring committed=50050/60000
+2026-11-07 14:00:03,142 INFO Network scoring committed=50075/60000
+2026-11-07 14:00:03,144 INFO Network scoring committed=50100/60000
+2026-11-07 14:00:03,147 INFO Network scoring committed=50125/60000
+2026-11-07 14:00:03,150 INFO Network scoring committed=50150/60000
+2026-11-07 14:00:03,152 INFO Network scoring committed=50175/60000
+2026-11-07 14:00:03,155 INFO Network scoring committed=50200/60000
+2026-11-07 14:00:03,157 INFO Network scoring committed=50225/60000
+2026-11-07 14:00:03,161 INFO Network scoring committed=50250/60000
+2026-11-07 14:00:03,163 INFO Network scoring committed=50275/60000
+2026-11-07 14:00:03,166 INFO Network scoring committed=50300/60000
+2026-11-07 14:00:03,169 INFO Network scoring committed=50325/60000
+2026-11-07 14:00:03,172 INFO Network scoring committed=50350/60000
+2026-11-07 14:00:03,175 INFO Network scoring committed=50375/60000
+2026-11-07 14:00:03,177 INFO Network scoring committed=50400/60000
+2026-11-07 14:00:03,180 INFO Network scoring committed=50425/60000
+2026-11-07 14:00:03,183 INFO Network scoring committed=50450/60000
+2026-11-07 14:00:03,186 INFO Network scoring committed=50475/60000
+2026-11-07 14:00:03,188 INFO Network scoring committed=50500/60000
+2026-11-07 14:00:03,191 INFO Network scoring committed=50525/60000
+2026-11-07 14:00:03,194 INFO Network scoring committed=50550/60000
+2026-11-07 14:00:03,197 INFO Network scoring committed=50575/60000
+2026-11-07 14:00:03,199 INFO Network scoring committed=50600/60000
+2026-11-07 14:00:03,202 INFO Network scoring committed=50625/60000
+2026-11-07 14:00:03,204 INFO Network scoring committed=50650/60000
+2026-11-07 14:00:03,207 INFO Network scoring committed=50675/60000
+2026-11-07 14:00:03,209 INFO Network scoring committed=50700/60000
+2026-11-07 14:00:03,212 INFO Network scoring committed=50725/60000
+2026-11-07 14:00:03,215 INFO Network scoring committed=50750/60000
+2026-11-07 14:00:03,217 INFO Network scoring committed=50775/60000
+2026-11-07 14:00:03,220 INFO Network scoring committed=50800/60000
+2026-11-07 14:00:03,223 INFO Network scoring committed=50825/60000
+2026-11-07 14:00:03,225 INFO Network scoring committed=50850/60000
+2026-11-07 14:00:03,228 INFO Network scoring committed=50875/60000
+2026-11-07 14:00:03,230 INFO Network scoring committed=50900/60000
+2026-11-07 14:00:03,233 INFO Network scoring committed=50925/60000
+2026-11-07 14:00:03,236 INFO Network scoring committed=50950/60000
+2026-11-07 14:00:03,238 INFO Network scoring committed=50975/60000
+2026-11-07 14:00:03,241 INFO Network scoring committed=51000/60000
+2026-11-07 14:00:03,243 INFO Network scoring committed=51025/60000
+2026-11-07 14:00:03,246 INFO Network scoring committed=51050/60000
+2026-11-07 14:00:03,248 INFO Network scoring committed=51075/60000
+2026-11-07 14:00:03,251 INFO Network scoring committed=51100/60000
+2026-11-07 14:00:03,253 INFO Network scoring committed=51125/60000
+2026-11-07 14:00:03,256 INFO Network scoring committed=51150/60000
+2026-11-07 14:00:03,259 INFO Network scoring committed=51175/60000
+2026-11-07 14:00:03,261 INFO Network scoring committed=51200/60000
+2026-11-07 14:00:03,264 INFO Network scoring committed=51225/60000
+2026-11-07 14:00:03,266 INFO Network scoring committed=51250/60000
+2026-11-07 14:00:03,269 INFO Network scoring committed=51275/60000
+2026-11-07 14:00:03,272 INFO Network scoring committed=51300/60000
+2026-11-07 14:00:03,274 INFO Network scoring committed=51325/60000
+2026-11-07 14:00:03,277 INFO Network scoring committed=51350/60000
+2026-11-07 14:00:03,280 INFO Network scoring committed=51375/60000
+2026-11-07 14:00:03,283 INFO Network scoring committed=51400/60000
+2026-11-07 14:00:03,285 INFO Network scoring committed=51425/60000
+2026-11-07 14:00:03,288 INFO Network scoring committed=51450/60000
+2026-11-07 14:00:03,290 INFO Network scoring committed=51475/60000
+2026-11-07 14:00:03,293 INFO Network scoring committed=51500/60000
+2026-11-07 14:00:03,296 INFO Network scoring committed=51525/60000
+2026-11-07 14:00:03,299 INFO Network scoring committed=51550/60000
+2026-11-07 14:00:03,302 INFO Network scoring committed=51575/60000
+2026-11-07 14:00:03,305 INFO Network scoring committed=51600/60000
+2026-11-07 14:00:03,307 INFO Network scoring committed=51625/60000
+2026-11-07 14:00:03,310 INFO Network scoring committed=51650/60000
+2026-11-07 14:00:03,312 INFO Network scoring committed=51675/60000
+2026-11-07 14:00:03,315 INFO Network scoring committed=51700/60000
+2026-11-07 14:00:03,317 INFO Network scoring committed=51725/60000
+2026-11-07 14:00:03,320 INFO Network scoring committed=51750/60000
+2026-11-07 14:00:03,322 INFO Network scoring committed=51775/60000
+2026-11-07 14:00:03,325 INFO Network scoring committed=51800/60000
+2026-11-07 14:00:03,327 INFO Network scoring committed=51825/60000
+2026-11-07 14:00:03,330 INFO Network scoring committed=51850/60000
+2026-11-07 14:00:03,332 INFO Network scoring committed=51875/60000
+2026-11-07 14:00:03,335 INFO Network scoring committed=51900/60000
+2026-11-07 14:00:03,337 INFO Network scoring committed=51925/60000
+2026-11-07 14:00:03,340 INFO Network scoring committed=51950/60000
+2026-11-07 14:00:03,343 INFO Network scoring committed=51975/60000
+2026-11-07 14:00:03,346 INFO Network scoring committed=52000/60000
+2026-11-07 14:00:03,348 INFO Network scoring committed=52025/60000
+2026-11-07 14:00:03,351 INFO Network scoring committed=52050/60000
+2026-11-07 14:00:03,353 INFO Network scoring committed=52075/60000
+2026-11-07 14:00:03,356 INFO Network scoring committed=52100/60000
+2026-11-07 14:00:03,358 INFO Network scoring committed=52125/60000
+2026-11-07 14:00:03,361 INFO Network scoring committed=52150/60000
+2026-11-07 14:00:03,364 INFO Network scoring committed=52175/60000
+2026-11-07 14:00:03,366 INFO Network scoring committed=52200/60000
+2026-11-07 14:00:03,369 INFO Network scoring committed=52225/60000
+2026-11-07 14:00:03,371 INFO Network scoring committed=52250/60000
+2026-11-07 14:00:03,374 INFO Network scoring committed=52275/60000
+2026-11-07 14:00:03,378 INFO Network scoring committed=52300/60000
+2026-11-07 14:00:03,382 INFO Network scoring committed=52325/60000
+2026-11-07 14:00:03,384 INFO Network scoring committed=52350/60000
+2026-11-07 14:00:03,387 INFO Network scoring committed=52375/60000
+2026-11-07 14:00:03,390 INFO Network scoring committed=52400/60000
+2026-11-07 14:00:03,392 INFO Network scoring committed=52425/60000
+2026-11-07 14:00:03,395 INFO Network scoring committed=52450/60000
+2026-11-07 14:00:03,397 INFO Network scoring committed=52475/60000
+2026-11-07 14:00:03,400 INFO Network scoring committed=52500/60000
+2026-11-07 14:00:03,402 INFO Network scoring committed=52525/60000
+2026-11-07 14:00:03,405 INFO Network scoring committed=52550/60000
+2026-11-07 14:00:03,408 INFO Network scoring committed=52575/60000
+2026-11-07 14:00:03,410 INFO Network scoring committed=52600/60000
+2026-11-07 14:00:03,412 INFO Network scoring committed=52625/60000
+2026-11-07 14:00:03,415 INFO Network scoring committed=52650/60000
+2026-11-07 14:00:03,418 INFO Network scoring committed=52675/60000
+2026-11-07 14:00:03,420 INFO Network scoring committed=52700/60000
+2026-11-07 14:00:03,423 INFO Network scoring committed=52725/60000
+2026-11-07 14:00:03,425 INFO Network scoring committed=52750/60000
+2026-11-07 14:00:03,428 INFO Network scoring committed=52775/60000
+2026-11-07 14:00:03,430 INFO Network scoring committed=52800/60000
+2026-11-07 14:00:03,433 INFO Network scoring committed=52825/60000
+2026-11-07 14:00:03,435 INFO Network scoring committed=52850/60000
+2026-11-07 14:00:03,438 INFO Network scoring committed=52875/60000
+2026-11-07 14:00:03,440 INFO Network scoring committed=52900/60000
+2026-11-07 14:00:03,443 INFO Network scoring committed=52925/60000
+2026-11-07 14:00:03,446 INFO Network scoring committed=52950/60000
+2026-11-07 14:00:03,448 INFO Network scoring committed=52975/60000
+2026-11-07 14:00:03,451 INFO Network scoring committed=53000/60000
+2026-11-07 14:00:03,453 INFO Network scoring committed=53025/60000
+2026-11-07 14:00:03,456 INFO Network scoring committed=53050/60000
+2026-11-07 14:00:03,458 INFO Network scoring committed=53075/60000
+2026-11-07 14:00:03,461 INFO Network scoring committed=53100/60000
+2026-11-07 14:00:03,464 INFO Network scoring committed=53125/60000
+2026-11-07 14:00:03,466 INFO Network scoring committed=53150/60000
+2026-11-07 14:00:03,468 INFO Network scoring committed=53175/60000
+2026-11-07 14:00:03,471 INFO Network scoring committed=53200/60000
+2026-11-07 14:00:03,474 INFO Network scoring committed=53225/60000
+2026-11-07 14:00:03,476 INFO Network scoring committed=53250/60000
+2026-11-07 14:00:03,479 INFO Network scoring committed=53275/60000
+2026-11-07 14:00:03,482 INFO Network scoring committed=53300/60000
+2026-11-07 14:00:03,484 INFO Network scoring committed=53325/60000
+2026-11-07 14:00:03,486 INFO Network scoring committed=53350/60000
+2026-11-07 14:00:03,489 INFO Network scoring committed=53375/60000
+2026-11-07 14:00:03,491 INFO Network scoring committed=53400/60000
+2026-11-07 14:00:03,494 INFO Network scoring committed=53425/60000
+2026-11-07 14:00:03,496 INFO Network scoring committed=53450/60000
+2026-11-07 14:00:03,499 INFO Network scoring committed=53475/60000
+2026-11-07 14:00:03,502 INFO Network scoring committed=53500/60000
+2026-11-07 14:00:03,504 INFO Network scoring committed=53525/60000
+2026-11-07 14:00:03,507 INFO Network scoring committed=53550/60000
+2026-11-07 14:00:03,510 INFO Network scoring committed=53575/60000
+2026-11-07 14:00:03,512 INFO Network scoring committed=53600/60000
+2026-11-07 14:00:03,515 INFO Network scoring committed=53625/60000
+2026-11-07 14:00:03,517 INFO Network scoring committed=53650/60000
+2026-11-07 14:00:03,520 INFO Network scoring committed=53675/60000
+2026-11-07 14:00:03,522 INFO Network scoring committed=53700/60000
+2026-11-07 14:00:03,525 INFO Network scoring committed=53725/60000
+2026-11-07 14:00:03,528 INFO Network scoring committed=53750/60000
+2026-11-07 14:00:03,530 INFO Network scoring committed=53775/60000
+2026-11-07 14:00:03,533 INFO Network scoring committed=53800/60000
+2026-11-07 14:00:03,535 INFO Network scoring committed=53825/60000
+2026-11-07 14:00:03,537 INFO Network scoring committed=53850/60000
+2026-11-07 14:00:03,540 INFO Network scoring committed=53875/60000
+2026-11-07 14:00:03,543 INFO Network scoring committed=53900/60000
+2026-11-07 14:00:03,545 INFO Network scoring committed=53925/60000
+2026-11-07 14:00:03,548 INFO Network scoring committed=53950/60000
+2026-11-07 14:00:03,550 INFO Network scoring committed=53975/60000
+2026-11-07 14:00:03,552 INFO Network scoring committed=54000/60000
+2026-11-07 14:00:03,555 INFO Network scoring committed=54025/60000
+2026-11-07 14:00:03,560 INFO Network scoring committed=54050/60000
+2026-11-07 14:00:03,562 INFO Network scoring committed=54075/60000
+2026-11-07 14:00:03,565 INFO Network scoring committed=54100/60000
+2026-11-07 14:00:03,568 INFO Network scoring committed=54125/60000
+2026-11-07 14:00:03,571 INFO Network scoring committed=54150/60000
+2026-11-07 14:00:03,573 INFO Network scoring committed=54175/60000
+2026-11-07 14:00:03,576 INFO Network scoring committed=54200/60000
+2026-11-07 14:00:03,578 INFO Network scoring committed=54225/60000
+2026-11-07 14:00:03,581 INFO Network scoring committed=54250/60000
+2026-11-07 14:00:03,584 INFO Network scoring committed=54275/60000
+2026-11-07 14:00:03,587 INFO Network scoring committed=54300/60000
+2026-11-07 14:00:03,590 INFO Network scoring committed=54325/60000
+2026-11-07 14:00:03,592 INFO Network scoring committed=54350/60000
+2026-11-07 14:00:03,594 INFO Network scoring committed=54375/60000
+2026-11-07 14:00:03,597 INFO Network scoring committed=54400/60000
+2026-11-07 14:00:03,600 INFO Network scoring committed=54425/60000
+2026-11-07 14:00:03,602 INFO Network scoring committed=54450/60000
+2026-11-07 14:00:03,604 INFO Network scoring committed=54475/60000
+2026-11-07 14:00:03,607 INFO Network scoring committed=54500/60000
+2026-11-07 14:00:03,609 INFO Network scoring committed=54525/60000
+2026-11-07 14:00:03,612 INFO Network scoring committed=54550/60000
+2026-11-07 14:00:03,615 INFO Network scoring committed=54575/60000
+2026-11-07 14:00:03,618 INFO Network scoring committed=54600/60000
+2026-11-07 14:00:03,621 INFO Network scoring committed=54625/60000
+2026-11-07 14:00:03,623 INFO Network scoring committed=54650/60000
+2026-11-07 14:00:03,626 INFO Network scoring committed=54675/60000
+2026-11-07 14:00:03,628 INFO Network scoring committed=54700/60000
+2026-11-07 14:00:03,631 INFO Network scoring committed=54725/60000
+2026-11-07 14:00:03,633 INFO Network scoring committed=54750/60000
+2026-11-07 14:00:03,636 INFO Network scoring committed=54775/60000
+2026-11-07 14:00:03,638 INFO Network scoring committed=54800/60000
+2026-11-07 14:00:03,640 INFO Network scoring committed=54825/60000
+2026-11-07 14:00:03,642 INFO Network scoring committed=54850/60000
+2026-11-07 14:00:03,645 INFO Network scoring committed=54875/60000
+2026-11-07 14:00:03,647 INFO Network scoring committed=54900/60000
+2026-11-07 14:00:03,650 INFO Network scoring committed=54925/60000
+2026-11-07 14:00:03,652 INFO Network scoring committed=54950/60000
+2026-11-07 14:00:03,655 INFO Network scoring committed=54975/60000
+2026-11-07 14:00:03,657 INFO Network scoring committed=55000/60000
+2026-11-07 14:00:03,660 INFO Network scoring committed=55025/60000
+2026-11-07 14:00:03,662 INFO Network scoring committed=55050/60000
+2026-11-07 14:00:03,664 INFO Network scoring committed=55075/60000
+2026-11-07 14:00:03,667 INFO Network scoring committed=55100/60000
+2026-11-07 14:00:03,670 INFO Network scoring committed=55125/60000
+2026-11-07 14:00:03,673 INFO Network scoring committed=55150/60000
+2026-11-07 14:00:03,675 INFO Network scoring committed=55175/60000
+2026-11-07 14:00:03,677 INFO Network scoring committed=55200/60000
+2026-11-07 14:00:03,679 INFO Network scoring committed=55225/60000
+2026-11-07 14:00:03,682 INFO Network scoring committed=55250/60000
+2026-11-07 14:00:03,684 INFO Network scoring committed=55275/60000
+2026-11-07 14:00:03,688 INFO Network scoring committed=55300/60000
+2026-11-07 14:00:03,691 INFO Network scoring committed=55325/60000
+2026-11-07 14:00:03,693 INFO Network scoring committed=55350/60000
+2026-11-07 14:00:03,696 INFO Network scoring committed=55375/60000
+2026-11-07 14:00:03,698 INFO Network scoring committed=55400/60000
+2026-11-07 14:00:03,700 INFO Network scoring committed=55425/60000
+2026-11-07 14:00:03,703 INFO Network scoring committed=55450/60000
+2026-11-07 14:00:03,706 INFO Network scoring committed=55475/60000
+2026-11-07 14:00:03,708 INFO Network scoring committed=55500/60000
+2026-11-07 14:00:03,711 INFO Network scoring committed=55525/60000
+2026-11-07 14:00:03,713 INFO Network scoring committed=55550/60000
+2026-11-07 14:00:03,716 INFO Network scoring committed=55575/60000
+2026-11-07 14:00:03,718 INFO Network scoring committed=55600/60000
+2026-11-07 14:00:03,721 INFO Network scoring committed=55625/60000
+2026-11-07 14:00:03,723 INFO Network scoring committed=55650/60000
+2026-11-07 14:00:03,726 INFO Network scoring committed=55675/60000
+2026-11-07 14:00:03,731 INFO Network scoring committed=55700/60000
+2026-11-07 14:00:03,733 INFO Network scoring committed=55725/60000
+2026-11-07 14:00:03,736 INFO Network scoring committed=55750/60000
+2026-11-07 14:00:03,739 INFO Network scoring committed=55775/60000
+2026-11-07 14:00:03,742 INFO Network scoring committed=55800/60000
+2026-11-07 14:00:03,744 INFO Network scoring committed=55825/60000
+2026-11-07 14:00:03,747 INFO Network scoring committed=55850/60000
+2026-11-07 14:00:03,750 INFO Network scoring committed=55875/60000
+2026-11-07 14:00:03,752 INFO Network scoring committed=55900/60000
+2026-11-07 14:00:03,755 INFO Network scoring committed=55925/60000
+2026-11-07 14:00:03,757 INFO Network scoring committed=55950/60000
+2026-11-07 14:00:03,760 INFO Network scoring committed=55975/60000
+2026-11-07 14:00:03,763 INFO Network scoring committed=56000/60000
+2026-11-07 14:00:03,765 INFO Network scoring committed=56025/60000
+2026-11-07 14:00:03,768 INFO Network scoring committed=56050/60000
+2026-11-07 14:00:03,770 INFO Network scoring committed=56075/60000
+2026-11-07 14:00:03,773 INFO Network scoring committed=56100/60000
+2026-11-07 14:00:03,776 INFO Network scoring committed=56125/60000
+2026-11-07 14:00:03,778 INFO Network scoring committed=56150/60000
+2026-11-07 14:00:03,781 INFO Network scoring committed=56175/60000
+2026-11-07 14:00:03,783 INFO Network scoring committed=56200/60000
+2026-11-07 14:00:03,786 INFO Network scoring committed=56225/60000
+2026-11-07 14:00:03,788 INFO Network scoring committed=56250/60000
+2026-11-07 14:00:03,791 INFO Network scoring committed=56275/60000
+2026-11-07 14:00:03,794 INFO Network scoring committed=56300/60000
+2026-11-07 14:00:03,797 INFO Network scoring committed=56325/60000
+2026-11-07 14:00:03,800 INFO Network scoring committed=56350/60000
+2026-11-07 14:00:03,803 INFO Network scoring committed=56375/60000
+2026-11-07 14:00:03,805 INFO Network scoring committed=56400/60000
+2026-11-07 14:00:03,807 INFO Network scoring committed=56425/60000
+2026-11-07 14:00:03,810 INFO Network scoring committed=56450/60000
+2026-11-07 14:00:03,812 INFO Network scoring committed=56475/60000
+2026-11-07 14:00:03,815 INFO Network scoring committed=56500/60000
+2026-11-07 14:00:03,818 INFO Network scoring committed=56525/60000
+2026-11-07 14:00:03,821 INFO Network scoring committed=56550/60000
+2026-11-07 14:00:03,824 INFO Network scoring committed=56575/60000
+2026-11-07 14:00:03,827 INFO Network scoring committed=56600/60000
+2026-11-07 14:00:03,830 INFO Network scoring committed=56625/60000
+2026-11-07 14:00:03,833 INFO Network scoring committed=56650/60000
+2026-11-07 14:00:03,835 INFO Network scoring committed=56675/60000
+2026-11-07 14:00:03,837 INFO Network scoring committed=56700/60000
+2026-11-07 14:00:03,840 INFO Network scoring committed=56725/60000
+2026-11-07 14:00:03,842 INFO Network scoring committed=56750/60000
+2026-11-07 14:00:03,845 INFO Network scoring committed=56775/60000
+2026-11-07 14:00:03,848 INFO Network scoring committed=56800/60000
+2026-11-07 14:00:03,850 INFO Network scoring committed=56825/60000
+2026-11-07 14:00:03,852 INFO Network scoring committed=56850/60000
+2026-11-07 14:00:03,855 INFO Network scoring committed=56875/60000
+2026-11-07 14:00:03,857 INFO Network scoring committed=56900/60000
+2026-11-07 14:00:03,860 INFO Network scoring committed=56925/60000
+2026-11-07 14:00:03,862 INFO Network scoring committed=56950/60000
+2026-11-07 14:00:03,865 INFO Network scoring committed=56975/60000
+2026-11-07 14:00:03,868 INFO Network scoring committed=57000/60000
+2026-11-07 14:00:03,870 INFO Network scoring committed=57025/60000
+2026-11-07 14:00:03,872 INFO Network scoring committed=57050/60000
+2026-11-07 14:00:03,875 INFO Network scoring committed=57075/60000
+2026-11-07 14:00:03,878 INFO Network scoring committed=57100/60000
+2026-11-07 14:00:03,881 INFO Network scoring committed=57125/60000
+2026-11-07 14:00:03,884 INFO Network scoring committed=57150/60000
+2026-11-07 14:00:03,886 INFO Network scoring committed=57175/60000
+2026-11-07 14:00:03,889 INFO Network scoring committed=57200/60000
+2026-11-07 14:00:03,891 INFO Network scoring committed=57225/60000
+2026-11-07 14:00:03,894 INFO Network scoring committed=57250/60000
+2026-11-07 14:00:03,896 INFO Network scoring committed=57275/60000
+2026-11-07 14:00:03,899 INFO Network scoring committed=57300/60000
+2026-11-07 14:00:03,902 INFO Network scoring committed=57325/60000
+2026-11-07 14:00:03,904 INFO Network scoring committed=57350/60000
+2026-11-07 14:00:03,907 INFO Network scoring committed=57375/60000
+2026-11-07 14:00:03,909 INFO Network scoring committed=57400/60000
+2026-11-07 14:00:03,912 INFO Network scoring committed=57425/60000
+2026-11-07 14:00:03,914 INFO Network scoring committed=57450/60000
+2026-11-07 14:00:03,917 INFO Network scoring committed=57475/60000
+2026-11-07 14:00:03,920 INFO Network scoring committed=57500/60000
+2026-11-07 14:00:03,923 INFO Network scoring committed=57525/60000
+2026-11-07 14:00:03,926 INFO Network scoring committed=57550/60000
+2026-11-07 14:00:03,930 INFO Network scoring committed=57575/60000
+2026-11-07 14:00:03,933 INFO Network scoring committed=57600/60000
+2026-11-07 14:00:03,936 INFO Network scoring committed=57625/60000
+2026-11-07 14:00:03,939 INFO Network scoring committed=57650/60000
+2026-11-07 14:00:03,942 INFO Network scoring committed=57675/60000
+2026-11-07 14:00:03,945 INFO Network scoring committed=57700/60000
+2026-11-07 14:00:03,948 INFO Network scoring committed=57725/60000
+2026-11-07 14:00:03,951 INFO Network scoring committed=57750/60000
+2026-11-07 14:00:03,954 INFO Network scoring committed=57775/60000
+2026-11-07 14:00:03,957 INFO Network scoring committed=57800/60000
+2026-11-07 14:00:03,960 INFO Network scoring committed=57825/60000
+2026-11-07 14:00:03,963 INFO Network scoring committed=57850/60000
+2026-11-07 14:00:03,965 INFO Network scoring committed=57875/60000
+2026-11-07 14:00:03,968 INFO Network scoring committed=57900/60000
+2026-11-07 14:00:03,971 INFO Network scoring committed=57925/60000
+2026-11-07 14:00:03,976 INFO Network scoring committed=57950/60000
+2026-11-07 14:00:03,979 INFO Network scoring committed=57975/60000
+2026-11-07 14:00:03,982 INFO Network scoring committed=58000/60000
+2026-11-07 14:00:03,987 INFO Network scoring committed=58025/60000
+2026-11-07 14:00:03,990 INFO Network scoring committed=58050/60000
+2026-11-07 14:00:03,992 INFO Network scoring committed=58075/60000
+2026-11-07 14:00:03,994 INFO Network scoring committed=58100/60000
+2026-11-07 14:00:03,997 INFO Network scoring committed=58125/60000
+2026-11-07 14:00:04,000 INFO Network scoring committed=58150/60000
+2026-11-07 14:00:04,002 INFO Network scoring committed=58175/60000
+2026-11-07 14:00:04,005 INFO Network scoring committed=58200/60000
+2026-11-07 14:00:04,007 INFO Network scoring committed=58225/60000
+2026-11-07 14:00:04,010 INFO Network scoring committed=58250/60000
+2026-11-07 14:00:04,012 INFO Network scoring committed=58275/60000
+2026-11-07 14:00:04,015 INFO Network scoring committed=58300/60000
+2026-11-07 14:00:04,018 INFO Network scoring committed=58325/60000
+2026-11-07 14:00:04,021 INFO Network scoring committed=58350/60000
+2026-11-07 14:00:04,024 INFO Network scoring committed=58375/60000
+2026-11-07 14:00:04,027 INFO Network scoring committed=58400/60000
+2026-11-07 14:00:04,030 INFO Network scoring committed=58425/60000
+2026-11-07 14:00:04,033 INFO Network scoring committed=58450/60000
+2026-11-07 14:00:04,036 INFO Network scoring committed=58475/60000
+2026-11-07 14:00:04,039 INFO Network scoring committed=58500/60000
+2026-11-07 14:00:04,042 INFO Network scoring committed=58525/60000
+2026-11-07 14:00:04,044 INFO Network scoring committed=58550/60000
+2026-11-07 14:00:04,047 INFO Network scoring committed=58575/60000
+2026-11-07 14:00:04,050 INFO Network scoring committed=58600/60000
+2026-11-07 14:00:04,054 INFO Network scoring committed=58625/60000
+2026-11-07 14:00:04,056 INFO Network scoring committed=58650/60000
+2026-11-07 14:00:04,059 INFO Network scoring committed=58675/60000
+2026-11-07 14:00:04,062 INFO Network scoring committed=58700/60000
+2026-11-07 14:00:04,064 INFO Network scoring committed=58725/60000
+2026-11-07 14:00:04,067 INFO Network scoring committed=58750/60000
+2026-11-07 14:00:04,070 INFO Network scoring committed=58775/60000
+2026-11-07 14:00:04,073 INFO Network scoring committed=58800/60000
+2026-11-07 14:00:04,076 INFO Network scoring committed=58825/60000
+2026-11-07 14:00:04,079 INFO Network scoring committed=58850/60000
+2026-11-07 14:00:04,081 INFO Network scoring committed=58875/60000
+2026-11-07 14:00:04,084 INFO Network scoring committed=58900/60000
+2026-11-07 14:00:04,087 INFO Network scoring committed=58925/60000
+2026-11-07 14:00:04,089 INFO Network scoring committed=58950/60000
+2026-11-07 14:00:04,092 INFO Network scoring committed=58975/60000
+2026-11-07 14:00:04,095 INFO Network scoring committed=59000/60000
+2026-11-07 14:00:04,097 INFO Network scoring committed=59025/60000
+2026-11-07 14:00:04,100 INFO Network scoring committed=59050/60000
+2026-11-07 14:00:04,103 INFO Network scoring committed=59075/60000
+2026-11-07 14:00:04,105 INFO Network scoring committed=59100/60000
+2026-11-07 14:00:04,108 INFO Network scoring committed=59125/60000
+2026-11-07 14:00:04,110 INFO Network scoring committed=59150/60000
+2026-11-07 14:00:04,113 INFO Network scoring committed=59175/60000
+2026-11-07 14:00:04,115 INFO Network scoring committed=59200/60000
+2026-11-07 14:00:04,118 INFO Network scoring committed=59225/60000
+2026-11-07 14:00:04,121 INFO Network scoring committed=59250/60000
+2026-11-07 14:00:04,124 INFO Network scoring committed=59275/60000
+2026-11-07 14:00:04,127 INFO Network scoring committed=59300/60000
+2026-11-07 14:00:04,129 INFO Network scoring committed=59325/60000
+2026-11-07 14:00:04,132 INFO Network scoring committed=59350/60000
+2026-11-07 14:00:04,135 INFO Network scoring committed=59375/60000
+2026-11-07 14:00:04,138 INFO Network scoring committed=59400/60000
+2026-11-07 14:00:04,141 INFO Network scoring committed=59425/60000
+2026-11-07 14:00:04,143 INFO Network scoring committed=59450/60000
+2026-11-07 14:00:04,146 INFO Network scoring committed=59475/60000
+2026-11-07 14:00:04,148 INFO Network scoring committed=59500/60000
+2026-11-07 14:00:04,151 INFO Network scoring committed=59525/60000
+2026-11-07 14:00:04,153 INFO Network scoring committed=59550/60000
+2026-11-07 14:00:04,156 INFO Network scoring committed=59575/60000
+2026-11-07 14:00:04,159 INFO Network scoring committed=59600/60000
+2026-11-07 14:00:04,162 INFO Network scoring committed=59625/60000
+2026-11-07 14:00:04,165 INFO Network scoring committed=59650/60000
+2026-11-07 14:00:04,167 INFO Network scoring committed=59675/60000
+2026-11-07 14:00:04,170 INFO Network scoring committed=59700/60000
+2026-11-07 14:00:04,174 INFO Network scoring committed=59725/60000
+2026-11-07 14:00:04,177 INFO Network scoring committed=59750/60000
+2026-11-07 14:00:04,180 INFO Network scoring committed=59775/60000
+2026-11-07 14:00:04,182 INFO Network scoring committed=59800/60000
+2026-11-07 14:00:04,185 INFO Network scoring committed=59825/60000
+2026-11-07 14:00:04,188 INFO Network scoring committed=59850/60000
+2026-11-07 14:00:04,191 INFO Network scoring committed=59875/60000
+2026-11-07 14:00:04,194 INFO Network scoring committed=59900/60000
+2026-11-07 14:00:04,197 INFO Network scoring committed=59925/60000
+2026-11-07 14:00:04,199 INFO Network scoring committed=59950/60000
+2026-11-07 14:00:04,201 INFO Network scoring committed=59975/60000
+2026-11-07 14:00:04,205 INFO Network scoring committed=60000/60000
+2026-11-07 14:00:04,205 INFO Historical coauthor evidence / hidden PID processed=60000 authors speed=8448.4/s elapsed=7.1s {}
+2026-11-07 14:00:04,206 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:00:04,421 INFO Export complete: matching/candidate_coauthor_evidence.csv (11.4 MiB)
+2026-11-07 14:00:04,421 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:00:04,702 INFO Export complete: matching/candidate_scores.csv (9.0 MiB)
+2026-11-07 14:00:05,579 INFO Stage: identity recovery, history and features
+2026-11-07 14:00:05,726 INFO Foundational paper identity and name recovery started
+2026-11-07 14:00:10,726 INFO Foundational paper identity and name recovery processed=21829 papers speed=4365.7/s elapsed=5.0s {}
+2026-11-07 14:00:12,570 INFO Foundational paper identity and name recovery processed=30000 papers speed=4383.2/s elapsed=6.8s {}
+2026-11-07 14:00:12,738 INFO Anchored sequence and identity resolution started
+2026-11-07 14:00:15,226 INFO Anchored sequence and identity resolution processed=30000 papers speed=12056.9/s elapsed=2.5s {}
+2026-11-07 14:00:15,664 INFO Strict pre-t0 author statistics started
+2026-11-07 14:00:16,895 INFO Strict pre-t0 author statistics processed=60000 authors speed=48711.6/s elapsed=1.2s {}
+2026-11-07 14:00:21,057 INFO Recalculate four team features started
+2026-11-07 14:00:26,057 INFO Recalculate four team features processed=4874 papers speed=974.8/s elapsed=5.0s {}
+2026-11-07 14:00:31,058 INFO Recalculate four team features processed=9510 papers speed=950.9/s elapsed=10.0s {}
+2026-11-07 14:00:36,907 INFO Recalculate four team features processed=15168 papers speed=957.0/s elapsed=15.9s {}
+2026-11-07 14:00:41,907 INFO Recalculate four team features processed=21240 papers speed=1018.7/s elapsed=20.9s {}
+2026-11-07 14:00:46,907 INFO Recalculate four team features processed=25496 papers speed=986.3/s elapsed=25.9s {}
+2026-11-07 14:00:50,967 INFO Recalculate four team features processed=30000 papers speed=1003.0/s elapsed=29.9s {}
+2026-11-07 14:01:50,580 INFO Stage: final source integrity verification
+{
+  "dataset": "SYNTHETIC_UNIQUE_NAMES_TWO_AUTHORS_ONE_HISTORY_AND_ONE_TARGET_PER_PAPER",
+  "paper_count": 30000,
+  "xml_publications": 60000,
+  "xml_profiles": 60000,
+  "xml_total_records": 120000,
+  "author_occurrences": 60000,
+  "fixture_setup_seconds": 2.351,
+  "workflow": {
+    "status": "COMPLETE",
+    "requested_stage": "all",
+    "network_policy": "OFFLINE_SOCKET_AUDIT_AND_NO_HTTP_CLIENT",
+    "profile_index_rebuilt": false,
+    "profile_index_copied": false,
+    "profile_index_created": true,
+    "profile_index_reused": false,
+    "paper_count": 30000,
+    "input_author_occurrences": 60000,
+    "fetch_claimed_verified": 30000,
+    "previous_verified": 30000,
+    "previous_unresolved": 30000,
+    "xml_available": true,
+    "expanded_candidate_rows": 180000,
+    "eligible_distinct_candidate_pids": 60000,
+    "xml_snapshot": {
+      "size": 1379060,
+      "mtime_ns": 1794031163070083166,
+      "sample_sha256": "9301f3d10fd277b01f4383bdb1de32074a4d13e70d43e906abf0fd9889e8fc40",
+      "sha256": "bcf62931b7939517cb02fe70b1dda7e8ea3b3245814ad17215228b71fa41ae0e"
+    },
+    "xml_records_processed": 120000,
+    "target_paper_hits": 30000,
+    "candidate_history_records": 120000,
+    "coauthor_relations": 30000,
+    "backtest": {
+      "automatic_network_confirmation_enabled": false,
+      "selected_rule": null,
+      "calibration_trials": [
+        {
+          "minimum_joint": 2,
+          "margin": 2.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 2,
+          "margin": 4.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 2,
+          "margin": 8.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 3,
+          "margin": 2.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 3,
+          "margin": 4.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 3,
+          "margin": 8.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 5,
+          "margin": 2.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 5,
+          "margin": 4.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 5,
+          "margin": 8.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        }
+      ],
+      "holdout_accepted": 0,
+      "holdout_correct": 0,
+      "holdout_precision": null,
+      "holdout_wilson_lower_95": 0.0,
+      "requested_lower_bound": 0.99,
+      "holdout_policy_evaluated": "diagnostic_strict_rule_only",
+      "split": "CONNECTED_PAPER_PID_COMPONENTS",
+      "ground_truth": "PREVIOUS_VERIFIED_PSEUDO_LABELS_NOT_EXTERNAL_GOLD",
+      "future_collaborations_allowed": false,
+      "reason": "INSUFFICIENT_CALIBRATION_OR_HOLDOUT_SUPPORT_NETWORK_AUTO_DISABLED"
+    },
+    "final_author_occurrences": 60000,
+    "verified_author_count": 60000,
+    "unresolved_author_count": 0,
+    "identity_conflicts": 0,
+    "feature_regression_review_count": 0,
+    "feature_comparison": [
+      {
+        "feature": "dblp_team_mean_publication_count_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      },
+      {
+        "feature": "dblp_team_max_publication_count_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      },
+      {
+        "feature": "dblp_team_mean_academic_age_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      },
+      {
+        "feature": "dblp_team_max_academic_age_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      }
+    ],
+    "temporal_validation": {
+      "included_same_or_future_year": 0,
+      "included_focal_works": 0,
+      "publication_year_boundary": "publication_year < t0_year",
+      "unresolved_zero_fill": false,
+      "target_candidates_missing_exclusion": 0,
+      "coauthor_focal_leakage_count": 0,
+      "coauthor_same_or_future_year_count": 0,
+      "unreliable_target_candidates_excluded": 0,
+      "identity_reliability_independent_of_focal_exclusion": true
+    },
+    "full_xml_scan_complete": true,
+    "history_status_counts": {
+      "COMPLETE_OBSERVED_DBLP_HISTORY": 60000
+    },
+    "source_files_unchanged": true,
+    "network_attempts_blocked": 0,
+    "subprocess_attempts_blocked": 0,
+    "elapsed_seconds": 146.741,
+    "peak_process_rss_mb": 1051.6
+  },
+  "ten_thousand_indexed_queries_seconds": 0.048,
+  "query_plans": {
+    "pid_history": [
+      [
+        2,
+        0,
+        55,
+        "SEARCH candidate_publications USING COVERING INDEX sqlite_autoindex_candidate_publications_1 (pid=?)"
+      ]
+    ],
+    "pid_year": [
+      [
+        3,
+        0,
+        51,
+        "SEARCH candidate_publication_years USING INDEX candidate_year (pid=? AND year<?)"
+      ]
+    ],
+    "coauthors": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH candidate_coauthors USING COVERING INDEX coauthor_candidate (oid=? AND pid=?)"
+      ]
+    ],
+    "work_years": [
+      [
+        2,
+        0,
+        56,
+        "SEARCH work_years USING COVERING INDEX work_person (pid=?)"
+      ]
+    ]
+  },
+  "sqlite_bytes": 309538816,
+  "whole_process_peak_rss_mb": 1051.59765625,
+  "limitations": [
+    "Not a full DBLP snapshot benchmark",
+    "Unique names do not model thousands of ambiguous candidates",
+    "Includes real XML streaming, SQL history/dedup, alignment, scoring/backtest, features and exports"
+  ]
+}

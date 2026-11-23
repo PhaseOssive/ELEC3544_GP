@@ -1,0 +1,205 @@
+2026-11-07 14:02:17,518 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:02:17,519 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:02:17,520 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:02:17,520 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:02:17,520 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:02:17,520 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:02:17,520 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:02:17,536 INFO Verified exact Standalone predecessor; reuse candidate/XML/dedup checkpoints
+2026-11-07 14:02:17,538 INFO Stage: candidate expansion/export
+2026-11-07 14:02:17,538 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:02:17,539 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:02:17,542 INFO Stage: alias preparation and XML scans
+2026-11-07 14:02:17,542 INFO Prepare unique publication aliases started
+2026-11-07 14:02:17,543 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,543 INFO Complete local XML scan cache reused: primary
+2026-11-07 14:02:17,543 INFO Stage: disk deduplication
+2026-11-07 14:02:17,543 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:02:17,543 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:02:17,543 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:02:17,543 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:02:17,543 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:02:17,544 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:02:17,544 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:02:17,544 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:02:17,544 INFO Stage: network scores and calibration
+2026-11-07 14:02:17,546 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:02:17,546 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:02:17,547 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,548 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:02:17,548 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:02:17,548 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:02:17,549 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:02:17,550 INFO Stage: identity recovery, history and features
+2026-11-07 14:02:17,550 INFO Foundational paper identity and name recovery started
+2026-11-07 14:02:17,551 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,554 INFO Anchored sequence and identity resolution started
+2026-11-07 14:02:17,554 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,556 INFO Strict pre-t0 author statistics started
+2026-11-07 14:02:17,556 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,558 INFO Recalculate four team features started
+2026-11-07 14:02:17,560 INFO Recalculate four team features processed=1 papers speed=695.5/s elapsed=0.0s {}
+2026-11-07 14:02:17,581 INFO Stage: final source integrity verification
+{
+  "status": "COMPLETE",
+  "requested_stage": "all",
+  "network_policy": "OFFLINE_SOCKET_AUDIT_AND_NO_HTTP_CLIENT",
+  "profile_index_rebuilt": false,
+  "profile_index_copied": false,
+  "profile_index_created": false,
+  "profile_index_reused": true,
+  "paper_count": 1,
+  "input_author_occurrences": 3,
+  "fetch_claimed_verified": 2,
+  "previous_verified": 2,
+  "previous_unresolved": 1,
+  "xml_available": true,
+  "expanded_candidate_rows": 14,
+  "eligible_distinct_candidate_pids": 4,
+  "xml_snapshot": {
+    "size": 366,
+    "mtime_ns": 1794031336550163500,
+    "sample_sha256": "63818d2004219b21aeb560ac85738481dde107ba63c76b1bea6af9876d32bae6",
+    "sha256": "3b305a6df628a11001d78a9e49a9e1e5236644624c208f925bb75e40b11771d8"
+  },
+  "xml_records_processed": 8,
+  "target_paper_hits": 1,
+  "candidate_history_records": 11,
+  "coauthor_relations": 8,
+  "backtest": {
+    "automatic_network_confirmation_enabled": false,
+    "selected_rule": null,
+    "calibration_trials": [
+      {
+        "minimum_joint": 2,
+        "margin": 2.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 2,
+        "margin": 4.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 2,
+        "margin": 8.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 3,
+        "margin": 2.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 3,
+        "margin": 4.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 3,
+        "margin": 8.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 5,
+        "margin": 2.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 5,
+        "margin": 4.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 5,
+        "margin": 8.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      }
+    ],
+    "holdout_accepted": 0,
+    "holdout_correct": 0,
+    "holdout_precision": null,
+    "holdout_wilson_lower_95": 0.0,
+    "requested_lower_bound": 0.99,
+    "holdout_policy_evaluated": "diagnostic_strict_rule_only",
+    "split": "CONNECTED_PAPER_PID_COMPONENTS",
+    "ground_truth": "PREVIOUS_VERIFIED_PSEUDO_LABELS_NOT_EXTERNAL_GOLD",
+    "future_collaborations_allowed": false,
+    "reason": "INSUFFICIENT_CALIBRATION_OR_HOLDOUT_SUPPORT_NETWORK_AUTO_DISABLED"
+  },
+  "final_author_occurrences": 3,
+  "verified_author_count": 3,
+  "unresolved_author_count": 0,
+  "identity_conflicts": 0,
+  "feature_regression_review_count": 0,
+  "feature_comparison": [
+    {
+      "feature": "dblp_team_mean_publication_count_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    },
+    {
+      "feature": "dblp_team_max_publication_count_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    },
+    {
+      "feature": "dblp_team_mean_academic_age_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    },
+    {
+      "feature": "dblp_team_max_academic_age_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    }
+  ],
+  "temporal_validation": {
+    "included_same_or_future_year": 0,
+    "included_focal_works": 0,
+    "publication_year_boundary": "publication_year < t0_year",
+    "unresolved_zero_fill": false,
+    "target_candidates_missing_exclusion": 0,
+    "coauthor_focal_leakage_count": 0,
+    "coauthor_same_or_future_year_count": 0,
+    "unreliable_target_candidates_excluded": 0,
+    "identity_reliability_independent_of_focal_exclusion": true
+  },
+  "full_xml_scan_complete": true,
+  "history_status_counts": {
+    "COMPLETE_OBSERVED_DBLP_HISTORY": 2,
+    "AMBIGUOUS_ALIAS_COVERAGE": 1
+  },
+  "source_files_unchanged": true,
+  "network_attempts_blocked": 0,
+  "subprocess_attempts_blocked": 0,
+  "elapsed_seconds": 0.067,
+  "peak_process_rss_mb": 61.69
+}

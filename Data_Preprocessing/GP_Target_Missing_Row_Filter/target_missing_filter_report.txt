@@ -1,0 +1,25 @@
+TARGET MISSINGNESS ROW FILTER REPORT
+================================================
+Run time: 2026-11-10T15:13:01
+Input: /Users/owenli/Desktop/GP_Target_Missing_Row_Filter/papers_features.csv
+Output: /Users/owenli/Desktop/GP_Target_Missing_Row_Filter/papers_features.csv
+
+Input rows: 29,963
+Rows removed (Y1, Y2, and Y3 all missing): 107
+Output rows: 29,856
+
+Missing values before filtering:
+  Y1 (s2_citation_count_3y): 145
+  Y2 (s2_influential_citation_count_3y): 111
+  Y3 (openreview_mean_rating): 29,029
+
+Rows with all three targets missing: 107
+Rows with exactly one target available: 37
+Rows with at least two targets available: 29,819
+
+Rule applied:
+  Remove a row only if Y1, Y2, and Y3 are all missing.
+  Keep a row if at least one of the three targets is available.
+  Missing predictor values and optional metadata do not trigger row deletion.
+
+The input file is not modified. The output retains the original columns and row order.

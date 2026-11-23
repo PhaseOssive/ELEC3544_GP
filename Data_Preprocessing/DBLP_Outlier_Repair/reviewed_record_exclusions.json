@@ -1,0 +1,16 @@
+[
+  {
+    "rule_id": "DOBREV_1966_SOURCE_EVIDENCE",
+    "pid": "homepages/28/2256",
+    "record_key": "journals/eik/DobrevAB66",
+    "year": 1966,
+    "author_alias": "Dimiter Dobrev",
+    "reason": "Research article dated in the target author’s birth year cannot belong to this person.",
+    "evidence_urls": [
+      "https://dobrev.com/dobrev.html",
+      "https://dblp.org/rec/journals/eik/DobrevAB66"
+    ],
+    "reviewed_on": "2026-11-10",
+    "reviewer": "ChatGPT source review"
+  }
+]

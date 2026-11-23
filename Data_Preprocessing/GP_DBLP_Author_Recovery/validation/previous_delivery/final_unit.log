@@ -1,0 +1,845 @@
+test_duplicate_occurrence_rejected (test_bootstrap.ArchitectureTests.test_duplicate_occurrence_rejected) ... 2026-11-06 23:08:20,879 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:20,880 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:20,880 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:20,880 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:20,880 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:20,880 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:20,880 WARNING Optional Fetch file absent: /tmp/tmpnmw3uorr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:20,881 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 149, in run
+    papers,rows,master,old,sources=load(cfg)
+                                   ^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 39, in load
+    if table.duplicated(['arxiv_id','author_position']).any():raise ValueError('Duplicate Fetch occurrence keys')
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Duplicate Fetch occurrence keys
+ok
+test_existing_incompatible_index_not_overwritten (test_bootstrap.ArchitectureTests.test_existing_incompatible_index_not_overwritten) ... ok
+test_first_run_builds_and_reuses_no_recovery_inputs (test_bootstrap.ArchitectureTests.test_first_run_builds_and_reuses_no_recovery_inputs) ... 2026-11-06 23:08:20,891 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:20,892 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:20,892 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:20,892 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:20,892 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:20,892 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:20,892 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:20,902 INFO Build missing profile index locally; committed records=0
+2026-11-06 23:08:20,902 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:20,902 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,906 INFO Expand all profile candidates started
+2026-11-06 23:08:20,906 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,907 INFO Prepare unique publication aliases started
+2026-11-06 23:08:20,907 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,907 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:20,907 INFO Complete local XML primary started
+2026-11-06 23:08:20,908 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,909 INFO Disk historical work deduplication started
+2026-11-06 23:08:20,909 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,910 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:20,910 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,912 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:20,912 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,914 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:20,914 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,916 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:20,916 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,918 INFO Recalculate four team features started
+2026-11-06 23:08:20,919 INFO Recalculate four team features processed=1 papers speed=681.4/s elapsed=0.0s {}
+2026-11-06 23:08:20,943 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:20,944 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:20,944 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:20,944 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:20,944 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:20,944 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:20,944 WARNING Optional Fetch file absent: /tmp/tmp_15920jr/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:20,953 INFO Prepare unique publication aliases started
+2026-11-06 23:08:20,953 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,953 INFO Complete local XML scan cache reused: primary
+2026-11-06 23:08:20,954 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:20,954 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,956 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:20,956 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,958 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:20,958 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,960 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:20,960 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:20,962 INFO Recalculate four team features started
+2026-11-06 23:08:20,963 INFO Recalculate four team features processed=1 papers speed=943.9/s elapsed=0.0s {}
+ok
+test_incomplete_roster_cannot_be_complete_team (test_bootstrap.ArchitectureTests.test_incomplete_roster_cannot_be_complete_team) ... 2026-11-06 23:08:20,992 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:20,993 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:20,993 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:20,993 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:20,993 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:20,993 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:20,993 WARNING Optional Fetch file absent: /tmp/tmpew090p3r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,000 INFO Build missing profile index locally; committed records=0
+2026-11-06 23:08:21,000 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:21,001 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,006 INFO Expand all profile candidates started
+2026-11-06 23:08:21,006 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,007 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,007 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,007 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,007 INFO Complete local XML primary started
+2026-11-06 23:08:21,008 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,009 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,009 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,010 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,010 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,012 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,012 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,014 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,014 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,016 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,016 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,018 INFO Recalculate four team features started
+2026-11-06 23:08:21,019 INFO Recalculate four team features processed=1 papers speed=820.5/s elapsed=0.0s {}
+ok
+test_interrupted_build_never_publishes (test_bootstrap.ArchitectureTests.test_interrupted_build_never_publishes) ... 2026-11-06 23:08:21,045 INFO Build missing profile index locally; committed records=0
+2026-11-06 23:08:21,045 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:21,045 INFO Initial local Profile/Alias index processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,046 INFO Build missing profile index locally; committed records=1
+2026-11-06 23:08:21,046 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:21,046 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+ok
+test_invalid_prior_pid_has_explicit_reason (test_bootstrap.ArchitectureTests.test_invalid_prior_pid_has_explicit_reason) ... 2026-11-06 23:08:21,053 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,054 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,054 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,054 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,054 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,054 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,054 WARNING Optional Fetch file absent: /tmp/tmpjla1t5nf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,061 INFO Build missing profile index locally; committed records=0
+2026-11-06 23:08:21,061 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:21,062 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,066 INFO Expand all profile candidates started
+2026-11-06 23:08:21,066 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,067 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,067 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,067 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,067 INFO Complete local XML primary started
+2026-11-06 23:08:21,068 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,068 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,069 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,070 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,070 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,071 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,071 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,073 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,073 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,075 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,075 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,077 INFO Recalculate four team features started
+2026-11-06 23:08:21,079 INFO Recalculate four team features processed=1 papers speed=695.6/s elapsed=0.0s {}
+ok
+test_local_dtd_outside_cache (test_bootstrap.ArchitectureTests.test_local_dtd_outside_cache) ... 2026-11-06 23:08:21,107 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,108 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,108 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,108 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,108 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,108 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,108 WARNING Optional Fetch file absent: /tmp/tmpxfrsg7hq/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,115 INFO Build missing profile index locally; committed records=0
+2026-11-06 23:08:21,115 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:21,115 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,120 INFO Expand all profile candidates started
+2026-11-06 23:08:21,120 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,121 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,121 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,121 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,121 INFO Complete local XML primary started
+2026-11-06 23:08:21,122 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,123 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,123 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,124 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,124 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,126 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,126 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,128 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,129 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,130 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,130 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,132 INFO Recalculate four team features started
+2026-11-06 23:08:21,134 INFO Recalculate four team features processed=1 papers speed=818.3/s elapsed=0.0s {}
+ok
+test_missing_optional_files_still_bootstraps (test_bootstrap.ArchitectureTests.test_missing_optional_files_still_bootstraps) ... 2026-11-06 23:08:21,162 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,162 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features_by_author.csv
+2026-11-06 23:08:21,162 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,162 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,163 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,163 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,163 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,163 WARNING Optional Fetch file absent: /tmp/tmp8lv96ynm/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,168 INFO Build missing profile index locally; committed records=0
+2026-11-06 23:08:21,168 INFO Initial local Profile/Alias index started
+2026-11-06 23:08:21,168 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,172 INFO Expand all profile candidates started
+2026-11-06 23:08:21,172 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,173 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,173 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,173 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,173 INFO Complete local XML primary started
+2026-11-06 23:08:21,174 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,174 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,175 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,176 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,176 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,177 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,177 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,179 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,180 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,181 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,181 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,183 INFO Recalculate four team features started
+2026-11-06 23:08:21,185 INFO Recalculate four team features processed=1 papers speed=717.1/s elapsed=0.0s {}
+ok
+test_missing_required_file_clear_error (test_bootstrap.ArchitectureTests.test_missing_required_file_clear_error) ... 2026-11-06 23:08:21,212 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 149, in run
+    papers,rows,master,old,sources=load(cfg)
+                                   ^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 28, in load
+    master=read(root/cfg.master_file,True);authors=read(root/cfg.authors_file,True)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 22, in read
+    if required:raise FileNotFoundError('Required Fetch file missing: '+str(path))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Required Fetch file missing: /tmp/tmp61j9h_l4/fetch/data/processed/authors_arxiv_v1.csv
+ok
+test_no_recovery_config_fields (test_bootstrap.ArchitectureTests.test_no_recovery_config_fields) ... ok
+test_wrong_t0_rejected (test_bootstrap.ArchitectureTests.test_wrong_t0_rejected) ... 2026-11-06 23:08:21,220 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,221 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,221 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,221 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,221 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,222 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,222 WARNING Optional Fetch file absent: /tmp/tmprlae6fo5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,225 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 149, in run
+    papers,rows,master,old,sources=load(cfg)
+                                   ^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 66, in load
+    if old.get('t0_year') and int(float(old['t0_year']))!=years[aid]:raise ValueError('Fetch author t0 differs from arXiv v1 timestamp')
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fetch author t0 differs from arXiv v1 timestamp
+ok
+test_fetch_candidate_audit_independent_of_selected (test_bootstrap.FocalRegressionTests.test_fetch_candidate_audit_independent_of_selected) ... 2026-11-06 23:08:21,232 WARNING Optional Fetch file absent: /tmp/tmprmop1k2d/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,233 WARNING Optional Fetch file absent: /tmp/tmprmop1k2d/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,233 WARNING Optional Fetch file absent: /tmp/tmprmop1k2d/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,233 WARNING Optional Fetch file absent: /tmp/tmprmop1k2d/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,233 WARNING Optional Fetch file absent: /tmp/tmprmop1k2d/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,233 WARNING Optional Fetch file absent: /tmp/tmprmop1k2d/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,243 INFO Expand all profile candidates started
+2026-11-06 23:08:21,243 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,244 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,245 INFO Prepare unique publication aliases processed=3 profiles speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,245 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,245 INFO Complete local XML primary started
+2026-11-06 23:08:21,246 INFO Complete local XML primary processed=6 records speed=4862.1/s elapsed=0.0s {}
+2026-11-06 23:08:21,247 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,247 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,248 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,248 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,250 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,250 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,252 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,253 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,255 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,255 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,257 INFO Recalculate four team features started
+2026-11-06 23:08:21,259 INFO Recalculate four team features processed=1 papers speed=802.1/s elapsed=0.0s {}
+ok
+test_unknown_year_unmapped_target_excludes_duplicate (test_bootstrap.FocalRegressionTests.test_unknown_year_unmapped_target_excludes_duplicate) ... 2026-11-06 23:08:21,288 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,289 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,289 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,289 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,289 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,289 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,289 WARNING Optional Fetch file absent: /tmp/tmphodh1sy6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,299 INFO Expand all profile candidates started
+2026-11-06 23:08:21,299 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,300 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,300 INFO Prepare unique publication aliases processed=3 profiles speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,301 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,301 INFO Complete local XML primary started
+2026-11-06 23:08:21,302 INFO Complete local XML primary processed=6 records speed=5892.5/s elapsed=0.0s {}
+2026-11-06 23:08:21,302 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,303 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,304 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,304 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,306 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,306 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,308 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,309 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,310 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,310 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,313 INFO Recalculate four team features started
+2026-11-06 23:08:21,313 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+ok
+test_unreliable_target_cannot_prove_itself (test_bootstrap.FocalRegressionTests.test_unreliable_target_cannot_prove_itself) ... 2026-11-06 23:08:21,343 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,344 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,344 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,344 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,344 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,344 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,344 WARNING Optional Fetch file absent: /tmp/tmprshwvi77/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,353 INFO Expand all profile candidates started
+2026-11-06 23:08:21,354 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,355 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,355 INFO Prepare unique publication aliases processed=3 profiles speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,355 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,355 INFO Complete local XML primary started
+2026-11-06 23:08:21,356 INFO Complete local XML primary processed=6 records speed=5900.2/s elapsed=0.0s {}
+2026-11-06 23:08:21,357 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,357 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,358 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,359 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,361 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,361 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,363 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,363 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,365 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,365 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,367 INFO Recalculate four team features started
+2026-11-06 23:08:21,368 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+ok
+test_ambiguous_source_resolved_by_numbered_target_alias (test_bootstrap.IntegratedLegacyIdentityTests.test_ambiguous_source_resolved_by_numbered_target_alias) ... 2026-11-06 23:08:21,400 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,401 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,401 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,401 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,401 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,401 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,401 WARNING Optional Fetch file absent: /tmp/tmpsz6a214u/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,411 INFO Expand all profile candidates started
+2026-11-06 23:08:21,411 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,412 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,412 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,413 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,413 INFO Complete local XML primary started
+2026-11-06 23:08:21,413 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,414 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,414 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,415 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,416 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,417 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,417 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,419 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,419 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,421 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,421 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,423 INFO Recalculate four team features started
+2026-11-06 23:08:21,424 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+ok
+test_broken_spacing_normalized (test_bootstrap.IntegratedLegacyIdentityTests.test_broken_spacing_normalized) ... 2026-11-06 23:08:21,461 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,462 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,462 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,462 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,462 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,462 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,462 WARNING Optional Fetch file absent: /tmp/tmpstacy6vf/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,473 INFO Expand all profile candidates started
+2026-11-06 23:08:21,473 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,474 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,475 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,475 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,475 INFO Complete local XML primary started
+2026-11-06 23:08:21,475 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,477 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,477 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,480 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,480 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,482 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,482 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,487 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,487 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,489 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,489 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,491 INFO Recalculate four team features started
+2026-11-06 23:08:21,492 INFO Recalculate four team features processed=1 papers speed=957.0/s elapsed=0.0s {}
+ok
+test_existing_pid_redirect_revalidated (test_bootstrap.IntegratedLegacyIdentityTests.test_existing_pid_redirect_revalidated) ... 2026-11-06 23:08:21,536 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,538 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,538 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,538 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,538 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,538 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,538 WARNING Optional Fetch file absent: /tmp/tmpiuglltt9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,549 INFO Expand all profile candidates started
+2026-11-06 23:08:21,550 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,551 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,551 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,551 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,551 INFO Complete local XML primary started
+2026-11-06 23:08:21,553 INFO Complete local XML primary processed=8 records speed=6514.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,553 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,554 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,555 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,555 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,557 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,558 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,560 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,561 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,562 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,563 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,565 INFO Recalculate four team features started
+2026-11-06 23:08:21,569 INFO Recalculate four team features processed=1 papers speed=269.5/s elapsed=0.0s {}
+ok
+test_initial_alone_does_not_override_full_given_name (test_bootstrap.IntegratedLegacyIdentityTests.test_initial_alone_does_not_override_full_given_name) ... 2026-11-06 23:08:21,599 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,600 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,600 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,600 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,600 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,600 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,600 WARNING Optional Fetch file absent: /tmp/tmpqz25x2e2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,610 INFO Expand all profile candidates started
+2026-11-06 23:08:21,611 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,612 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,612 INFO Prepare unique publication aliases processed=0 profiles speed=0.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,612 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,612 INFO Complete local XML primary started
+2026-11-06 23:08:21,613 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,613 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,613 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,613 INFO XML scan discovered_profiles: replay to 0 committed records
+2026-11-06 23:08:21,613 INFO Complete local XML discovered_profiles started
+2026-11-06 23:08:21,614 INFO Complete local XML discovered_profiles processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,614 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,615 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,616 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,616 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,617 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,618 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,620 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,620 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,622 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,622 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,624 INFO Recalculate four team features started
+2026-11-06 23:08:21,625 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+ok
+test_pid_mismatch_resolved_by_target_evidence (test_bootstrap.IntegratedLegacyIdentityTests.test_pid_mismatch_resolved_by_target_evidence) ... 2026-11-06 23:08:21,659 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,660 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,660 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,660 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,660 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,660 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,660 WARNING Optional Fetch file absent: /tmp/tmpx_9_2rsb/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,674 INFO Expand all profile candidates started
+2026-11-06 23:08:21,674 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,676 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,676 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,676 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,676 INFO Complete local XML primary started
+2026-11-06 23:08:21,677 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,677 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,678 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,679 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,679 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,681 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,681 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,683 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,683 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,685 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,685 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,687 INFO Recalculate four team features started
+2026-11-06 23:08:21,689 INFO Recalculate four team features processed=1 papers speed=759.0/s elapsed=0.0s {}
+ok
+test_ambiguous_publication_name_not_assigned (test_integrity.AdditionalIntegrityTests.test_ambiguous_publication_name_not_assigned) ... 2026-11-06 23:08:21,718 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:21,719 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:21,719 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:21,719 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:21,719 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:21,719 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:21,719 WARNING Optional Fetch file absent: /tmp/tmpgg92f1re/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:21,730 INFO Expand all profile candidates started
+2026-11-06 23:08:21,730 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,731 INFO Prepare unique publication aliases started
+2026-11-06 23:08:21,731 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,731 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:21,731 INFO Complete local XML primary started
+2026-11-06 23:08:21,733 INFO Complete local XML primary processed=8 records speed=6140.6/s elapsed=0.0s {}
+2026-11-06 23:08:21,734 INFO Disk historical work deduplication started
+2026-11-06 23:08:21,734 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,736 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:21,736 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,738 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:21,739 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,742 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:21,742 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,744 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:21,744 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:21,746 INFO Recalculate four team features started
+2026-11-06 23:08:21,747 INFO Recalculate four team features processed=1 papers speed=847.7/s elapsed=0.0s {}
+ok
+test_calibration_holdout_enables_only_supported_rule (test_integrity.AdditionalIntegrityTests.test_calibration_holdout_enables_only_supported_rule) ... ok
+test_fallback_preserves_reason (test_integrity.AdditionalIntegrityTests.test_fallback_preserves_reason) ... 2026-11-06 23:08:22,168 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,169 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,169 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,169 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,169 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,170 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,170 WARNING Optional Fetch file absent: /tmp/tmpcvge9uzo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,182 INFO Expand all profile candidates started
+2026-11-06 23:08:22,182 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,184 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,184 INFO Prepare unique publication aliases processed=0 profiles speed=0.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,184 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,184 INFO Complete local XML primary started
+2026-11-06 23:08:22,185 INFO Complete local XML primary processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,186 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,186 INFO Disk historical work deduplication processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,187 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,187 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,188 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,188 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,192 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,192 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,194 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,194 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,197 INFO Recalculate four team features started
+2026-11-06 23:08:22,198 INFO Recalculate four team features processed=1 papers speed=802.4/s elapsed=0.0s {}
+ok
+test_focal_before_t0_and_duplicate_excluded (test_integrity.AdditionalIntegrityTests.test_focal_before_t0_and_duplicate_excluded) ... 2026-11-06 23:08:22,231 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,232 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,232 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,232 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,233 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,233 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,233 WARNING Optional Fetch file absent: /tmp/tmpfq52b6f0/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,245 INFO Expand all profile candidates started
+2026-11-06 23:08:22,245 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,246 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,247 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,247 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,247 INFO Complete local XML primary started
+2026-11-06 23:08:22,248 INFO Complete local XML primary processed=4 records speed=2828.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,249 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,249 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,250 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,251 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,253 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,253 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,256 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,256 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,258 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,258 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,260 INFO Recalculate four team features started
+2026-11-06 23:08:22,262 INFO Recalculate four team features processed=1 papers speed=618.4/s elapsed=0.0s {}
+ok
+test_interrupted_scan_resumes (test_integrity.AdditionalIntegrityTests.test_interrupted_scan_resumes) ... 2026-11-06 23:08:22,297 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,298 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,298 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,298 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,298 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,298 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,298 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,308 INFO Expand all profile candidates started
+2026-11-06 23:08:22,309 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,310 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,310 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,310 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,310 INFO Complete local XML primary started
+2026-11-06 23:08:22,311 INFO XML primary committed=1 target_hits=0 candidate_records=0 person_links=0
+2026-11-06 23:08:22,311 INFO XML primary committed=2 target_hits=0 candidate_records=0 person_links=0
+2026-11-06 23:08:22,311 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,311 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 177, in run
+    store.db.commit();store.aliases(index);scan(cfg,store,index,papers,rows);build_works(store)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/search.py", line 105, in scan
+    for n,e in enumerate(records(cfg.DBLP_XML_PATH,cfg.DTD_PATH),1):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/tests/test_integrity.py", line 19, in interrupted
+    if i==2:raise RuntimeError('TEST_INTERRUPTION')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: TEST_INTERRUPTION
+2026-11-06 23:08:22,316 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,317 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,317 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,318 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,318 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,318 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,318 WARNING Optional Fetch file absent: /tmp/tmpemp9n_q8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,328 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,328 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,328 INFO XML scan primary: replay to 2 committed records
+2026-11-06 23:08:22,328 INFO Complete local XML primary started
+2026-11-06 23:08:22,329 INFO XML primary committed=3 target_hits=0 candidate_records=0 person_links=0
+2026-11-06 23:08:22,329 INFO XML primary committed=4 target_hits=0 candidate_records=0 person_links=0
+2026-11-06 23:08:22,330 INFO XML primary committed=5 target_hits=1 candidate_records=3 person_links=3
+2026-11-06 23:08:22,330 INFO XML primary committed=6 target_hits=1 candidate_records=6 person_links=6
+2026-11-06 23:08:22,330 INFO XML primary committed=7 target_hits=1 candidate_records=9 person_links=9
+2026-11-06 23:08:22,330 INFO XML primary committed=8 target_hits=1 candidate_records=11 person_links=11
+2026-11-06 23:08:22,330 INFO Complete local XML primary processed=8 records speed=3804.7/s elapsed=0.0s {}
+2026-11-06 23:08:22,331 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,332 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,333 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,334 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,336 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,336 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,339 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,339 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,341 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,341 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,343 INFO Recalculate four team features started
+2026-11-06 23:08:22,345 INFO Recalculate four team features processed=1 papers speed=465.4/s elapsed=0.0s {}
+ok
+test_missing_year_not_zero (test_integrity.AdditionalIntegrityTests.test_missing_year_not_zero) ... 2026-11-06 23:08:22,376 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,377 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,378 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,378 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,378 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,378 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,378 WARNING Optional Fetch file absent: /tmp/tmpmfk0qytx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,389 INFO Expand all profile candidates started
+2026-11-06 23:08:22,389 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,390 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,391 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,391 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,391 INFO Complete local XML primary started
+2026-11-06 23:08:22,392 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,393 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,393 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,395 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,395 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,398 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,398 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,400 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,400 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,402 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,402 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,404 INFO Recalculate four team features started
+2026-11-06 23:08:22,406 INFO Recalculate four team features processed=1 papers speed=791.1/s elapsed=0.0s {}
+ok
+test_new_target_pid_history_second_pass (test_integrity.AdditionalIntegrityTests.test_new_target_pid_history_second_pass) ... 2026-11-06 23:08:22,443 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,444 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,444 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,444 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,444 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,444 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,444 WARNING Optional Fetch file absent: /tmp/tmpt9ecmmfx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,457 INFO Expand all profile candidates started
+2026-11-06 23:08:22,458 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,460 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,461 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,461 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,461 INFO Complete local XML primary started
+2026-11-06 23:08:22,464 INFO Complete local XML primary processed=6 records speed=1799.5/s elapsed=0.0s {}
+2026-11-06 23:08:22,464 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,465 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,465 INFO XML scan discovered_profiles: replay to 0 committed records
+2026-11-06 23:08:22,465 INFO Complete local XML discovered_profiles started
+2026-11-06 23:08:22,466 INFO Complete local XML discovered_profiles processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,466 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,467 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,468 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,468 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,471 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,471 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,474 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,475 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,477 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,477 INFO Strict pre-t0 author statistics processed=4 authors speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,479 INFO Recalculate four team features started
+2026-11-06 23:08:22,481 INFO Recalculate four team features processed=1 papers speed=642.2/s elapsed=0.0s {}
+ok
+test_merge (test_local.AlignmentTests.test_merge) ... ok
+test_missing_middle (test_local.AlignmentTests.test_missing_middle) ... ok
+test_name_order (test_local.AlignmentTests.test_name_order) ... ok
+test_no_name_only_accept (test_local.AlignmentTests.test_no_name_only_accept) ... ok
+test_spelling (test_local.AlignmentTests.test_spelling) ... ok
+test_split (test_local.AlignmentTests.test_split) ... ok
+test_token_shift (test_local.AlignmentTests.test_token_shift) ... ok
+test_disk_matches_original_randomized (test_local.DedupParityTests.test_disk_matches_original_randomized) ... ok
+test_dtd_no_pid_assumption (test_local.LocalTests.test_dtd_no_pid_assumption) ... 2026-11-06 23:08:22,605 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,606 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,606 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,606 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,606 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,606 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,606 WARNING Optional Fetch file absent: /tmp/tmpjfcel9ff/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,617 INFO Expand all profile candidates started
+2026-11-06 23:08:22,618 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+ok
+test_full_run_and_idempotence (test_local.LocalTests.test_full_run_and_idempotence) ... 2026-11-06 23:08:22,627 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,628 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,628 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,628 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,628 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,628 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,628 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,642 INFO Expand all profile candidates started
+2026-11-06 23:08:22,642 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,644 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,644 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,644 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,644 INFO Complete local XML primary started
+2026-11-06 23:08:22,646 INFO Complete local XML primary processed=8 records speed=4709.6/s elapsed=0.0s {}
+2026-11-06 23:08:22,647 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,647 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,649 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,649 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,651 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,652 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,655 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,655 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,657 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,657 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,660 INFO Recalculate four team features started
+2026-11-06 23:08:22,661 INFO Recalculate four team features processed=1 papers speed=569.9/s elapsed=0.0s {}
+2026-11-06 23:08:22,693 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,694 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,694 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,694 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,694 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,694 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,694 WARNING Optional Fetch file absent: /tmp/tmpkorha2kc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,705 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,706 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,706 INFO Complete local XML scan cache reused: primary
+2026-11-06 23:08:22,707 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,707 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,709 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,710 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,712 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,712 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,714 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,714 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,716 INFO Recalculate four team features started
+2026-11-06 23:08:22,717 INFO Recalculate four team features processed=1 papers speed=855.9/s elapsed=0.0s {}
+ok
+test_future_coauthor_not_used (test_local.LocalTests.test_future_coauthor_not_used) ... 2026-11-06 23:08:22,753 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,754 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,754 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,754 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,754 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,754 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,754 WARNING Optional Fetch file absent: /tmp/tmp5mjnhjsh/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,765 INFO Expand all profile candidates started
+2026-11-06 23:08:22,766 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,767 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,767 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,767 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,767 INFO Complete local XML primary started
+2026-11-06 23:08:22,769 INFO Complete local XML primary processed=8 records speed=5757.1/s elapsed=0.0s {}
+2026-11-06 23:08:22,770 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,770 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,771 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,772 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,774 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,774 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,777 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,777 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,778 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,779 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,781 INFO Recalculate four team features started
+2026-11-06 23:08:22,782 INFO Recalculate four team features processed=1 papers speed=734.1/s elapsed=0.0s {}
+ok
+test_missing_cache_no_rebuild (test_local.LocalTests.test_missing_cache_no_rebuild) ... ok
+test_no_xml_fails_explicitly (test_local.LocalTests.test_no_xml_fails_explicitly) ... 2026-11-06 23:08:22,814 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,815 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,815 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,815 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,815 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,815 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,815 WARNING Optional Fetch file absent: /tmp/tmpcsouxkb_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,825 INFO Expand all profile candidates started
+2026-11-06 23:08:22,826 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,827 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 167, in run
+    if not summary['xml_available']:raise FileNotFoundError('DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.
+ok
+test_not_top_ten_and_initial_rejection (test_local.LocalTests.test_not_top_ten_and_initial_rejection) ... ok
+test_offline_enforcement (test_local.LocalTests.test_offline_enforcement) ... ok
+test_path_guards (test_local.LocalTests.test_path_guards) ... ok
+test_precision_gate_not_faked (test_local.LocalTests.test_precision_gate_not_faked) ... 2026-11-06 23:08:22,848 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,850 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,850 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,850 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,850 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,850 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,850 WARNING Optional Fetch file absent: /tmp/tmp56fu_dum/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,866 INFO Expand all profile candidates started
+2026-11-06 23:08:22,867 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,868 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,868 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,868 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,868 INFO Complete local XML primary started
+2026-11-06 23:08:22,870 INFO Complete local XML primary processed=8 records speed=4624.6/s elapsed=0.0s {}
+2026-11-06 23:08:22,871 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,871 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,873 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,873 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,878 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,879 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,881 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,882 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,884 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,884 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,887 INFO Recalculate four team features started
+2026-11-06 23:08:22,889 INFO Recalculate four team features processed=1 papers speed=464.9/s elapsed=0.0s {}
+ok
+test_verified_anchor_conflict_preserved (test_local.LocalTests.test_verified_anchor_conflict_preserved) ... 2026-11-06 23:08:22,932 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:22,933 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:22,933 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:22,933 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:22,933 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:22,933 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:22,933 WARNING Optional Fetch file absent: /tmp/tmpmphv9_d9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:22,945 INFO Expand all profile candidates started
+2026-11-06 23:08:22,945 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,947 INFO Prepare unique publication aliases started
+2026-11-06 23:08:22,947 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,947 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:22,947 INFO Complete local XML primary started
+2026-11-06 23:08:22,948 INFO Complete local XML primary processed=8 records speed=5553.8/s elapsed=0.0s {}
+2026-11-06 23:08:22,949 INFO Disk historical work deduplication started
+2026-11-06 23:08:22,950 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,951 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:22,951 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,954 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:22,954 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,957 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:22,958 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,959 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:22,959 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 23:08:22,961 INFO Recalculate four team features started
+2026-11-06 23:08:22,963 INFO Recalculate four team features processed=1 papers speed=791.8/s elapsed=0.0s {}
+ok
+test_zero_vs_unobserved (test_local.LocalTests.test_zero_vs_unobserved) ... 2026-11-06 23:08:23,022 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-06 23:08:23,023 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-06 23:08:23,023 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-06 23:08:23,023 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-06 23:08:23,023 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-06 23:08:23,023 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-06 23:08:23,024 WARNING Optional Fetch file absent: /tmp/tmppawaa7rn/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-06 23:08:23,036 INFO Expand all profile candidates started
+2026-11-06 23:08:23,036 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,037 INFO Prepare unique publication aliases started
+2026-11-06 23:08:23,038 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,038 INFO XML scan primary: replay to 0 committed records
+2026-11-06 23:08:23,038 INFO Complete local XML primary started
+2026-11-06 23:08:23,039 INFO Complete local XML primary processed=3 records speed=2980.9/s elapsed=0.0s {}
+2026-11-06 23:08:23,039 INFO Disk historical work deduplication started
+2026-11-06 23:08:23,040 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,041 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 23:08:23,041 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,043 INFO Foundational paper identity and name recovery started
+2026-11-06 23:08:23,043 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,046 INFO Anchored sequence and identity resolution started
+2026-11-06 23:08:23,047 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,049 INFO Strict pre-t0 author statistics started
+2026-11-06 23:08:23,049 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 23:08:23,051 INFO Recalculate four team features started
+2026-11-06 23:08:23,053 INFO Recalculate four team features processed=1 papers speed=715.5/s elapsed=0.0s {}
+ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 2.208s
+
+OK

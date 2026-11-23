@@ -1,0 +1,23 @@
+{
+  "previous": {
+    "seconds": 0.121236,
+    "sql_statements": 25034,
+    "score_rows": 5002,
+    "evidence_rows": 0,
+    "exact_parity": true
+  },
+  "optimized": {
+    "seconds": 0.075588,
+    "sql_statements": 5039,
+    "score_rows": 5002,
+    "evidence_rows": 0,
+    "exact_parity": true
+  },
+  "optimized_resume": {
+    "seconds": 0.023537,
+    "sql_statements": 10,
+    "score_rows": 5002,
+    "evidence_rows": 0,
+    "exact_parity": true
+  }
+}

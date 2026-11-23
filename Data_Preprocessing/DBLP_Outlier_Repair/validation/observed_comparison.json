@@ -1,0 +1,26 @@
+{
+  "mode": "READ_ONLY_REPLAY_OF_REAL_V3_EXPORTS",
+  "paper_count": 2568,
+  "author_count": 10061,
+  "v3_missing_names": 9428,
+  "display_names_missing_after_replay": 0,
+  "v3_papers_all_names_empty": 2051,
+  "papers_all_names_empty_after_replay": 0,
+  "name_sources": {
+    "accepted_alignment_exact_pid_position": 9397,
+    "v3_existing_name": 633,
+    "revalidation_exact_tuple": 18,
+    "master_position": 13
+  },
+  "flags": {
+    "[]": 10041,
+    "[\"ROSTER_KEY_CONFLICT\"]": 20
+  },
+  "v3_works_examined": 1662773,
+  "v3_work_detail_rows": 110609,
+  "v3_distinct_logged": 109557,
+  "v3_unlogged_distinct_work_occurrences": 1553216,
+  "v3_changed_papers": 1,
+  "v3_changed_cells": 4,
+  "new_repairs_executed": 0
+}

@@ -1,0 +1,6 @@
+# Python >= 3.10；本次实际验证 Python 3.12。pip 会选择与 Python 版本匹配的 wheel。
+requests>=2.32.3,<3
+pandas>=2.2.3,<4
+numpy>=1.26.4,<3
+tqdm>=4.67.1,<5
+lxml>=5.3,<7

@@ -1,0 +1,1914 @@
+test_duplicate_occurrence_rejected (test_bootstrap.ArchitectureTests.test_duplicate_occurrence_rejected) ... 2026-11-07 14:03:06,511 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,512 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,512 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,512 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,512 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,512 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,512 WARNING Optional Fetch file absent: /tmp/tmpkkb9f2rx/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,513 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/workflow.py", line 149, in run
+    papers,rows,master,old,sources=load(cfg)
+                                   ^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 39, in load
+    if table.duplicated(['arxiv_id','author_position']).any():raise ValueError('Duplicate Fetch occurrence keys')
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Duplicate Fetch occurrence keys
+2026-11-07 14:03:06,514 INFO Stage: final source integrity verification
+ok
+test_existing_incompatible_index_not_overwritten (test_bootstrap.ArchitectureTests.test_existing_incompatible_index_not_overwritten) ... ok
+test_first_run_builds_and_reuses_no_recovery_inputs (test_bootstrap.ArchitectureTests.test_first_run_builds_and_reuses_no_recovery_inputs) ... 2026-11-07 14:03:06,523 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,524 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,524 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,524 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,524 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,524 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,524 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,533 INFO Build missing profile index locally; committed records=0
+2026-11-07 14:03:06,533 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,533 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,537 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,537 INFO Expand all profile candidates started
+2026-11-07 14:03:06,538 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,538 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,538 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,539 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,539 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,539 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,539 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,539 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:06,539 INFO Complete local XML primary started
+2026-11-07 14:03:06,540 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,540 INFO Stage: disk deduplication
+2026-11-07 14:03:06,541 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,541 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,541 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,541 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,541 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,542 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,542 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,542 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,542 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,542 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,542 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,542 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,542 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,543 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,543 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,543 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,543 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,543 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,544 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,544 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,544 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,546 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,547 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,548 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,548 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,550 INFO Recalculate four team features started
+2026-11-07 14:03:06,551 INFO Recalculate four team features processed=1 papers speed=826.5/s elapsed=0.0s {}
+2026-11-07 14:03:06,571 INFO Stage: final source integrity verification
+2026-11-07 14:03:06,574 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,575 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,575 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,575 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,575 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,575 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,575 WARNING Optional Fetch file absent: /tmp/tmpasn2t06m/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,583 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,584 INFO Validated completed candidate CSV reused: /tmp/tmpasn2t06m/out/matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,584 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,584 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,584 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,584 INFO Complete local XML scan cache reused: primary
+2026-11-07 14:03:06,584 INFO Stage: disk deduplication
+2026-11-07 14:03:06,584 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,585 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,585 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,585 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,585 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,585 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,585 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,586 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,586 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,586 INFO Network scoring: 1 committed author occurrences reused
+2026-11-07 14:03:06,586 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,586 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,586 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,586 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,586 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,586 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,587 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,587 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,588 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,590 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,590 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,591 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,591 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,593 INFO Recalculate four team features started
+2026-11-07 14:03:06,594 INFO Recalculate four team features processed=1 papers speed=847.4/s elapsed=0.0s {}
+2026-11-07 14:03:06,617 INFO Stage: final source integrity verification
+ok
+test_incomplete_roster_cannot_be_complete_team (test_bootstrap.ArchitectureTests.test_incomplete_roster_cannot_be_complete_team) ... 2026-11-07 14:03:06,625 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,626 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,626 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,626 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,626 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,626 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,626 WARNING Optional Fetch file absent: /tmp/tmp2etyhpfp/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,632 INFO Build missing profile index locally; committed records=0
+2026-11-07 14:03:06,632 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,633 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,636 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,636 INFO Expand all profile candidates started
+2026-11-07 14:03:06,637 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,637 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,637 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,638 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,638 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,638 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,638 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,638 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:06,638 INFO Complete local XML primary started
+2026-11-07 14:03:06,639 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,639 INFO Stage: disk deduplication
+2026-11-07 14:03:06,639 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,640 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,640 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,640 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,640 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,640 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,640 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,640 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,640 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,641 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,641 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,641 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,641 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,641 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,641 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,641 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,641 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,642 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,643 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,643 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,643 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,645 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,645 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,646 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,647 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,649 INFO Recalculate four team features started
+2026-11-07 14:03:06,650 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,667 INFO Stage: final source integrity verification
+ok
+test_interrupted_build_never_publishes (test_bootstrap.ArchitectureTests.test_interrupted_build_never_publishes) ... 2026-11-07 14:03:06,674 INFO Build missing profile index locally; committed records=0
+2026-11-07 14:03:06,674 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,674 INFO Initial local Profile/Alias index processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,675 INFO Build missing profile index locally; committed records=1
+2026-11-07 14:03:06,675 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,675 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+ok
+test_invalid_prior_pid_has_explicit_reason (test_bootstrap.ArchitectureTests.test_invalid_prior_pid_has_explicit_reason) ... 2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,682 WARNING Optional Fetch file absent: /tmp/tmp_0jgn91z/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,689 INFO Build missing profile index locally; committed records=0
+2026-11-07 14:03:06,689 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,690 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,693 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,693 INFO Expand all profile candidates started
+2026-11-07 14:03:06,694 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,694 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,694 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,695 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,695 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,695 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,695 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,695 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:06,695 INFO Complete local XML primary started
+2026-11-07 14:03:06,696 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,696 INFO Stage: disk deduplication
+2026-11-07 14:03:06,696 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,696 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,697 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,697 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,697 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,697 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,697 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,697 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,697 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,698 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,698 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,698 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,698 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,698 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,698 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,698 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,699 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,699 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,699 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,699 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,700 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,702 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,702 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,703 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,703 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,705 INFO Recalculate four team features started
+2026-11-07 14:03:06,706 INFO Recalculate four team features processed=1 papers speed=948.3/s elapsed=0.0s {}
+2026-11-07 14:03:06,725 INFO Stage: final source integrity verification
+ok
+test_local_dtd_outside_cache (test_bootstrap.ArchitectureTests.test_local_dtd_outside_cache) ... 2026-11-07 14:03:06,733 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,734 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,734 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,734 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,734 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,734 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,734 WARNING Optional Fetch file absent: /tmp/tmpv4dv997i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,740 INFO Build missing profile index locally; committed records=0
+2026-11-07 14:03:06,740 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,740 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,744 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,744 INFO Expand all profile candidates started
+2026-11-07 14:03:06,744 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,744 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,744 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,745 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,745 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,745 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,745 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,745 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:06,745 INFO Complete local XML primary started
+2026-11-07 14:03:06,746 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,746 INFO Stage: disk deduplication
+2026-11-07 14:03:06,746 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,747 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,747 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,747 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,747 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,748 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,748 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,748 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,748 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,748 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,748 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,748 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,748 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,749 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,749 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,749 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,749 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,749 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,750 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,750 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,751 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,752 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,753 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,754 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,755 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,756 INFO Recalculate four team features started
+2026-11-07 14:03:06,757 INFO Recalculate four team features processed=1 papers speed=896.3/s elapsed=0.0s {}
+2026-11-07 14:03:06,780 INFO Stage: final source integrity verification
+ok
+test_missing_optional_files_still_bootstraps (test_bootstrap.ArchitectureTests.test_missing_optional_files_still_bootstraps) ... 2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features_by_author.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,787 WARNING Optional Fetch file absent: /tmp/tmp6cbor_js/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,793 INFO Build missing profile index locally; committed records=0
+2026-11-07 14:03:06,793 INFO Initial local Profile/Alias index started
+2026-11-07 14:03:06,793 INFO Initial local Profile/Alias index processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,797 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,797 INFO Expand all profile candidates started
+2026-11-07 14:03:06,798 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,798 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,798 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,799 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,799 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,799 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,799 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,799 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:06,799 INFO Complete local XML primary started
+2026-11-07 14:03:06,799 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,800 INFO Stage: disk deduplication
+2026-11-07 14:03:06,801 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,801 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,801 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,801 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,802 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,802 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,802 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,802 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,802 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,802 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,802 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,803 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,803 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,803 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,803 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,803 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,803 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,803 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,804 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,804 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,805 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,807 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,807 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,809 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,809 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,811 INFO Recalculate four team features started
+2026-11-07 14:03:06,813 INFO Recalculate four team features processed=1 papers speed=712.7/s elapsed=0.0s {}
+2026-11-07 14:03:06,831 INFO Stage: final source integrity verification
+ok
+test_missing_required_file_clear_error (test_bootstrap.ArchitectureTests.test_missing_required_file_clear_error) ... 2026-11-07 14:03:06,837 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/workflow.py", line 149, in run
+    papers,rows,master,old,sources=load(cfg)
+                                   ^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 28, in load
+    master=read(root/cfg.master_file,True);authors=read(root/cfg.authors_file,True)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 22, in read
+    if required:raise FileNotFoundError('Required Fetch file missing: '+str(path))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Required Fetch file missing: /tmp/tmpdfsc0sce/fetch/data/processed/authors_arxiv_v1.csv
+2026-11-07 14:03:06,837 INFO Stage: final source integrity verification
+ok
+test_no_recovery_config_fields (test_bootstrap.ArchitectureTests.test_no_recovery_config_fields) ... ok
+test_wrong_t0_rejected (test_bootstrap.ArchitectureTests.test_wrong_t0_rejected) ... 2026-11-07 14:03:06,844 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,845 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,845 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,845 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,845 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,845 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,845 WARNING Optional Fetch file absent: /tmp/tmppo0tswnc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,848 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/workflow.py", line 149, in run
+    papers,rows,master,old,sources=load(cfg)
+                                   ^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/bootstrap.py", line 66, in load
+    if old.get('t0_year') and int(float(old['t0_year']))!=years[aid]:raise ValueError('Fetch author t0 differs from arXiv v1 timestamp')
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fetch author t0 differs from arXiv v1 timestamp
+2026-11-07 14:03:06,848 INFO Stage: final source integrity verification
+ok
+test_fetch_candidate_audit_independent_of_selected (test_bootstrap.FocalRegressionTests.test_fetch_candidate_audit_independent_of_selected) ... 2026-11-07 14:03:06,854 WARNING Optional Fetch file absent: /tmp/tmp4zeavz5i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,856 WARNING Optional Fetch file absent: /tmp/tmp4zeavz5i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,856 WARNING Optional Fetch file absent: /tmp/tmp4zeavz5i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,856 WARNING Optional Fetch file absent: /tmp/tmp4zeavz5i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,856 WARNING Optional Fetch file absent: /tmp/tmp4zeavz5i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,856 WARNING Optional Fetch file absent: /tmp/tmp4zeavz5i/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,864 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,864 INFO Expand all profile candidates started
+2026-11-07 14:03:06,865 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,865 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,866 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,866 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,866 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,866 INFO Prepare unique publication aliases processed=3 profiles speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,867 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,867 INFO Candidate alias membership loaded: 3 aliases
+2026-11-07 14:03:06,867 INFO Complete local XML primary started
+2026-11-07 14:03:06,870 INFO Complete local XML primary processed=6 records speed=1853.2/s elapsed=0.0s {}
+2026-11-07 14:03:06,870 INFO Stage: disk deduplication
+2026-11-07 14:03:06,871 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,871 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,871 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,871 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,871 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,872 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,872 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,874 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,874 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,874 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,874 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,874 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,874 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,875 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,875 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,875 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,875 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,875 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,877 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,877 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,877 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,879 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,880 INFO Anchored sequence and identity resolution processed=1 papers speed=706.6/s elapsed=0.0s {}
+2026-11-07 14:03:06,882 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,882 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,884 INFO Recalculate four team features started
+2026-11-07 14:03:06,886 INFO Recalculate four team features processed=1 papers speed=696.9/s elapsed=0.0s {}
+2026-11-07 14:03:06,906 INFO Stage: final source integrity verification
+ok
+test_unknown_year_unmapped_target_excludes_duplicate (test_bootstrap.FocalRegressionTests.test_unknown_year_unmapped_target_excludes_duplicate) ... 2026-11-07 14:03:06,913 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,914 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,914 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,914 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,914 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,914 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,914 WARNING Optional Fetch file absent: /tmp/tmp22tda_5g/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,923 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,923 INFO Expand all profile candidates started
+2026-11-07 14:03:06,923 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,923 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,924 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,924 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,924 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,924 INFO Prepare unique publication aliases processed=3 profiles speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,925 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,925 INFO Candidate alias membership loaded: 3 aliases
+2026-11-07 14:03:06,925 INFO Complete local XML primary started
+2026-11-07 14:03:06,926 INFO Complete local XML primary processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,926 INFO Stage: disk deduplication
+2026-11-07 14:03:06,926 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,927 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,927 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,927 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,927 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,927 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,927 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,928 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,928 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,928 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,928 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,928 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,928 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,928 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,929 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,929 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,929 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,929 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,930 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,930 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,930 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,932 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,932 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,934 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,934 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,938 INFO Recalculate four team features started
+2026-11-07 14:03:06,939 INFO Recalculate four team features processed=1 papers speed=958.6/s elapsed=0.0s {}
+2026-11-07 14:03:06,960 INFO Stage: final source integrity verification
+ok
+test_unreliable_target_cannot_prove_itself (test_bootstrap.FocalRegressionTests.test_unreliable_target_cannot_prove_itself) ... 2026-11-07 14:03:06,969 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:06,970 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:06,970 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:06,970 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:06,970 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:06,970 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:06,970 WARNING Optional Fetch file absent: /tmp/tmpvm22_3wg/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:06,979 INFO Stage: candidate expansion/export
+2026-11-07 14:03:06,979 INFO Expand all profile candidates started
+2026-11-07 14:03:06,980 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,980 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:06,980 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:06,981 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:06,981 INFO Prepare unique publication aliases started
+2026-11-07 14:03:06,981 INFO Prepare unique publication aliases processed=3 profiles speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,981 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:06,981 INFO Candidate alias membership loaded: 3 aliases
+2026-11-07 14:03:06,981 INFO Complete local XML primary started
+2026-11-07 14:03:06,982 INFO Complete local XML primary processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,982 INFO Stage: disk deduplication
+2026-11-07 14:03:06,983 INFO Disk historical work deduplication started
+2026-11-07 14:03:06,983 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,983 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:06,984 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:06,984 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:06,984 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:06,984 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:06,984 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,984 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:06,984 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:06,984 INFO Stage: network scores and calibration
+2026-11-07 14:03:06,985 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:06,985 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:06,985 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,985 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:06,985 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:06,986 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:06,986 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:06,987 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:06,987 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:06,987 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,989 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:06,989 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,991 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:06,991 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:06,993 INFO Recalculate four team features started
+2026-11-07 14:03:06,994 INFO Recalculate four team features processed=1 papers speed=869.3/s elapsed=0.0s {}
+2026-11-07 14:03:07,015 INFO Stage: final source integrity verification
+ok
+test_ambiguous_source_resolved_by_numbered_target_alias (test_bootstrap.IntegratedLegacyIdentityTests.test_ambiguous_source_resolved_by_numbered_target_alias) ... 2026-11-07 14:03:07,023 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,024 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,024 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,024 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,024 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,024 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,024 WARNING Optional Fetch file absent: /tmp/tmp5yx7bsch/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,033 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,033 INFO Expand all profile candidates started
+2026-11-07 14:03:07,034 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,034 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,034 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,035 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,035 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,035 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,035 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,035 INFO Candidate alias membership loaded: 2 aliases
+2026-11-07 14:03:07,035 INFO Complete local XML primary started
+2026-11-07 14:03:07,036 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,036 INFO Stage: disk deduplication
+2026-11-07 14:03:07,036 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,037 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,037 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,037 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,037 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,037 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,037 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,038 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,038 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,038 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,038 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,038 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,038 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,039 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,039 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,039 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,039 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,039 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,040 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,040 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,040 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,042 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,042 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,044 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,044 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,046 INFO Recalculate four team features started
+2026-11-07 14:03:07,047 INFO Recalculate four team features processed=1 papers speed=985.7/s elapsed=0.0s {}
+2026-11-07 14:03:07,065 INFO Stage: final source integrity verification
+ok
+test_broken_spacing_normalized (test_bootstrap.IntegratedLegacyIdentityTests.test_broken_spacing_normalized) ... 2026-11-07 14:03:07,074 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,075 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,075 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,075 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,075 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,075 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,075 WARNING Optional Fetch file absent: /tmp/tmp2884peyu/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,084 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,084 INFO Expand all profile candidates started
+2026-11-07 14:03:07,085 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,085 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,085 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,086 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,086 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,086 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,086 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,086 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:07,086 INFO Complete local XML primary started
+2026-11-07 14:03:07,087 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,087 INFO Stage: disk deduplication
+2026-11-07 14:03:07,087 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,088 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,088 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,088 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,088 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,088 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,088 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,089 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,089 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,089 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,089 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,089 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,089 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,089 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,089 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,090 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,090 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,090 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,091 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,091 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,091 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,093 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,093 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,095 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,095 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,097 INFO Recalculate four team features started
+2026-11-07 14:03:07,098 INFO Recalculate four team features processed=1 papers speed=922.1/s elapsed=0.0s {}
+2026-11-07 14:03:07,118 INFO Stage: final source integrity verification
+ok
+test_existing_pid_redirect_revalidated (test_bootstrap.IntegratedLegacyIdentityTests.test_existing_pid_redirect_revalidated) ... 2026-11-07 14:03:07,127 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,128 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,128 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,128 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,128 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,128 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,128 WARNING Optional Fetch file absent: /tmp/tmpp4lebzsy/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,138 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,138 INFO Expand all profile candidates started
+2026-11-07 14:03:07,138 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,139 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,139 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,140 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,140 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,140 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,140 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,140 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,140 INFO Complete local XML primary started
+2026-11-07 14:03:07,142 INFO Complete local XML primary processed=8 records speed=5378.9/s elapsed=0.0s {}
+2026-11-07 14:03:07,142 INFO Stage: disk deduplication
+2026-11-07 14:03:07,143 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,143 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,143 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,143 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,143 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,144 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,144 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,144 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,144 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,144 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,144 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,145 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,145 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,145 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,145 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,146 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,146 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,146 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,147 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,147 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,148 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,150 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,150 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,152 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,152 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,154 INFO Recalculate four team features started
+2026-11-07 14:03:07,155 INFO Recalculate four team features processed=1 papers speed=921.5/s elapsed=0.0s {}
+2026-11-07 14:03:07,175 INFO Stage: final source integrity verification
+ok
+test_initial_alone_does_not_override_full_given_name (test_bootstrap.IntegratedLegacyIdentityTests.test_initial_alone_does_not_override_full_given_name) ... 2026-11-07 14:03:07,183 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,184 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,184 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,184 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,184 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,184 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,184 WARNING Optional Fetch file absent: /tmp/tmpfsyzlau2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,194 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,194 INFO Expand all profile candidates started
+2026-11-07 14:03:07,194 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,195 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,195 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,195 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,195 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,195 INFO Prepare unique publication aliases processed=0 profiles speed=0.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,196 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,196 INFO Candidate alias membership loaded: 0 aliases
+2026-11-07 14:03:07,196 INFO Complete local XML primary started
+2026-11-07 14:03:07,196 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,196 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,196 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,197 INFO XML scan discovered_profiles: replay to 0 committed records
+2026-11-07 14:03:07,197 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:07,197 INFO Complete local XML discovered_profiles started
+2026-11-07 14:03:07,197 INFO Complete local XML discovered_profiles processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,197 INFO Stage: disk deduplication
+2026-11-07 14:03:07,198 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,198 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,198 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,198 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,198 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,199 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,199 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,199 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,199 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,199 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,199 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,199 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,199 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,200 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,200 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,200 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,200 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,200 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,201 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,201 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,201 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,203 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,203 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,205 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,205 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,207 INFO Recalculate four team features started
+2026-11-07 14:03:07,208 INFO Recalculate four team features processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,234 INFO Stage: final source integrity verification
+ok
+test_pid_mismatch_resolved_by_target_evidence (test_bootstrap.IntegratedLegacyIdentityTests.test_pid_mismatch_resolved_by_target_evidence) ... 2026-11-07 14:03:07,243 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,244 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,244 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,244 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,244 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,244 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,244 WARNING Optional Fetch file absent: /tmp/tmpshifdl_5/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,252 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,252 INFO Expand all profile candidates started
+2026-11-07 14:03:07,253 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,253 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,253 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,254 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,254 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,254 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,254 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,254 INFO Candidate alias membership loaded: 2 aliases
+2026-11-07 14:03:07,254 INFO Complete local XML primary started
+2026-11-07 14:03:07,255 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,255 INFO Stage: disk deduplication
+2026-11-07 14:03:07,256 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,256 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,256 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,256 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,256 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,256 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,256 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,257 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,257 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,257 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,257 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,257 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,257 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,257 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,257 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,258 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,258 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,258 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,259 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,259 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,259 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,261 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,261 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,262 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,262 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,264 INFO Recalculate four team features started
+2026-11-07 14:03:07,265 INFO Recalculate four team features processed=1 papers speed=851.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,284 INFO Stage: final source integrity verification
+ok
+test_ambiguous_publication_name_not_assigned (test_integrity.AdditionalIntegrityTests.test_ambiguous_publication_name_not_assigned) ... 2026-11-07 14:03:07,293 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,293 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,293 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,294 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,294 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,294 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,294 WARNING Optional Fetch file absent: /tmp/tmpccpiqcce/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,304 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,305 INFO Expand all profile candidates started
+2026-11-07 14:03:07,305 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,305 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,306 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,306 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,306 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,307 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,307 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,307 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,307 INFO Complete local XML primary started
+2026-11-07 14:03:07,308 INFO Complete local XML primary processed=8 records speed=6994.3/s elapsed=0.0s {}
+2026-11-07 14:03:07,308 INFO Stage: disk deduplication
+2026-11-07 14:03:07,309 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,309 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,309 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,309 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,309 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,310 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,310 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,310 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,310 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,310 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,310 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,310 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,310 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,311 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,311 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,311 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,311 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,312 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,313 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,313 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,313 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,315 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,315 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,317 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,317 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,319 INFO Recalculate four team features started
+2026-11-07 14:03:07,320 INFO Recalculate four team features processed=1 papers speed=959.9/s elapsed=0.0s {}
+2026-11-07 14:03:07,339 INFO Stage: final source integrity verification
+ok
+test_calibration_holdout_enables_only_supported_rule (test_integrity.AdditionalIntegrityTests.test_calibration_holdout_enables_only_supported_rule) ... ok
+test_fallback_preserves_reason (test_integrity.AdditionalIntegrityTests.test_fallback_preserves_reason) ... 2026-11-07 14:03:07,445 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,445 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,446 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,446 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,446 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,446 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,446 WARNING Optional Fetch file absent: /tmp/tmp98whs_sc/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,455 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,455 INFO Expand all profile candidates started
+2026-11-07 14:03:07,455 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,455 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,456 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,456 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,456 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,456 INFO Prepare unique publication aliases processed=0 profiles speed=0.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,456 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,456 INFO Candidate alias membership loaded: 0 aliases
+2026-11-07 14:03:07,456 INFO Complete local XML primary started
+2026-11-07 14:03:07,457 INFO Complete local XML primary processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,457 INFO Stage: disk deduplication
+2026-11-07 14:03:07,457 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,457 INFO Disk historical work deduplication processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,458 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,458 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,458 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,458 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,458 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,458 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,458 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,458 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,458 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,459 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,459 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,459 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,459 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,459 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,459 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,459 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,460 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,460 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,460 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,462 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,463 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,464 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,464 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,466 INFO Recalculate four team features started
+2026-11-07 14:03:07,467 INFO Recalculate four team features processed=1 papers speed=826.2/s elapsed=0.0s {}
+2026-11-07 14:03:07,486 INFO Stage: final source integrity verification
+ok
+test_focal_before_t0_and_duplicate_excluded (test_integrity.AdditionalIntegrityTests.test_focal_before_t0_and_duplicate_excluded) ... 2026-11-07 14:03:07,494 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,495 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,495 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,495 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,495 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,495 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,495 WARNING Optional Fetch file absent: /tmp/tmpvsb3_xdi/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,503 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,503 INFO Expand all profile candidates started
+2026-11-07 14:03:07,504 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,504 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,504 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,505 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,505 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,505 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,505 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,505 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:07,505 INFO Complete local XML primary started
+2026-11-07 14:03:07,506 INFO Complete local XML primary processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,506 INFO Stage: disk deduplication
+2026-11-07 14:03:07,506 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,507 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,507 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,507 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,507 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,507 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,508 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,508 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,508 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,508 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,508 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,508 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,508 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,508 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,509 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,509 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,509 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,509 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,510 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,510 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,510 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,512 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,512 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,514 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,514 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,516 INFO Recalculate four team features started
+2026-11-07 14:03:07,517 INFO Recalculate four team features processed=1 papers speed=996.8/s elapsed=0.0s {}
+2026-11-07 14:03:07,536 INFO Stage: final source integrity verification
+ok
+test_interrupted_scan_resumes (test_integrity.AdditionalIntegrityTests.test_interrupted_scan_resumes) ... 2026-11-07 14:03:07,545 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,546 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,546 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,546 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,546 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,546 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,546 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,555 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,555 INFO Expand all profile candidates started
+2026-11-07 14:03:07,555 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,556 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,556 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,556 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,557 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,557 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,557 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,557 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,557 INFO Complete local XML primary started
+2026-11-07 14:03:07,558 INFO XML primary committed=1 target_hits=0 candidate_records=0 person_links=0
+2026-11-07 14:03:07,558 INFO XML primary committed=2 target_hits=0 candidate_records=0 person_links=0
+2026-11-07 14:03:07,558 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,558 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/workflow.py", line 178, in run
+    store.db.commit();logging.info('Stage: alias preparation and XML scans');store.aliases(index);scan(cfg,store,index,papers,rows)
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/search.py", line 107, in scan
+    for n,e in enumerate(records(cfg.DBLP_XML_PATH,cfg.DTD_PATH),1):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/tests/test_integrity.py", line 19, in interrupted
+    if i==2:raise RuntimeError('TEST_INTERRUPTION')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: TEST_INTERRUPTION
+2026-11-07 14:03:07,558 INFO Stage: final source integrity verification
+2026-11-07 14:03:07,562 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,562 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,562 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,562 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,562 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,563 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,563 WARNING Optional Fetch file absent: /tmp/tmpab55xgni/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,571 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,571 INFO Validated completed candidate CSV reused: /tmp/tmpab55xgni/out/matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,572 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,572 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,572 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,572 INFO XML scan primary: replay to 2 committed records
+2026-11-07 14:03:07,572 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,572 INFO Complete local XML primary started
+2026-11-07 14:03:07,572 INFO XML primary committed=3 target_hits=0 candidate_records=0 person_links=0
+2026-11-07 14:03:07,573 INFO XML primary committed=4 target_hits=0 candidate_records=0 person_links=0
+2026-11-07 14:03:07,573 INFO XML primary committed=5 target_hits=1 candidate_records=3 person_links=3
+2026-11-07 14:03:07,574 INFO XML primary committed=6 target_hits=1 candidate_records=6 person_links=6
+2026-11-07 14:03:07,574 INFO XML primary committed=7 target_hits=1 candidate_records=9 person_links=9
+2026-11-07 14:03:07,574 INFO XML primary committed=8 target_hits=1 candidate_records=11 person_links=11
+2026-11-07 14:03:07,574 INFO Complete local XML primary processed=8 records speed=4153.7/s elapsed=0.0s {}
+2026-11-07 14:03:07,574 INFO Stage: disk deduplication
+2026-11-07 14:03:07,575 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,575 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,575 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,576 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,576 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,576 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,576 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,576 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,576 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,576 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,576 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,577 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,577 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,577 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,577 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,578 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,578 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,578 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,579 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,579 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,580 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,582 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,582 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,584 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,584 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,586 INFO Recalculate four team features started
+2026-11-07 14:03:07,587 INFO Recalculate four team features processed=1 papers speed=839.5/s elapsed=0.0s {}
+2026-11-07 14:03:07,607 INFO Stage: final source integrity verification
+ok
+test_missing_year_not_zero (test_integrity.AdditionalIntegrityTests.test_missing_year_not_zero) ... 2026-11-07 14:03:07,614 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,615 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,615 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,615 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,615 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,615 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,615 WARNING Optional Fetch file absent: /tmp/tmpqc0vbovz/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,624 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,624 INFO Expand all profile candidates started
+2026-11-07 14:03:07,625 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,625 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,625 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,626 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,626 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,626 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,626 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,626 INFO Candidate alias membership loaded: 1 aliases
+2026-11-07 14:03:07,626 INFO Complete local XML primary started
+2026-11-07 14:03:07,626 INFO Complete local XML primary processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,627 INFO Stage: disk deduplication
+2026-11-07 14:03:07,627 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,627 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,627 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,628 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,628 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,628 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,628 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,628 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,628 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,628 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,628 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,629 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,629 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,629 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,629 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,629 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,629 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,629 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,631 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,631 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,631 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,633 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,633 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,634 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,634 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,636 INFO Recalculate four team features started
+2026-11-07 14:03:07,637 INFO Recalculate four team features processed=1 papers speed=973.6/s elapsed=0.0s {}
+2026-11-07 14:03:07,656 INFO Stage: final source integrity verification
+ok
+test_new_target_pid_history_second_pass (test_integrity.AdditionalIntegrityTests.test_new_target_pid_history_second_pass) ... 2026-11-07 14:03:07,664 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,665 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,665 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,665 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,665 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,665 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,665 WARNING Optional Fetch file absent: /tmp/tmp6afednr8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,674 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,674 INFO Expand all profile candidates started
+2026-11-07 14:03:07,674 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,675 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,675 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,676 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,676 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,676 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,676 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,676 INFO Candidate alias membership loaded: 2 aliases
+2026-11-07 14:03:07,676 INFO Complete local XML primary started
+2026-11-07 14:03:07,677 INFO Complete local XML primary processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,677 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,677 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,677 INFO XML scan discovered_profiles: replay to 0 committed records
+2026-11-07 14:03:07,677 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,678 INFO Complete local XML discovered_profiles started
+2026-11-07 14:03:07,678 INFO Complete local XML discovered_profiles processed=6 records speed=6000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,678 INFO Stage: disk deduplication
+2026-11-07 14:03:07,679 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,679 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,679 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,679 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,679 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,680 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,680 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,680 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,680 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,680 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,680 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,680 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,680 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,681 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,681 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,681 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,681 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,681 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,682 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,682 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,683 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,685 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,685 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,687 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,687 INFO Strict pre-t0 author statistics processed=4 authors speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,689 INFO Recalculate four team features started
+2026-11-07 14:03:07,691 INFO Recalculate four team features processed=1 papers speed=858.8/s elapsed=0.0s {}
+2026-11-07 14:03:07,709 INFO Stage: final source integrity verification
+ok
+test_merge (test_local.AlignmentTests.test_merge) ... ok
+test_missing_middle (test_local.AlignmentTests.test_missing_middle) ... ok
+test_name_order (test_local.AlignmentTests.test_name_order) ... ok
+test_no_name_only_accept (test_local.AlignmentTests.test_no_name_only_accept) ... ok
+test_spelling (test_local.AlignmentTests.test_spelling) ... ok
+test_split (test_local.AlignmentTests.test_split) ... ok
+test_token_shift (test_local.AlignmentTests.test_token_shift) ... ok
+test_disk_matches_original_randomized (test_local.DedupParityTests.test_disk_matches_original_randomized) ... ok
+test_dtd_no_pid_assumption (test_local.LocalTests.test_dtd_no_pid_assumption) ... 2026-11-07 14:03:07,788 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,789 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,789 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,789 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,789 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,790 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,790 WARNING Optional Fetch file absent: /tmp/tmpp2_uwjq8/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,799 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,799 INFO Expand all profile candidates started
+2026-11-07 14:03:07,799 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,800 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,800 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,800 INFO Stage: final source integrity verification
+ok
+test_full_run_and_idempotence (test_local.LocalTests.test_full_run_and_idempotence) ... 2026-11-07 14:03:07,807 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,807 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,807 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,808 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,808 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,808 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,808 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,816 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,816 INFO Expand all profile candidates started
+2026-11-07 14:03:07,817 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,817 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,818 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,818 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,818 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,818 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,818 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,819 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,819 INFO Complete local XML primary started
+2026-11-07 14:03:07,820 INFO Complete local XML primary processed=8 records speed=8000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,820 INFO Stage: disk deduplication
+2026-11-07 14:03:07,820 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,821 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,821 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,821 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,821 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,821 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,821 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,822 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,822 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,822 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,822 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,822 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,822 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,822 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,823 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,823 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,823 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,823 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,824 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,824 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,825 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,827 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,827 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,829 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,829 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,831 INFO Recalculate four team features started
+2026-11-07 14:03:07,832 INFO Recalculate four team features processed=1 papers speed=874.4/s elapsed=0.0s {}
+2026-11-07 14:03:07,853 INFO Stage: final source integrity verification
+2026-11-07 14:03:07,858 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,859 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,859 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,859 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,859 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,859 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,859 WARNING Optional Fetch file absent: /tmp/tmp2lcimjc2/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,869 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,871 INFO Validated completed candidate CSV reused: /tmp/tmp2lcimjc2/out/matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,872 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,872 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,872 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,872 INFO Complete local XML scan cache reused: primary
+2026-11-07 14:03:07,872 INFO Stage: disk deduplication
+2026-11-07 14:03:07,872 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,872 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,872 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,872 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,872 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,873 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,874 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,875 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,875 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,875 INFO Network scoring: 3 committed author occurrences reused
+2026-11-07 14:03:07,875 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,875 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,875 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,875 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,875 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,876 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,877 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,877 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,878 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,880 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,880 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,882 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,882 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,884 INFO Recalculate four team features started
+2026-11-07 14:03:07,885 INFO Recalculate four team features processed=1 papers speed=864.6/s elapsed=0.0s {}
+2026-11-07 14:03:07,908 INFO Stage: final source integrity verification
+ok
+test_future_coauthor_not_used (test_local.LocalTests.test_future_coauthor_not_used) ... 2026-11-07 14:03:07,920 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:07,921 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:07,921 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:07,921 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:07,921 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:07,921 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:07,921 WARNING Optional Fetch file absent: /tmp/tmpuuwfqc2p/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:07,932 INFO Stage: candidate expansion/export
+2026-11-07 14:03:07,932 INFO Expand all profile candidates started
+2026-11-07 14:03:07,932 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,932 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:07,934 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:07,934 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:07,934 INFO Prepare unique publication aliases started
+2026-11-07 14:03:07,935 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,935 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:07,935 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:07,935 INFO Complete local XML primary started
+2026-11-07 14:03:07,936 INFO Complete local XML primary processed=8 records speed=6149.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,936 INFO Stage: disk deduplication
+2026-11-07 14:03:07,937 INFO Disk historical work deduplication started
+2026-11-07 14:03:07,938 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,938 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:07,938 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:07,938 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:07,939 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:07,939 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:07,939 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,939 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:07,939 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:07,939 INFO Stage: network scores and calibration
+2026-11-07 14:03:07,940 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:07,940 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:07,940 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,940 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:07,941 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:07,941 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:07,942 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:07,944 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:07,944 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:07,945 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,947 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:07,947 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,949 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:07,950 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:07,952 INFO Recalculate four team features started
+2026-11-07 14:03:07,953 INFO Recalculate four team features processed=1 papers speed=743.9/s elapsed=0.0s {}
+2026-11-07 14:03:07,997 INFO Stage: final source integrity verification
+ok
+test_missing_cache_no_rebuild (test_local.LocalTests.test_missing_cache_no_rebuild) ... ok
+test_no_xml_fails_explicitly (test_local.LocalTests.test_no_xml_fails_explicitly) ... 2026-11-07 14:03:08,006 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,007 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,007 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,007 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,007 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,007 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,007 WARNING Optional Fetch file absent: /tmp/tmp1ys2xix6/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,019 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,019 INFO Expand all profile candidates started
+2026-11-07 14:03:08,020 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,020 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,020 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,021 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/optimized/GP_DBLP_Author_Recovery/recovery/workflow.py", line 168, in run
+    if not summary['xml_available']:raise FileNotFoundError('DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.
+2026-11-07 14:03:08,021 INFO Stage: final source integrity verification
+ok
+test_not_top_ten_and_initial_rejection (test_local.LocalTests.test_not_top_ten_and_initial_rejection) ... ok
+test_offline_enforcement (test_local.LocalTests.test_offline_enforcement) ... ok
+test_path_guards (test_local.LocalTests.test_path_guards) ... ok
+test_precision_gate_not_faked (test_local.LocalTests.test_precision_gate_not_faked) ... 2026-11-07 14:03:08,039 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,040 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,040 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,040 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,040 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,040 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,040 WARNING Optional Fetch file absent: /tmp/tmp__6fctq_/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,050 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,050 INFO Expand all profile candidates started
+2026-11-07 14:03:08,051 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,051 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,051 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,052 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,052 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,052 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,053 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,053 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:08,053 INFO Complete local XML primary started
+2026-11-07 14:03:08,054 INFO Complete local XML primary processed=8 records speed=7959.6/s elapsed=0.0s {}
+2026-11-07 14:03:08,054 INFO Stage: disk deduplication
+2026-11-07 14:03:08,054 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,055 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,055 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,055 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,055 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,056 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,056 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,056 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,056 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,056 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,056 INFO Stage: network scores and calibration
+2026-11-07 14:03:08,057 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,057 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,057 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,057 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,058 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,058 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,058 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,059 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:08,060 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:08,060 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,062 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:08,063 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,066 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:08,067 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,069 INFO Recalculate four team features started
+2026-11-07 14:03:08,070 INFO Recalculate four team features processed=1 papers speed=679.9/s elapsed=0.0s {}
+2026-11-07 14:03:08,094 INFO Stage: final source integrity verification
+ok
+test_verified_anchor_conflict_preserved (test_local.LocalTests.test_verified_anchor_conflict_preserved) ... 2026-11-07 14:03:08,104 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,105 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,105 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,106 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,106 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,106 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,106 WARNING Optional Fetch file absent: /tmp/tmpme0pjh98/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,119 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,119 INFO Expand all profile candidates started
+2026-11-07 14:03:08,119 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,120 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,120 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,121 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,121 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,121 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,121 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,121 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:08,121 INFO Complete local XML primary started
+2026-11-07 14:03:08,123 INFO Complete local XML primary processed=8 records speed=4901.5/s elapsed=0.0s {}
+2026-11-07 14:03:08,123 INFO Stage: disk deduplication
+2026-11-07 14:03:08,124 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,125 INFO Disk historical work deduplication processed=4 records speed=3151.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,125 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,126 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,126 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,126 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,126 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,127 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,127 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,127 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,127 INFO Stage: network scores and calibration
+2026-11-07 14:03:08,127 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,127 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,128 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,128 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,128 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,129 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,129 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,130 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:08,130 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:08,131 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,133 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:08,134 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,136 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:08,136 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,138 INFO Recalculate four team features started
+2026-11-07 14:03:08,140 INFO Recalculate four team features processed=1 papers speed=642.7/s elapsed=0.0s {}
+2026-11-07 14:03:08,166 INFO Stage: final source integrity verification
+ok
+test_zero_vs_unobserved (test_local.LocalTests.test_zero_vs_unobserved) ... 2026-11-07 14:03:08,176 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,177 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,177 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,177 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,177 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,177 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,177 WARNING Optional Fetch file absent: /tmp/tmpriw9iquo/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,189 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,189 INFO Expand all profile candidates started
+2026-11-07 14:03:08,190 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,190 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,190 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,192 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,192 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,192 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,192 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,192 INFO Candidate alias membership loaded: 2 aliases
+2026-11-07 14:03:08,192 INFO Complete local XML primary started
+2026-11-07 14:03:08,193 INFO Complete local XML primary processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,193 INFO Stage: disk deduplication
+2026-11-07 14:03:08,194 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,194 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,194 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,195 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,195 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,196 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,196 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,196 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,196 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,196 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,196 INFO Stage: network scores and calibration
+2026-11-07 14:03:08,197 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,197 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,197 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,197 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,197 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,197 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,198 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,199 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:08,199 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:08,199 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,202 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:08,202 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,205 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:08,205 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,208 INFO Recalculate four team features started
+2026-11-07 14:03:08,209 INFO Recalculate four team features processed=1 papers speed=617.4/s elapsed=0.0s {}
+2026-11-07 14:03:08,237 INFO Stage: final source integrity verification
+ok
+test_changed_input_not_migrated (test_performance.PerformanceTests.test_changed_input_not_migrated) ... ok
+test_export_reuse_and_modified_file_regenerated (test_performance.PerformanceTests.test_export_reuse_and_modified_file_regenerated) ... 2026-11-07 14:03:08,247 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,248 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,248 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,248 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,248 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,248 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,248 WARNING Optional Fetch file absent: /tmp/tmpt77oo0y9/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,257 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,257 INFO Expand all profile candidates started
+2026-11-07 14:03:08,257 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,258 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,258 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,258 INFO Stage: final source integrity verification
+2026-11-07 14:03:08,260 INFO Validated completed candidate CSV reused: /tmp/tmpt77oo0y9/out/matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,260 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,260 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+ok
+test_interrupt_waits_then_snapshots (test_performance.PerformanceTests.test_interrupt_waits_then_snapshots) ... 2026-11-07 14:03:08 Copy /tmp/tmph4ppy9lf/source/cache/index.sqlite -> /tmp/tmph4ppy9lf/vm/restore_d82d15f49d3f498ca78036b3f83a13f4/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Restored cache from /tmp/tmph4ppy9lf/source/cache
+2026-11-07 14:03:08 Copy /tmp/tmph4ppy9lf/source/dblp.xml.gz -> /tmp/tmph4ppy9lf/vm/xml/dblp.xml.gz (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmph4ppy9lf/source/cache/dblp.dtd -> /tmp/tmph4ppy9lf/vm/xml/dblp.dtd (0.0 MiB)
+2026-11-07 14:03:08 Interrupt: requesting graceful main.py exit; integrity verification may take time
+2026-11-07 14:03:08 main.py exited; saving closed SQLite cache to Drive
+2026-11-07 14:03:08 Copy /tmp/tmph4ppy9lf/vm/cache/index.sqlite -> /tmp/tmph4ppy9lf/source/cache/runtime_snapshots/20261107T140308_3129b220.partial/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Persistent cache snapshot saved: /tmp/tmph4ppy9lf/source/cache/runtime_snapshots/20261107T140308_3129b220
+ok
+test_launch_end_to_end_auto_snapshot (test_performance.PerformanceTests.test_launch_end_to_end_auto_snapshot) ... 2026-11-07 14:03:08 Copy /tmp/tmp3e3rwrim/source/cache/index.sqlite -> /tmp/tmp3e3rwrim/vm/restore_243126749a334574bb416a31c8ad0b2c/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Restored cache from /tmp/tmp3e3rwrim/source/cache
+2026-11-07 14:03:08 Copy /tmp/tmp3e3rwrim/source/dblp.xml.gz -> /tmp/tmp3e3rwrim/vm/xml/dblp.xml.gz (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmp3e3rwrim/source/cache/dblp.dtd -> /tmp/tmp3e3rwrim/vm/xml/dblp.dtd (0.0 MiB)
+2026-11-07 14:03:08,535 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,536 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,536 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,536 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,536 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,536 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,536 WARNING Optional Fetch file absent: /tmp/tmp3e3rwrim/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,550 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,550 INFO Expand all profile candidates started
+2026-11-07 14:03:08,550 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,550 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,551 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,551 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,551 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,552 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,552 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,552 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:08,552 INFO Complete local XML primary started
+2026-11-07 14:03:08,553 INFO Complete local XML primary processed=8 records speed=5000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,554 INFO Stage: disk deduplication
+2026-11-07 14:03:08,554 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,555 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,555 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,555 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,555 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,555 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,555 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,555 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,556 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,556 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,556 INFO Stage: network scores and calibration
+2026-11-07 14:03:08,556 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,556 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,556 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,557 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,557 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,557 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,557 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,558 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:08,558 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:08,559 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,561 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:08,561 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,562 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:08,563 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,565 INFO Recalculate four team features started
+2026-11-07 14:03:08,566 INFO Recalculate four team features processed=1 papers speed=794.5/s elapsed=0.0s {}
+2026-11-07 14:03:08,585 INFO Stage: final source integrity verification
+{
+  "status": "COMPLETE",
+  "requested_stage": "all",
+  "network_policy": "OFFLINE_SOCKET_AUDIT_AND_NO_HTTP_CLIENT",
+  "profile_index_rebuilt": false,
+  "profile_index_copied": false,
+  "profile_index_created": false,
+  "profile_index_reused": true,
+  "paper_count": 1,
+  "input_author_occurrences": 3,
+  "fetch_claimed_verified": 2,
+  "previous_verified": 2,
+  "previous_unresolved": 1,
+  "xml_available": true,
+  "expanded_candidate_rows": 14,
+  "eligible_distinct_candidate_pids": 4,
+  "xml_snapshot": {
+    "size": 366,
+    "mtime_ns": 1794031388268203245,
+    "sample_sha256": "ec73b7d2be04788034ca1c02679d6458b6028055811477b5039371d6868b8a4c",
+    "sha256": "4cb9a3d6f23ba4bd286d9c938195d347db4407f29e8b23ffaf43f41544434f20"
+  },
+  "xml_records_processed": 8,
+  "target_paper_hits": 1,
+  "candidate_history_records": 11,
+  "coauthor_relations": 8,
+  "backtest": {
+    "automatic_network_confirmation_enabled": false,
+    "selected_rule": null,
+    "calibration_trials": [
+      {
+        "minimum_joint": 2,
+        "margin": 2.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 2,
+        "margin": 4.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 2,
+        "margin": 8.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 3,
+        "margin": 2.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 3,
+        "margin": 4.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 3,
+        "margin": 8.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 5,
+        "margin": 2.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 5,
+        "margin": 4.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      },
+      {
+        "minimum_joint": 5,
+        "margin": 8.0,
+        "accepted": 0,
+        "correct": 0,
+        "precision": null,
+        "precision_lower_bound": 0.0
+      }
+    ],
+    "holdout_accepted": 0,
+    "holdout_correct": 0,
+    "holdout_precision": null,
+    "holdout_wilson_lower_95": 0.0,
+    "requested_lower_bound": 0.99,
+    "holdout_policy_evaluated": "diagnostic_strict_rule_only",
+    "split": "CONNECTED_PAPER_PID_COMPONENTS",
+    "ground_truth": "PREVIOUS_VERIFIED_PSEUDO_LABELS_NOT_EXTERNAL_GOLD",
+    "future_collaborations_allowed": false,
+    "reason": "INSUFFICIENT_CALIBRATION_OR_HOLDOUT_SUPPORT_NETWORK_AUTO_DISABLED"
+  },
+  "final_author_occurrences": 3,
+  "verified_author_count": 3,
+  "unresolved_author_count": 0,
+  "identity_conflicts": 0,
+  "feature_regression_review_count": 0,
+  "feature_comparison": [
+    {
+      "feature": "dblp_team_mean_publication_count_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    },
+    {
+      "feature": "dblp_team_max_publication_count_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    },
+    {
+      "feature": "dblp_team_mean_academic_age_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    },
+    {
+      "feature": "dblp_team_max_academic_age_pre_t0",
+      "previous_available": 0,
+      "final_available": 0
+    }
+  ],
+  "temporal_validation": {
+    "included_same_or_future_year": 0,
+    "included_focal_works": 0,
+    "publication_year_boundary": "publication_year < t0_year",
+    "unresolved_zero_fill": false,
+    "target_candidates_missing_exclusion": 0,
+    "coauthor_focal_leakage_count": 0,
+    "coauthor_same_or_future_year_count": 0,
+    "unreliable_target_candidates_excluded": 0,
+    "identity_reliability_independent_of_focal_exclusion": true
+  },
+  "full_xml_scan_complete": true,
+  "history_status_counts": {
+    "COMPLETE_OBSERVED_DBLP_HISTORY": 2,
+    "AMBIGUOUS_ALIAS_COVERAGE": 1
+  },
+  "source_files_unchanged": true,
+  "network_attempts_blocked": 0,
+  "subprocess_attempts_blocked": 0,
+  "elapsed_seconds": 0.055,
+  "peak_process_rss_mb": 69.59
+}
+2026-11-07 14:03:08 main.py exited; saving closed SQLite cache to Drive
+2026-11-07 14:03:08 Copy /tmp/tmp3e3rwrim/vm/cache/index.sqlite -> /tmp/tmp3e3rwrim/source/cache/runtime_snapshots/20261107T140308_5bf66afa.partial/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmp3e3rwrim/vm/cache/derived/candidate_history.sqlite -> /tmp/tmp3e3rwrim/source/cache/runtime_snapshots/20261107T140308_5bf66afa.partial/derived/candidate_history.sqlite (0.2 MiB)
+2026-11-07 14:03:08 Persistent cache snapshot saved: /tmp/tmp3e3rwrim/source/cache/runtime_snapshots/20261107T140308_5bf66afa
+ok
+test_live_cache_copy_refused (test_performance.PerformanceTests.test_live_cache_copy_refused) ... ok
+test_reference_scoring_evidence_and_backtest_parity (test_performance.PerformanceTests.test_reference_scoring_evidence_and_backtest_parity) ... 2026-11-07 14:03:08,643 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,644 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,644 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,644 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,644 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,644 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,644 WARNING Optional Fetch file absent: /tmp/tmp4h7yas6r/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,654 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,654 INFO Expand all profile candidates started
+2026-11-07 14:03:08,654 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,654 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,655 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,655 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,655 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,655 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,656 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,656 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:08,656 INFO Complete local XML primary started
+2026-11-07 14:03:08,657 INFO Complete local XML primary processed=8 records speed=5295.6/s elapsed=0.0s {}
+2026-11-07 14:03:08,657 INFO Stage: disk deduplication
+2026-11-07 14:03:08,658 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,658 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,658 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,659 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,659 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,659 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,659 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,659 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,659 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,659 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,660 INFO Stage: final source integrity verification
+2026-11-07 14:03:08,662 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,662 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,662 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,663 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,663 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,663 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,664 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,665 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,665 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,666 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,666 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,666 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,666 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,667 INFO Network scoring: 3 committed author occurrences reused
+2026-11-07 14:03:08,667 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,667 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+ok
+test_runtime_refuses_writes_inside_fetch (test_performance.PerformanceTests.test_runtime_refuses_writes_inside_fetch) ... ok
+test_runtime_snapshot_restore_bytes_and_no_source_changes (test_performance.PerformanceTests.test_runtime_snapshot_restore_bytes_and_no_source_changes) ... 2026-11-07 14:03:08,677 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,678 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,678 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,678 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,678 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,678 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,678 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,688 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,688 INFO Expand all profile candidates started
+2026-11-07 14:03:08,689 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,689 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,690 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,690 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,690 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,690 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,691 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,691 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:08,691 INFO Complete local XML primary started
+2026-11-07 14:03:08,692 INFO Complete local XML primary processed=8 records speed=8000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,692 INFO Stage: disk deduplication
+2026-11-07 14:03:08,692 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,693 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,693 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,693 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,693 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,694 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,694 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,694 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,694 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,694 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,694 INFO Stage: final source integrity verification
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/cache/index.sqlite -> /tmp/tmpapudakwo/vm1/restore_f3eb7d5b0f644a81b84f3db1584a24eb/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/cache/derived/candidate_history.sqlite -> /tmp/tmpapudakwo/vm1/restore_f3eb7d5b0f644a81b84f3db1584a24eb/derived/candidate_history.sqlite (0.2 MiB)
+2026-11-07 14:03:08 Restored cache from /tmp/tmpapudakwo/source/cache
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/dblp.xml.gz -> /tmp/tmpapudakwo/vm1/xml/dblp.xml.gz (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/cache/dblp.dtd -> /tmp/tmpapudakwo/vm1/xml/dblp.dtd (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/vm1/cache/index.sqlite -> /tmp/tmpapudakwo/source/cache/runtime_snapshots/20261107T140308_ec925066.partial/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/vm1/cache/derived/candidate_history.sqlite -> /tmp/tmpapudakwo/source/cache/runtime_snapshots/20261107T140308_ec925066.partial/derived/candidate_history.sqlite (0.2 MiB)
+2026-11-07 14:03:08 Persistent cache snapshot saved: /tmp/tmpapudakwo/source/cache/runtime_snapshots/20261107T140308_ec925066
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/cache/runtime_snapshots/20261107T140308_ec925066/index.sqlite -> /tmp/tmpapudakwo/vm2/restore_5762375fe01145d3aca1234f8291ed1e/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/cache/runtime_snapshots/20261107T140308_ec925066/derived/candidate_history.sqlite -> /tmp/tmpapudakwo/vm2/restore_5762375fe01145d3aca1234f8291ed1e/derived/candidate_history.sqlite (0.2 MiB)
+2026-11-07 14:03:08 Restored cache from /tmp/tmpapudakwo/source/cache/runtime_snapshots/20261107T140308_ec925066
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/dblp.xml.gz -> /tmp/tmpapudakwo/vm2/xml/dblp.xml.gz (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpapudakwo/source/cache/dblp.dtd -> /tmp/tmpapudakwo/vm2/xml/dblp.dtd (0.0 MiB)
+2026-11-07 14:03:08 Reusing current VM local cache; persistent copy will not overwrite it
+2026-11-07 14:03:08,704 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,706 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,706 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,706 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,706 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,706 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,706 WARNING Optional Fetch file absent: /tmp/tmpapudakwo/source/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,715 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,715 INFO Validated completed candidate CSV reused: /tmp/tmpapudakwo/source/out/matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,716 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,716 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,716 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,716 INFO Complete local XML scan cache reused: primary
+2026-11-07 14:03:08,716 INFO Stage: disk deduplication
+2026-11-07 14:03:08,716 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,716 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,716 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,717 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,717 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,717 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,717 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,717 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,717 INFO Stage: network scores and calibration
+2026-11-07 14:03:08,718 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,718 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,718 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,718 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,719 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,719 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,719 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,720 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:08,720 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:08,721 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,723 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:08,723 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,725 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:08,725 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,727 INFO Recalculate four team features started
+2026-11-07 14:03:08,728 INFO Recalculate four team features processed=1 papers speed=847.4/s elapsed=0.0s {}
+2026-11-07 14:03:08,747 INFO Stage: final source integrity verification
+ok
+test_score_checkpoint_transaction_rollback (test_performance.PerformanceTests.test_score_checkpoint_transaction_rollback) ... 2026-11-07 14:03:08,754 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,754 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,759 INFO Network scoring committed=25/30
+2026-11-07 14:03:08,759 INFO Historical coauthor evidence / hidden PID processed=25 authors speed=5746.2/s elapsed=0.0s {}
+2026-11-07 14:03:08,759 INFO Network scoring: 25 committed author occurrences reused
+2026-11-07 14:03:08,759 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,759 INFO Historical coauthor evidence / hidden PID processed=30 authors speed=30000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,760 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,760 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,760 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,760 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+ok
+test_snapshot_corruption_rejected (test_performance.PerformanceTests.test_snapshot_corruption_rejected) ... 2026-11-07 14:03:08 Copy /tmp/tmpes7byxkn/source/cache/index.sqlite -> /tmp/tmpes7byxkn/vm/restore_1e7bc91a3d8143d9bb55050538cdd8ad/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Restored cache from /tmp/tmpes7byxkn/source/cache
+2026-11-07 14:03:08 Copy /tmp/tmpes7byxkn/source/dblp.xml.gz -> /tmp/tmpes7byxkn/vm/xml/dblp.xml.gz (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpes7byxkn/source/cache/dblp.dtd -> /tmp/tmpes7byxkn/vm/xml/dblp.dtd (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmpes7byxkn/vm/cache/index.sqlite -> /tmp/tmpes7byxkn/source/cache/runtime_snapshots/20261107T140308_7ec45e7e.partial/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Persistent cache snapshot saved: /tmp/tmpes7byxkn/source/cache/runtime_snapshots/20261107T140308_7ec45e7e
+2026-11-07 14:03:08 Copy /tmp/tmpes7byxkn/source/cache/runtime_snapshots/20261107T140308_7ec45e7e/index.sqlite -> /tmp/tmpes7byxkn/vm2/restore_9edf987267774218aa517a9e472cc2f8/index.sqlite (0.0 MiB)
+ok
+test_snapshot_missing_database_rejected (test_performance.PerformanceTests.test_snapshot_missing_database_rejected) ... 2026-11-07 14:03:08 Copy /tmp/tmp5432iill/source/cache/index.sqlite -> /tmp/tmp5432iill/vm/restore_302397e1b9cc40b780e5222fa2aa232e/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Restored cache from /tmp/tmp5432iill/source/cache
+2026-11-07 14:03:08 Copy /tmp/tmp5432iill/source/dblp.xml.gz -> /tmp/tmp5432iill/vm/xml/dblp.xml.gz (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmp5432iill/source/cache/dblp.dtd -> /tmp/tmp5432iill/vm/xml/dblp.dtd (0.0 MiB)
+2026-11-07 14:03:08 Copy /tmp/tmp5432iill/vm/cache/index.sqlite -> /tmp/tmp5432iill/source/cache/runtime_snapshots/20261107T140308_f4368e43.partial/index.sqlite (0.0 MiB)
+2026-11-07 14:03:08 Persistent cache snapshot saved: /tmp/tmp5432iill/source/cache/runtime_snapshots/20261107T140308_f4368e43
+ok
+test_verified_predecessor_cache_migration (test_performance.PerformanceTests.test_verified_predecessor_cache_migration) ... 2026-11-07 14:03:08,781 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,782 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,782 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,782 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,782 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,782 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,782 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,792 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,792 INFO Expand all profile candidates started
+2026-11-07 14:03:08,792 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,792 INFO Export start: matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,793 INFO Export complete: matching/expanded_candidate_pids.csv (0.0 MiB)
+2026-11-07 14:03:08,793 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,793 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,794 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,794 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:03:08,794 INFO Candidate alias membership loaded: 4 aliases
+2026-11-07 14:03:08,794 INFO Complete local XML primary started
+2026-11-07 14:03:08,795 INFO Complete local XML primary processed=8 records speed=8000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,795 INFO Stage: disk deduplication
+2026-11-07 14:03:08,796 INFO Disk historical work deduplication started
+2026-11-07 14:03:08,796 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,796 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,796 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,796 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,797 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,797 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,797 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,797 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,797 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,797 INFO Stage: final source integrity verification
+2026-11-07 14:03:08,799 INFO Verified exact Standalone predecessor; reuse candidate/XML/dedup checkpoints
+2026-11-07 14:03:08,801 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:03:08,802 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:03:08,802 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:03:08,802 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:03:08,802 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:03:08,802 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:03:08,802 WARNING Optional Fetch file absent: /tmp/tmpb9yt9vh1/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:03:08,811 INFO Stage: candidate expansion/export
+2026-11-07 14:03:08,811 INFO Validated completed candidate CSV reused: /tmp/tmpb9yt9vh1/out/matching/expanded_candidate_pids.csv
+2026-11-07 14:03:08,812 INFO Stage: alias preparation and XML scans
+2026-11-07 14:03:08,812 INFO Prepare unique publication aliases started
+2026-11-07 14:03:08,812 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,812 INFO Complete local XML scan cache reused: primary
+2026-11-07 14:03:08,812 INFO Stage: disk deduplication
+2026-11-07 14:03:08,813 INFO Export start: report/focal_work_exclusion_audit.csv
+2026-11-07 14:03:08,813 INFO Export complete: report/focal_work_exclusion_audit.csv (0.0 MiB)
+2026-11-07 14:03:08,813 INFO Export start: matching/target_paper_search_results.csv
+2026-11-07 14:03:08,813 INFO Export complete: matching/target_paper_search_results.csv (0.0 MiB)
+2026-11-07 14:03:08,813 INFO Export start: matching/candidate_history_evidence.csv
+2026-11-07 14:03:08,813 INFO Export complete: matching/candidate_history_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,814 INFO Export start: matching/candidate_history_status.csv
+2026-11-07 14:03:08,814 INFO Export complete: matching/candidate_history_status.csv (0.0 MiB)
+2026-11-07 14:03:08,814 INFO Stage: network scores and calibration
+2026-11-07 14:03:08,814 INFO Network scoring: 0 committed author occurrences reused
+2026-11-07 14:03:08,814 INFO Historical coauthor evidence / hidden PID started
+2026-11-07 14:03:08,815 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,815 INFO Export start: matching/candidate_coauthor_evidence.csv
+2026-11-07 14:03:08,815 INFO Export complete: matching/candidate_coauthor_evidence.csv (0.0 MiB)
+2026-11-07 14:03:08,815 INFO Export start: matching/candidate_scores.csv
+2026-11-07 14:03:08,815 INFO Export complete: matching/candidate_scores.csv (0.0 MiB)
+2026-11-07 14:03:08,816 INFO Stage: identity recovery, history and features
+2026-11-07 14:03:08,816 INFO Foundational paper identity and name recovery started
+2026-11-07 14:03:08,817 INFO Foundational paper identity and name recovery processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,819 INFO Anchored sequence and identity resolution started
+2026-11-07 14:03:08,819 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,822 INFO Strict pre-t0 author statistics started
+2026-11-07 14:03:08,822 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:03:08,824 INFO Recalculate four team features started
+2026-11-07 14:03:08,825 INFO Recalculate four team features processed=1 papers speed=880.5/s elapsed=0.0s {}
+2026-11-07 14:03:08,844 INFO Stage: final source integrity verification
+ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 2.349s
+
+OK

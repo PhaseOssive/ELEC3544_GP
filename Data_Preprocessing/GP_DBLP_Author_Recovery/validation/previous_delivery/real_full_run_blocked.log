@@ -1,0 +1,24 @@
+2026-11-06 23:08:47,129 INFO Expand all profile candidates started
+2026-11-06 23:08:52,151 INFO Expand all profile candidates processed=523 occurrences speed=104.1/s elapsed=5.0s {}
+2026-11-06 23:08:57,155 INFO Expand all profile candidates processed=801 occurrences speed=79.9/s elapsed=10.0s {}
+2026-11-06 23:09:02,190 INFO Expand all profile candidates processed=1130 occurrences speed=75.0/s elapsed=15.1s {}
+2026-11-06 23:09:07,203 INFO Expand all profile candidates processed=1393 occurrences speed=69.4/s elapsed=20.1s {}
+2026-11-06 23:09:12,217 INFO Expand all profile candidates processed=1595 occurrences speed=63.6/s elapsed=25.1s {}
+2026-11-06 23:09:17,226 INFO Expand all profile candidates processed=1800 occurrences speed=59.8/s elapsed=30.1s {}
+2026-11-06 23:09:22,232 INFO Expand all profile candidates processed=2002 occurrences speed=57.0/s elapsed=35.1s {}
+2026-11-06 23:09:27,294 INFO Expand all profile candidates processed=2346 occurrences speed=58.4/s elapsed=40.2s {}
+2026-11-06 23:09:27,750 INFO Expand all profile candidates processed=2361 occurrences speed=58.1/s elapsed=40.6s {}
+2026-11-06 23:09:32,622 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 167, in run
+    if not summary['xml_available']:raise FileNotFoundError('DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/main.py", line 8, in <module>
+    print(json.dumps(run(Config.load(args.config),args.stage),ensure_ascii=False,indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/final_project/GP_DBLP_Author_Recovery/recovery/workflow.py", line 167, in run
+    if not summary['xml_available']:raise FileNotFoundError('DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.

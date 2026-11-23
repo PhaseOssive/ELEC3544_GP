@@ -1,0 +1,16 @@
+{
+  "runtime_mode": "colab",
+  "FETCH_DATA_ROOT": "/content/drive/MyDrive/GP_Research_Papers",
+  "DBLP_XML_PATH": "/content/drive/MyDrive/GP_Research_Papers/data/raw/dblp/dblp.xml.gz",
+  "CACHE_DIR": "/content/drive/MyDrive/dblp_cache_30000_temp",
+  "PROFILE_INDEX_PATH": null,
+  "DTD_PATH": "/content/drive/MyDrive/GP_Research_Papers/data/raw/dblp/dblp.dtd",
+  "DERIVED_CACHE_DIR": null,
+  "OUTPUT_DIR": "/content/drive/MyDrive/GP_DBLP_Author_Recovery/recovery_output_30000_temp",
+  "master_file": "data/processed/papers_master_temp.csv",
+  "authors_file": "data/processed/authors_arxiv_v1.csv",
+  "dblp_directory": "data/processed/dblp_author_features_v3_1_1",
+  "checkpoint_records": 50000,
+  "resume_enabled": true,
+  "log_level": "INFO"
+}

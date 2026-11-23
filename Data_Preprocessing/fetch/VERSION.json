@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "input_sha256": {
+    "GP_Data_Collection_Colab(5).ipynb": "1da185d0e86a89a6ebf2c9ecc5a1346927b7b7332762a2f1b4146fa4a49da411",
+    "fetch.zip": "b242b5721ab8fdbf008dda4b7b6073ce780c605394ca5f25adf9bf67f3204df7",
+    "note.md": "d13c403af3de7e56cc7a570416adf64d85f851f418a2335c3b5e23f3cf466cf4",
+    "Version_2(2).zip": "4c0fa7c05d1a719005e5664f6284116c270c5b10d4a325554fd830f1159773f3"
+  },
+  "algorithm": "DBLP V3.1.1; arXiv v1; notebook C3/IC3 and OpenReview aggregation",
+  "tests_directory": "intentionally empty per note.md",
+  "validation_report": "VALIDATION_REPORT.md"
+}

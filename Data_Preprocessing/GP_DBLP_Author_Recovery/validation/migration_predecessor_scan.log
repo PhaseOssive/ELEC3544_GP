@@ -1,0 +1,47 @@
+2026-11-07 14:02:17,103 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_features.csv
+2026-11-07 14:02:17,104 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_candidate_match_audit.csv
+2026-11-07 14:02:17,104 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_conflicts.csv
+2026-11-07 14:02:17,104 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_identity_priority_audit.csv
+2026-11-07 14:02:17,104 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_author_match_audit.csv
+2026-11-07 14:02:17,104 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_temporal_exclusion_audit.csv
+2026-11-07 14:02:17,104 WARNING Optional Fetch file absent: /workspace/scratch/974ab544f6c1/migration_actual/fetch/data/processed/dblp_author_features_v3_1_1/dblp_source_metadata.json
+2026-11-07 14:02:17,164 INFO Expand all profile candidates started
+2026-11-07 14:02:17,165 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,169 INFO Prepare unique publication aliases started
+2026-11-07 14:02:17,170 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-07 14:02:17,171 INFO XML scan primary: replay to 0 committed records
+2026-11-07 14:02:17,171 INFO Complete local XML primary started
+2026-11-07 14:02:17,175 INFO Complete local XML primary processed=8 records speed=2243.7/s elapsed=0.0s {}
+2026-11-07 14:02:17,187 INFO Disk historical work deduplication started
+2026-11-07 14:02:17,187 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+{
+  "status": "LOCAL_SCAN_COMPLETE",
+  "requested_stage": "scan",
+  "network_policy": "OFFLINE_SOCKET_AUDIT_AND_NO_HTTP_CLIENT",
+  "profile_index_rebuilt": false,
+  "profile_index_copied": false,
+  "profile_index_created": false,
+  "profile_index_reused": true,
+  "paper_count": 1,
+  "input_author_occurrences": 3,
+  "fetch_claimed_verified": 2,
+  "previous_verified": 2,
+  "previous_unresolved": 1,
+  "xml_available": true,
+  "expanded_candidate_rows": 14,
+  "eligible_distinct_candidate_pids": 4,
+  "xml_snapshot": {
+    "size": 366,
+    "mtime_ns": 1794031336550163500,
+    "sample_sha256": "63818d2004219b21aeb560ac85738481dde107ba63c76b1bea6af9876d32bae6",
+    "sha256": "3b305a6df628a11001d78a9e49a9e1e5236644624c208f925bb75e40b11771d8"
+  },
+  "xml_records_processed": 8,
+  "target_paper_hits": 1,
+  "candidate_history_records": 11,
+  "source_files_unchanged": true,
+  "network_attempts_blocked": 0,
+  "subprocess_attempts_blocked": 0,
+  "elapsed_seconds": 0.092,
+  "peak_process_rss_mb": 61.68
+}

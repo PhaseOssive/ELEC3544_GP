@@ -1,0 +1,239 @@
+2026-11-06 22:52:48,077 INFO Expand all profile candidates started
+2026-11-06 22:52:48,077 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,078 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,079 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,079 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,079 INFO Complete local XML primary started
+2026-11-06 22:52:48,081 INFO Complete local XML primary processed=4 records speed=2215.1/s elapsed=0.0s {}
+2026-11-06 22:52:48,081 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,082 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,083 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,083 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,085 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,086 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,088 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,088 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,090 INFO Recalculate four team features started
+2026-11-06 22:52:48,091 INFO Recalculate four team features processed=1 papers speed=781.7/s elapsed=0.0s {}
+..2026-11-06 22:52:48,508 INFO Expand all profile candidates started
+2026-11-06 22:52:48,509 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,510 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,510 INFO Prepare unique publication aliases processed=0 profiles speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,510 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,510 INFO Complete local XML primary started
+2026-11-06 22:52:48,510 INFO Complete local XML primary processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,511 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,511 INFO Disk historical work deduplication processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,512 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,513 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,514 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,515 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,517 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,517 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,519 INFO Recalculate four team features started
+2026-11-06 22:52:48,521 INFO Recalculate four team features processed=1 papers speed=657.5/s elapsed=0.0s {}
+.2026-11-06 22:52:48,565 INFO Expand all profile candidates started
+2026-11-06 22:52:48,565 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,566 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,567 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,567 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,567 INFO Complete local XML primary started
+2026-11-06 22:52:48,568 INFO Complete local XML primary processed=3 records speed=2868.7/s elapsed=0.0s {}
+2026-11-06 22:52:48,569 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,569 INFO Disk historical work deduplication processed=3 records speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,570 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,571 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,573 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,573 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,576 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,576 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,578 INFO Recalculate four team features started
+2026-11-06 22:52:48,580 INFO Recalculate four team features processed=1 papers speed=612.4/s elapsed=0.0s {}
+.2026-11-06 22:52:48,624 INFO Expand all profile candidates started
+2026-11-06 22:52:48,625 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,626 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,626 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,627 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,627 INFO Complete local XML primary started
+2026-11-06 22:52:48,628 INFO XML primary committed=1 target_hits=1 candidate_records=3 person_links=3
+2026-11-06 22:52:48,628 INFO XML primary committed=2 target_hits=1 candidate_records=6 person_links=6
+2026-11-06 22:52:48,628 INFO Complete local XML primary processed=2 records speed=1429.6/s elapsed=0.0s {}
+2026-11-06 22:52:48,628 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/architecture_review/local/GP_DBLP_Author_Recovery/recovery/workflow.py", line 180, in run
+    store.db.commit();store.aliases(index);scan(cfg,store,index,papers,rows);build_works(store)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/architecture_review/local/GP_DBLP_Author_Recovery/recovery/search.py", line 102, in scan
+    for n,e in enumerate(records(cfg.DBLP_XML_PATH,cfg.DTD_PATH),1):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/974ab544f6c1/architecture_review/local/GP_DBLP_Author_Recovery/tests/test_integrity.py", line 19, in interrupted
+    if i==2:raise RuntimeError('TEST_INTERRUPTION')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: TEST_INTERRUPTION
+2026-11-06 22:52:48,639 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,640 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,640 INFO XML scan primary: replay to 2 committed records
+2026-11-06 22:52:48,640 INFO Complete local XML primary started
+2026-11-06 22:52:48,641 INFO XML primary committed=3 target_hits=0 candidate_records=3 person_links=3
+2026-11-06 22:52:48,641 INFO XML primary committed=4 target_hits=0 candidate_records=5 person_links=5
+2026-11-06 22:52:48,641 INFO Complete local XML primary processed=4 records speed=3021.5/s elapsed=0.0s {}
+2026-11-06 22:52:48,642 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,643 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,644 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,645 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,647 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,648 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,650 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,650 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,653 INFO Recalculate four team features started
+2026-11-06 22:52:48,654 INFO Recalculate four team features processed=1 papers speed=642.3/s elapsed=0.0s {}
+.2026-11-06 22:52:48,695 INFO Expand all profile candidates started
+2026-11-06 22:52:48,696 INFO Expand all profile candidates processed=1 occurrences speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,697 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,697 INFO Prepare unique publication aliases processed=1 profiles speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,697 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,697 INFO Complete local XML primary started
+2026-11-06 22:52:48,698 INFO Complete local XML primary processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,699 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,699 INFO Disk historical work deduplication processed=0 records speed=0.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,700 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,700 INFO Historical coauthor evidence / hidden PID processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,702 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,702 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,704 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,704 INFO Strict pre-t0 author statistics processed=1 authors speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,706 INFO Recalculate four team features started
+2026-11-06 22:52:48,707 INFO Recalculate four team features processed=1 papers speed=930.6/s elapsed=0.0s {}
+.2026-11-06 22:52:48,743 INFO Expand all profile candidates started
+2026-11-06 22:52:48,743 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,744 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,745 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,745 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,745 INFO Complete local XML primary started
+2026-11-06 22:52:48,746 INFO Complete local XML primary processed=2 records speed=1931.9/s elapsed=0.0s {}
+2026-11-06 22:52:48,746 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,746 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,746 INFO XML scan discovered_profiles: replay to 0 committed records
+2026-11-06 22:52:48,746 INFO Complete local XML discovered_profiles started
+2026-11-06 22:52:48,747 INFO Complete local XML discovered_profiles processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,748 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,748 INFO Disk historical work deduplication processed=2 records speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,749 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,749 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,751 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,752 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,754 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,754 INFO Strict pre-t0 author statistics processed=4 authors speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,756 INFO Recalculate four team features started
+2026-11-06 22:52:48,758 INFO Recalculate four team features processed=1 papers speed=653.4/s elapsed=0.0s {}
+.........2026-11-06 22:52:48,897 INFO Expand all profile candidates started
+2026-11-06 22:52:48,898 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+.2026-11-06 22:52:48,912 INFO Expand all profile candidates started
+2026-11-06 22:52:48,913 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,914 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,915 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,915 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:48,915 INFO Complete local XML primary started
+2026-11-06 22:52:48,916 INFO Complete local XML primary processed=4 records speed=3061.4/s elapsed=0.0s {}
+2026-11-06 22:52:48,917 INFO Disk historical work deduplication started
+2026-11-06 22:52:48,918 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,919 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,920 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,922 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,922 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,925 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,925 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,927 INFO Recalculate four team features started
+2026-11-06 22:52:48,929 INFO Recalculate four team features processed=1 papers speed=514.5/s elapsed=0.0s {}
+2026-11-06 22:52:48,969 INFO Prepare unique publication aliases started
+2026-11-06 22:52:48,969 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,970 INFO Complete local XML scan cache reused: primary
+2026-11-06 22:52:48,971 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:48,971 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,973 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:48,974 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,976 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:48,976 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:48,978 INFO Recalculate four team features started
+2026-11-06 22:52:48,979 INFO Recalculate four team features processed=1 papers speed=871.8/s elapsed=0.0s {}
+.2026-11-06 22:52:49,018 INFO Expand all profile candidates started
+2026-11-06 22:52:49,019 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,020 INFO Prepare unique publication aliases started
+2026-11-06 22:52:49,021 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,021 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:49,021 INFO Complete local XML primary started
+2026-11-06 22:52:49,022 INFO Complete local XML primary processed=4 records speed=3608.5/s elapsed=0.0s {}
+2026-11-06 22:52:49,023 INFO Disk historical work deduplication started
+2026-11-06 22:52:49,023 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,024 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:49,025 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,027 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:49,028 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,030 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:49,031 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,033 INFO Recalculate four team features started
+2026-11-06 22:52:49,034 INFO Recalculate four team features processed=1 papers speed=647.0/s elapsed=0.0s {}
+..2026-11-06 22:52:49,078 INFO Expand all profile candidates started
+2026-11-06 22:52:49,079 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,080 ERROR Local recovery stopped without declaring completion
+Traceback (most recent call last):
+  File "/workspace/scratch/974ab544f6c1/architecture_review/local/GP_DBLP_Author_Recovery/recovery/workflow.py", line 172, in run
+    if not summary['xml_available']:raise FileNotFoundError('DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.
+....2026-11-06 22:52:49,104 INFO Expand all profile candidates started
+2026-11-06 22:52:49,105 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,106 INFO Prepare unique publication aliases started
+2026-11-06 22:52:49,107 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,107 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:49,107 INFO Complete local XML primary started
+2026-11-06 22:52:49,108 INFO Complete local XML primary processed=4 records speed=3064.8/s elapsed=0.0s {}
+2026-11-06 22:52:49,109 INFO Disk historical work deduplication started
+2026-11-06 22:52:49,110 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,111 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:49,111 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,114 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:49,114 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,117 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:49,117 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,119 INFO Recalculate four team features started
+2026-11-06 22:52:49,121 INFO Recalculate four team features processed=1 papers speed=577.9/s elapsed=0.0s {}
+.2026-11-06 22:52:49,159 INFO Expand all profile candidates started
+2026-11-06 22:52:49,160 INFO Expand all profile candidates processed=3 occurrences speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,161 INFO Prepare unique publication aliases started
+2026-11-06 22:52:49,161 INFO Prepare unique publication aliases processed=4 profiles speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,161 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:49,161 INFO Complete local XML primary started
+2026-11-06 22:52:49,162 INFO Complete local XML primary processed=4 records speed=3059.7/s elapsed=0.0s {}
+2026-11-06 22:52:49,163 INFO Disk historical work deduplication started
+2026-11-06 22:52:49,164 INFO Disk historical work deduplication processed=4 records speed=4000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,164 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:49,165 INFO Historical coauthor evidence / hidden PID processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,168 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:49,168 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,170 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:49,170 INFO Strict pre-t0 author statistics processed=3 authors speed=3000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,172 INFO Recalculate four team features started
+2026-11-06 22:52:49,173 INFO Recalculate four team features processed=1 papers speed=660.1/s elapsed=0.0s {}
+.2026-11-06 22:52:49,214 INFO Expand all profile candidates started
+2026-11-06 22:52:49,215 INFO Expand all profile candidates processed=2 occurrences speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,216 INFO Prepare unique publication aliases started
+2026-11-06 22:52:49,216 INFO Prepare unique publication aliases processed=2 profiles speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,216 INFO XML scan primary: replay to 0 committed records
+2026-11-06 22:52:49,216 INFO Complete local XML primary started
+2026-11-06 22:52:49,217 INFO Complete local XML primary processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,218 INFO Disk historical work deduplication started
+2026-11-06 22:52:49,218 INFO Disk historical work deduplication processed=1 records speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,219 INFO Historical coauthor evidence / hidden PID started
+2026-11-06 22:52:49,220 INFO Historical coauthor evidence / hidden PID processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,222 INFO Anchored sequence and identity resolution started
+2026-11-06 22:52:49,222 INFO Anchored sequence and identity resolution processed=1 papers speed=1000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,224 INFO Strict pre-t0 author statistics started
+2026-11-06 22:52:49,224 INFO Strict pre-t0 author statistics processed=2 authors speed=2000.0/s elapsed=0.0s {}
+2026-11-06 22:52:49,226 INFO Recalculate four team features started
+2026-11-06 22:52:49,227 INFO Recalculate four team features processed=1 papers speed=792.1/s elapsed=0.0s {}
+.
+----------------------------------------------------------------------
+Ran 26 tests in 1.194s
+
+OK

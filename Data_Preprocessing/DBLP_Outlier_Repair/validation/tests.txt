@@ -1,0 +1,27 @@
+test_budget_zero_full_coverage_and_resume (test_fast.FastTests.test_budget_zero_full_coverage_and_resume) ... ok
+test_cached_supported_extreme_unchanged (test_fast.FastTests.test_cached_supported_extreme_unchanged) ... ok
+test_candidate_union_includes_unflagged_paper (test_fast.FastTests.test_candidate_union_includes_unflagged_paper) ... ok
+test_corrupt_exported_history_blocks_change (test_fast.FastTests.test_corrupt_exported_history_blocks_change) ... ok
+test_fallback_only_other_version_blocks_removal (test_fast.FastTests.test_fallback_only_other_version_blocks_removal) ... ok
+test_full_coverage_strict_repair_and_request_selection (test_fast.FastTests.test_full_coverage_strict_repair_and_request_selection) ... ok
+test_matching_v2_snapshot_skips_xml_and_incompatible_one_does_not (test_fast.FastTests.test_matching_v2_snapshot_skips_xml_and_incompatible_one_does_not) ... ok
+test_missing_proof_preserves_extremes (test_fast.FastTests.test_missing_proof_preserves_extremes) ... ok
+test_pid_collision_preserves_team (test_fast.FastTests.test_pid_collision_preserves_team) ... ok
+test_pid_reassignment_requires_target_and_transfer_evidence (test_fast.FastTests.test_pid_reassignment_requires_target_and_transfer_evidence) ... ok
+test_resume_after_interruption (test_fast.FastTests.test_resume_after_interruption) ... ok
+test_review_only_preserves_original (test_fast.FastTests.test_review_only_preserves_original) ... ok
+test_reviewed_record_rule_repairs_offline (test_fast.FastTests.test_reviewed_record_rule_repairs_offline) ... ok
+test_stale_baseline_blocks (test_fast.FastTests.test_stale_baseline_blocks) ... ok
+test_uncorroborated_signature_cannot_repair (test_fast.FastTests.test_uncorroborated_signature_cannot_repair) ... ok
+test_cache_only_reaudit_preserves_confirmed_proposals (test_trace31.TraceTests.test_cache_only_reaudit_preserves_confirmed_proposals) ... ok
+test_cached_title_conflict_enters_queue_and_no_repeat (test_trace31.TraceTests.test_cached_title_conflict_enters_queue_and_no_repeat) ... ok
+test_exact_master_fallback_and_pid_unchanged (test_trace31.TraceTests.test_exact_master_fallback_and_pid_unchanged) ... ok
+test_no_work_doi_is_separate_from_missing_name (test_trace31.TraceTests.test_no_work_doi_is_separate_from_missing_name) ... ok
+test_offline_names_and_complete_versions_and_no_changes (test_trace31.TraceTests.test_offline_names_and_complete_versions_and_no_changes) ... ok
+test_resume_does_not_duplicate_and_reports_same_work_keys (test_trace31.TraceTests.test_resume_does_not_duplicate_and_reports_same_work_keys) ... ok
+test_team_profile_missing_and_wrong_key (test_trace31.TraceTests.test_team_profile_missing_and_wrong_key) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 11.500s
+
+OK

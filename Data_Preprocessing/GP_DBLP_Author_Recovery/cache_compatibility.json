@@ -1,0 +1,23 @@
+{
+  "trusted_previous_algorithm_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "alignment.py": "6a974483ad2d84ed6d7dc6e457925fba6a447637c1bad9c9d39baadb9075f427",
+    "bootstrap.py": "bf6854a9c70e77ba3d91e3330aea013ca1789087add2071cf5df3c68e98b4c0b",
+    "database.py": "d7a264e0904e2570f959f225c2f906a8685738f056542da56cf2df541e8c85d2",
+    "dedup.py": "2259b4184f778827758decc14d92371f70ff7f0ca25a41dc7f01aa79984724a2",
+    "evidence.py": "9f510e2237c678ec2c89dadea14d36ecbdb779644afeda800e63e74da5783d1b",
+    "features.py": "bf496570b47854cd086733bf1f809478fc46f0d7aaf0426333edb6a831942c57",
+    "focal.py": "f252a543cf8adcc7d09e9d4ddbf838ed3be4edfe48496f7587ce39807713506f",
+    "history.py": "e72d29e8610bc3a7fc87ee1fafd711afd6866e18520ea9a7fc7915d98201d71b",
+    "index_init.py": "30eef7db59517e5f90619ce8a3e434ceda2bf70ddfdf10ace44e22aced1b7f2f",
+    "io.py": "db7ba2b871b963d4bfc12384e02fdee860945fac6628ab2f7cc0ee235baef534",
+    "name_repair.py": "bd6ba4cf90948193f3bb7237384c4e6aa742f7282f5f881e149e13fc53c0101b",
+    "names.py": "ae4a436bf2f1778312f9ce4a34020d41b3e5c8e69357b2a03fc04e4e3264506c",
+    "network.py": "ee7348841caf943b85a1a25352f6c6a64c4d2638cf9eb16092bc87ab18d21066",
+    "profile.py": "c31a8d84d257ad651b50ce1c30ff7c1a38b66a3a5faa41d530d013ba6ba3c9e0",
+    "progress.py": "93bff2b4d9ce79df685aba16eb53167b2ba70bef77e337d692196fac24f11fc1",
+    "rules.py": "c7ca6f7b23cd9e845490ab017a274edb637edb4f780439640fb688f8d99b972d",
+    "search.py": "906a18e94b36a2b9da9dbb0831de3f1db3f78dee0dcafadfa0ebcb6b0f58e4c7",
+    "workflow.py": "f988cb72fff30ad4ec99e4f78fa08179e35c113d2e3952a435c0588b20f7e144"
+  }
+}

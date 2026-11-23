@@ -1,0 +1,23 @@
+{
+  "status": "BLOCKED_MISSING_INPUT",
+  "requested_stage": "all",
+  "network_policy": "OFFLINE_SOCKET_AUDIT_AND_NO_HTTP_CLIENT",
+  "profile_index_rebuilt": false,
+  "profile_index_copied": false,
+  "profile_index_created": false,
+  "profile_index_reused": true,
+  "paper_count": 599,
+  "input_author_occurrences": 2361,
+  "fetch_claimed_verified": 1768,
+  "previous_verified": 1767,
+  "previous_unresolved": 594,
+  "xml_available": false,
+  "expanded_candidate_rows": 1084900,
+  "eligible_distinct_candidate_pids": 22969,
+  "error": "FileNotFoundError('DBLP_XML_PATH missing. Full XML is mandatory; downloading and partial-cache substitution are disabled.')",
+  "source_files_unchanged": true,
+  "network_attempts_blocked": 0,
+  "subprocess_attempts_blocked": 0,
+  "elapsed_seconds": 57.693,
+  "peak_process_rss_mb": 349.09
+}

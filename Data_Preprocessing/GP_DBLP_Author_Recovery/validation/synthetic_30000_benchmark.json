@@ -1,0 +1,213 @@
+{
+  "dataset": "SYNTHETIC_UNIQUE_NAMES_TWO_AUTHORS_ONE_HISTORY_AND_ONE_TARGET_PER_PAPER",
+  "paper_count": 30000,
+  "xml_publications": 60000,
+  "xml_profiles": 60000,
+  "xml_total_records": 120000,
+  "author_occurrences": 60000,
+  "fixture_setup_seconds": 2.351,
+  "workflow": {
+    "status": "COMPLETE",
+    "requested_stage": "all",
+    "network_policy": "OFFLINE_SOCKET_AUDIT_AND_NO_HTTP_CLIENT",
+    "profile_index_rebuilt": false,
+    "profile_index_copied": false,
+    "profile_index_created": true,
+    "profile_index_reused": false,
+    "paper_count": 30000,
+    "input_author_occurrences": 60000,
+    "fetch_claimed_verified": 30000,
+    "previous_verified": 30000,
+    "previous_unresolved": 30000,
+    "xml_available": true,
+    "expanded_candidate_rows": 180000,
+    "eligible_distinct_candidate_pids": 60000,
+    "xml_snapshot": {
+      "size": 1379060,
+      "mtime_ns": 1794031163070083166,
+      "sample_sha256": "9301f3d10fd277b01f4383bdb1de32074a4d13e70d43e906abf0fd9889e8fc40",
+      "sha256": "bcf62931b7939517cb02fe70b1dda7e8ea3b3245814ad17215228b71fa41ae0e"
+    },
+    "xml_records_processed": 120000,
+    "target_paper_hits": 30000,
+    "candidate_history_records": 120000,
+    "coauthor_relations": 30000,
+    "backtest": {
+      "automatic_network_confirmation_enabled": false,
+      "selected_rule": null,
+      "calibration_trials": [
+        {
+          "minimum_joint": 2,
+          "margin": 2.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 2,
+          "margin": 4.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 2,
+          "margin": 8.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 3,
+          "margin": 2.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 3,
+          "margin": 4.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 3,
+          "margin": 8.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 5,
+          "margin": 2.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 5,
+          "margin": 4.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        },
+        {
+          "minimum_joint": 5,
+          "margin": 8.0,
+          "accepted": 0,
+          "correct": 0,
+          "precision": null,
+          "precision_lower_bound": 0.0
+        }
+      ],
+      "holdout_accepted": 0,
+      "holdout_correct": 0,
+      "holdout_precision": null,
+      "holdout_wilson_lower_95": 0.0,
+      "requested_lower_bound": 0.99,
+      "holdout_policy_evaluated": "diagnostic_strict_rule_only",
+      "split": "CONNECTED_PAPER_PID_COMPONENTS",
+      "ground_truth": "PREVIOUS_VERIFIED_PSEUDO_LABELS_NOT_EXTERNAL_GOLD",
+      "future_collaborations_allowed": false,
+      "reason": "INSUFFICIENT_CALIBRATION_OR_HOLDOUT_SUPPORT_NETWORK_AUTO_DISABLED"
+    },
+    "final_author_occurrences": 60000,
+    "verified_author_count": 60000,
+    "unresolved_author_count": 0,
+    "identity_conflicts": 0,
+    "feature_regression_review_count": 0,
+    "feature_comparison": [
+      {
+        "feature": "dblp_team_mean_publication_count_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      },
+      {
+        "feature": "dblp_team_max_publication_count_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      },
+      {
+        "feature": "dblp_team_mean_academic_age_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      },
+      {
+        "feature": "dblp_team_max_academic_age_pre_t0",
+        "previous_available": 0,
+        "final_available": 30000
+      }
+    ],
+    "temporal_validation": {
+      "included_same_or_future_year": 0,
+      "included_focal_works": 0,
+      "publication_year_boundary": "publication_year < t0_year",
+      "unresolved_zero_fill": false,
+      "target_candidates_missing_exclusion": 0,
+      "coauthor_focal_leakage_count": 0,
+      "coauthor_same_or_future_year_count": 0,
+      "unreliable_target_candidates_excluded": 0,
+      "identity_reliability_independent_of_focal_exclusion": true
+    },
+    "full_xml_scan_complete": true,
+    "history_status_counts": {
+      "COMPLETE_OBSERVED_DBLP_HISTORY": 60000
+    },
+    "source_files_unchanged": true,
+    "network_attempts_blocked": 0,
+    "subprocess_attempts_blocked": 0,
+    "elapsed_seconds": 146.741,
+    "peak_process_rss_mb": 1051.6
+  },
+  "ten_thousand_indexed_queries_seconds": 0.048,
+  "query_plans": {
+    "pid_history": [
+      [
+        2,
+        0,
+        55,
+        "SEARCH candidate_publications USING COVERING INDEX sqlite_autoindex_candidate_publications_1 (pid=?)"
+      ]
+    ],
+    "pid_year": [
+      [
+        3,
+        0,
+        51,
+        "SEARCH candidate_publication_years USING INDEX candidate_year (pid=? AND year<?)"
+      ]
+    ],
+    "coauthors": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH candidate_coauthors USING COVERING INDEX coauthor_candidate (oid=? AND pid=?)"
+      ]
+    ],
+    "work_years": [
+      [
+        2,
+        0,
+        56,
+        "SEARCH work_years USING COVERING INDEX work_person (pid=?)"
+      ]
+    ]
+  },
+  "sqlite_bytes": 309538816,
+  "whole_process_peak_rss_mb": 1051.59765625,
+  "limitations": [
+    "Not a full DBLP snapshot benchmark",
+    "Unique names do not model thousands of ambiguous candidates",
+    "Includes real XML streaming, SQL history/dedup, alignment, scoring/backtest, features and exports"
+  ]
+}
